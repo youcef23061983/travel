@@ -1,0 +1,30 @@
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
+import { getMessages } from "next-intl/server";
+import FrontImage from "@/components/frontPage/FrontImage";
+import PartnersImages from "@/components/frontPage/PartnersImages";
+import TextScroll from "@/components/frontPage/TextScroll";
+import Partnership2 from "@/components/frontPage/Partnership2";
+
+export async function generateMetadata({ params: { locale } }) {
+  const messages = await getMessages({ locale });
+  const homePageMessages = messages["HomePage"];
+
+  return {
+    title: homePageMessages ? homePageMessages.title : "Default Title",
+  };
+}
+
+export default function HomePage() {
+  const t = useTranslations("HomePage");
+
+  return (
+    <div>
+      <FrontImage />
+      <TextScroll />
+
+      <PartnersImages />
+      <Partnership2 />
+    </div>
+  );
+}

@@ -1,0 +1,381 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+before,
+after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("/font/SourceSerifPro-LightIt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Didot Italic";
+  src: url("/font/Didot Italic.ttf") format("truetype");
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+p {
+  font-family: "Source Serif Pro", serif;
+
+  font-weight: 100;
+  margin-bottom: 2rem;
+  letter-spacing: normal;
+  word-spacing: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label {
+  font-family: "Didot Italic", serif;
+
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 99;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 0.8rem;
+}
+
+.link {
+  color: white;
+  background-color: black;
+  padding: 0.7rem 1.7rem;
+  border-radius: 0.7rem;
+}
+.headerimages {
+  display: flex;
+  height: 100vh;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #95615e;
+}
+.active {
+  color: #95615e;
+}
+.logName {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logDiv {
+  display: flex;
+  gap: 1rem;
+}
+.frontDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/homepage/frontImg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.marquee {
+  padding: 2rem 0rem;
+  max-width: 1800px;
+  overflow: hidden;
+  --speed: 25s;
+  --item-width: 300px;
+  --item-gap: 25px;
+  --num-items: 7;
+
+  --single-slide-speed: calc(var(--speed) / var(--num-items));
+  --item-width-plus-gap: calc(var(--item-width) + var(--item-gap));
+  --track-width: calc(var(--item-width-plus-gap) * calc(var(--num-items) - 1));
+}
+
+.marquee-track {
+  container-type: inline-size;
+  display: grid;
+  grid-template-columns: var(--track-width) [track] 0px [resting];
+  width: max-content;
+}
+
+.marquee-item {
+  width: 10rem;
+  aspect-ratio: 1/1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: #fff;
+  grid-area: resting;
+  animation: marquee-move var(--speed) linear infinite
+    var(--direction, forwards);
+  animation-delay: calc(var(--single-slide-speed) * var(--item-position) * -1);
+}
+.marquee-item2 {
+  width: 10rem;
+  aspect-ratio: 1/1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: #fff;
+  grid-area: resting;
+  animation: marquee-move var(--speed) linear infinite reverse;
+  animation-delay: calc(var(--single-slide-speed) * var(--item-position) * -1);
+}
+
+@keyframes marquee-move {
+  to {
+    transform: translateX(calc(-100cqw - 100%));
+  }
+}
+@keyframes marquee-move-rtl {
+  to {
+    transform: translateX(calc(100cqw + 100%));
+  }
+}
+
+.marquee.rtl .marquee-item {
+  animation: marquee-move-rtl var(--speed) linear infinite;
+}
+
+@media screen and (min-width: 336px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  a {
+    font-size: 1.2rem;
+  }
+  .x {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+  /* .x {
+    margin-left: 10%;
+  } */
+
+  .links {
+    display: none;
+    overflow: hidden;
+    order: 1;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 1rem;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.7rem #95615e;
+  }
+  .show-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+
+  .ham {
+    display: none;
+  }
+  .x {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none; /* Adjust for the logo's width */
+  }
+
+  .links {
+    order: unset;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.7rem 4.5rem;
+    margin-top: 0rem;
+  }
+  /* a {
+    font-size: 1rem;
+  } */
+}
+
+@media screen and (min-width: 785px) {
+  a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+    line-height: 1.6;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+  /* .frontTitle {
+    font-size: 7rem;
+  }
+  .frontP {
+    font-size: 4rem;
+  }
+  .counNum {
+    font-size: 4.7rem;
+  }
+  .featured1 {
+    font-size: 6rem;
+  }
+  .aboutArticle {
+    top: 40%;
+  }
+  .pricingDiv {
+    min-height: 40rem;
+  }
+  .unitDiv {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 3rem 5rem;
+  }
+  .testimonialArticle {
+    padding: 2rem 1rem 20rem 1rem;
+  }
+  .input {
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+  .form {
+    width: 800px;
+  }
+  .inputLabel {
+    font-size: 2.2rem;
+    color: white;
+  }
+  .formStatusMessage {
+    color: white;
+    font-size: 2.2rem;
+  } */
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 3.7rem;
+    line-height: 1.5;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  /* .footerlink {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  .footerReserved {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  } */
+  p {
+    font-size: clamp(2.4rem, 1.5vw, 4rem);
+    line-height: 1.6;
+  }
+  /* a {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  } */
+  /* .footericon {
+    font-size: 2.8rem;
+  }
+  .counNum {
+    font-size: 5.4rem;
+  } */
+}

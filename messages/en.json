@@ -1,0 +1,41 @@
+{
+  "HomePage": {
+    "title": "Petra says hello",
+    "imgHeader": "Explore the World with Us",
+    "imgTitle": "Your Trusted Travel Partner for Unforgettable Journeys",
+    "bestPartners": "these are our best parntners",
+    "navbar": {
+      "home": "Home",
+      "offer": "Group offers",
+      "service": "Our service",
+      "about": "About Us",
+      "login": "Login",
+      "logout": "Logout",
+      "contact": "Contact us"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "about"
+  },
+  "About": {
+    "title": "we are the best",
+    "booking": "our company",
+    "p": "We are a travel agency dedicated to providing unforgettable travel experiences. We offer a wide range of tours to suit all preferences, from exploring historical and cultural landmarks to adventures in breathtaking natural landscapes. Our experienced team ensures that your journey is comfortable and filled with moments you'll cherish forever. Let us take you on a unique journey to the most beautiful destinations around the world."
+  },
+  "Contact": {
+    "title": "contct-us",
+    "email": " this is our email",
+    "full name": " youcef hank"
+  },
+  "Service": {
+    "title": "our-service",
+    "lease": "Car rental",
+    "booking": "booking hotel"
+  },
+  "Offer": {
+    "title": "gropu offer",
+    "country": "mekka",
+    "period": "10 days"
+  }
+}
