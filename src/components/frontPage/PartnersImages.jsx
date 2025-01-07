@@ -75,52 +75,18 @@
 
 // export default PartnersImages;
 
-// import React from "react";
-// import { useLocale } from "next-intl";
-// import Image from "next/image";
-
-// const PartnersImages = () => {
-//   const locale = useLocale();
-//   const isRTL = locale === "ar"; // Check if the language is Arabic
-
-//   return (
-//     <div
-//       className={`marquee fadeout-horizontal ${isRTL ? "rtl" : ""}`}
-//       style={{ "--num-items": 7 }}
-//     >
-//       <div className="marquee-track">
-//         {[...Array(7)].map((_, index) => (
-//           <div
-//             key={index}
-//             className="marquee-item"
-//             style={{ "--item-position": index + 1 }}
-//           >
-//             <Image
-//               src={`/homepage/partners/${index + 1}.png`}
-//               width={40}
-//               height={40}
-//               className="img"
-//               alt={`Partner ${index + 1}`}
-//             />
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default PartnersImages;
 import React from "react";
 import { useLocale } from "next-intl";
 import Image from "next/image";
 
 const PartnersImages = () => {
   const locale = useLocale();
-  const isRTL = locale === "ar"; // Check if the language is Arabic
+  const isRTL = locale === "en";
 
   return (
     <div
-      className={`marquee fadeout-horizontal ${isRTL ? "rtl" : ""}`}
+      // className={`marquee fadeout-horizontal ${isRTL ? "ltr" : "rtl"}`}
+      className="marquee fadeout-horizontal"
       style={{ "--num-items": 7 }}
     >
       <div className="marquee-track">
@@ -145,3 +111,45 @@ const PartnersImages = () => {
 };
 
 export default PartnersImages;
+// import { useLocale, useTranslations } from "next-intl";
+// import Image from "next/image";
+
+// const PartnersImages = () => {
+//   const locale = useLocale();
+//   const isRTL = locale === "ar";
+//   const t = useTranslations("HomePage");
+
+//   const partnersImages = Array.isArray(t("Partners"))
+//     ? t("Partners")
+//     : [...Array(7)].map((_, index) => `/homepage/partners/${index + 1}.png`);
+
+//   console.log("partnersImages:", partnersImages); // Debugging
+
+//   return (
+//     <div
+//       className={`marquee fadeout-horizontal ${isRTL ? "rtl" : ""}`}
+//       // className="marquee fadeout-horizontal"
+//       style={{ "--num-items": partnersImages.length }}
+//     >
+//       <div className="marquee-track">
+//         {partnersImages.map((image, index) => (
+//           <div
+//             key={index}
+//             className={`marquee-item ${isRTL ? "marquee-item-rtl" : ""}`}
+//             style={{ "--item-position": index + 1 }}
+//           >
+//             <Image
+//               src={image}
+//               width={40}
+//               height={40}
+//               className="img"
+//               alt={`Partner ${index + 1}`}
+//             />
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default PartnersImages;

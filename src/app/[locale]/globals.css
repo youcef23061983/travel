@@ -128,7 +128,7 @@ a {
   background-position: center;
   background-attachment: fixed;
 }
-.marquee {
+/* .marquee {
   padding: 2rem 0rem;
   max-width: 1800px;
   overflow: hidden;
@@ -188,6 +188,122 @@ a {
 
 .marquee.rtl .marquee-item {
   animation: marquee-move-rtl var(--speed) linear infinite;
+} */
+
+/* with this it shwos all the images eng and arab
+.marquee {
+  padding: 2rem 0;
+  max-width: 1800px;
+  overflow: hidden;
+  --speed: 25s;
+  --item-width: 300px;
+  --item-gap: 25px;
+  --num-items: 7; 
+
+  --single-slide-speed: calc(var(--speed) / var(--num-items));
+  --item-width-plus-gap: calc(var(--item-width) + var(--item-gap));
+}
+
+.marquee-track {
+  display: flex; 
+  gap: var(--item-gap);
+  animation: marquee-move var(--speed) linear infinite;
+}
+
+.marquee.rtl .marquee-track {
+  animation: marquee-move-rtl var(--speed) linear infinite;
+}
+
+.marquee-item {
+  width: var(--item-width); 
+  aspect-ratio: 1 / 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: #fff;
+  flex-shrink: 0; 
+}
+
+@keyframes marquee-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--item-gap)));
+  }
+}
+
+@keyframes marquee-move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% + var(--item-gap)));
+  }
+} */
+
+.marquee {
+  padding: 2rem 15rem;
+  max-width: 100%;
+  overflow: hidden;
+  --speed: 8s;
+  --item-width: 100px;
+  --item-gap: 250px;
+  --num-items: 7;
+
+  --single-slide-speed: calc(var(--speed) / var(--num-items));
+  --item-width-plus-gap: calc(var(--item-width) + var(--item-gap));
+  --track-width: calc(var(--item-width-plus-gap) * var(--num-items));
+}
+
+.marquee-track {
+  display: flex;
+  gap: var(--item-gap);
+  animation: marquee-move var(--speed) linear infinite;
+  width: 100%;
+}
+
+.marquee.rtl .marquee-track {
+  animation: marquee-move-rtl var(--speed) linear infinite;
+}
+
+.marquee-item {
+  width: var(--item-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+.marquee-item2 {
+  width: var(--item-width);
+  aspect-ratio: 1 / 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+@keyframes marquee-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--item-gap)));
+  }
+}
+
+@keyframes marquee-move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% + var(--item-gap)));
+  }
 }
 
 @media screen and (min-width: 336px) {

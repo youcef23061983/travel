@@ -73,18 +73,18 @@
 // };
 
 // export default Partnership2;
-
 import React from "react";
 import { useLocale } from "next-intl";
 import Image from "next/image";
 
-const PartnersImages = () => {
+const Partnership2 = () => {
   const locale = useLocale();
-  const isRTL = locale === "ar"; // Check if the language is Arabic
+  const isRTL = locale === "en";
 
   return (
     <div
-      className={`marquee fadeout-horizontal ${isRTL ? "rtl" : ""}`}
+      // className={`marquee fadeout-horizontal ${isRTL ? "ltr" : "rtl"}`}
+      className="marquee fadeout-horizontal"
       style={{ "--num-items": 7 }}
     >
       <div className="marquee-track">
@@ -92,7 +92,12 @@ const PartnersImages = () => {
           <div
             key={index}
             className="marquee-item2"
-            style={{ "--item-position": index + 1 }}
+            style={{
+              "--item-position": index + 1,
+              animation: `${
+                isRTL ? "marquee-move-rtl" : "marquee-move"
+              } var(--speed) linear infinite`,
+            }}
           >
             <Image
               src={`/homepage/partners/${index + 1}.png`}
@@ -108,4 +113,4 @@ const PartnersImages = () => {
   );
 };
 
-export default PartnersImages;
+export default Partnership2;

@@ -10,6 +10,7 @@ const LocolSwitcher = () => {
   const localeValue = useLocale();
   const pathname = usePathname();
   const params = useParams();
+  console.log(localeValue);
 
   const changeHandler = (e) => {
     const nextLocale = e.target.value;
