@@ -13,16 +13,7 @@
       "about": "من نحن",
       "login": "تسجيل الدخول",
       "logout": "خروج"
-    },
-    "Partners": [
-      "/homepage/partners/1.png",
-      "/homepage/partners/2.png",
-      "/homepage/partners/3.png",
-      "/homepage/partners/4.png",
-      "/homepage/partners/5.png",
-      "/homepage/partners/6.png",
-      "/homepage/partners/7.png"
-    ]
+    }
   },
   "Navigation": {
     "home": "الرئيسية",
