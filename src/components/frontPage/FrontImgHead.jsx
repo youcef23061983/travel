@@ -71,7 +71,6 @@ function FrontImgHead() {
   const locale = useLocale();
   const t = useTranslations("HomePage");
 
-  // Dynamically choose the correct AnimatedText component based on locale
   const AnimatedComponent = locale === "en" ? AnimatedText : AnimatedTextArabic;
 
   return (

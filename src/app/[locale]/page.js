@@ -5,6 +5,8 @@ import FrontImage from "@/components/frontPage/FrontImage";
 import PartnersImages from "@/components/frontPage/PartnersImages";
 import TextScroll from "@/components/frontPage/TextScroll";
 import Partnership2 from "@/components/frontPage/Partnership2";
+import TextScroll2 from "@/components/frontPage/TextScroll2";
+import Statistics from "@/components/frontPage/Statistics";
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
@@ -24,7 +26,10 @@ export default function HomePage() {
       <TextScroll />
 
       <PartnersImages />
+      <TextScroll2 />
+
       <Partnership2 />
+      <Statistics />
     </div>
   );
 }

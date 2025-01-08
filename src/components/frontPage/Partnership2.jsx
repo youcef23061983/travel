@@ -2,14 +2,8 @@ import { useLocale } from "next-intl";
 import Image from "next/image";
 
 const Partnership2 = () => {
-  const locale = useLocale();
-  const isRTL = locale === "ar";
-
   return (
-    <div
-      className={`marquee fadeout-horizontal ${isRTL ? "rtl" : "ltr"}`}
-      style={{ "--num-items": 7 }}
-    >
+    <div className={"marquee fadeout-horizontal"} style={{ "--num-items": 7 }}>
       <div className="marquee-track">
         {[...Array(7)].map((_, index) => (
           <div
@@ -17,15 +11,12 @@ const Partnership2 = () => {
             className="marquee-item"
             style={{
               "--item-position": index + 1,
-              animation: `${
-                isRTL ? "marquee-move-ltr" : "marquee-move-rtl"
-              } var(--speed) linear infinite`,
             }}
           >
             <Image
-              src={`/homepage/partners/${index + 1}.png`}
-              width={40}
-              height={40}
+              src={`/homepage/partners-hotels/${index + 1}.png`}
+              width={80}
+              height={80}
               className="img"
               alt={`Partner ${index + 1}`}
             />

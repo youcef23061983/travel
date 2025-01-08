@@ -57,6 +57,7 @@ const AnimatedTextArabic = ({
         animate={controls}
         variants={animation}
         aria-hidden
+        className="text-[40px]"
       >
         {text}
       </motion.div>

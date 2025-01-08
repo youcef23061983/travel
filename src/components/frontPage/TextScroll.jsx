@@ -71,30 +71,18 @@ function TextScroll() {
   const locale = useLocale();
   const t = useTranslations("HomePage");
 
-  // Dynamically choose the correct AnimatedText component based on locale
   const AnimatedComponent = locale === "en" ? AnimatedText : AnimatedTextArabic;
 
   return (
-    <div>
-      <section>
-        <AnimatedComponent
-          once
-          text={t("bestPartners")}
-          el="h2"
-          className="text-center font-extrabold mb-[30px]"
-        />
-      </section>
-
-      {/* <section>
-        <AnimatedComponent
-          once
-          el="h3"
-          text={t("imgTitle")}
-          repeatDelay={10000}
-          className="text-center font-extrabold"
-        />
-      </section> */}
-    </div>
+    <section>
+      <AnimatedComponent
+        once
+        text={t("bestPartners")}
+        el="h2"
+        // className="text-center font-extrabold mb-[30px] mt-[30px]"
+        className="text-center mt-[30px]"
+      />
+    </section>
   );
 }
 

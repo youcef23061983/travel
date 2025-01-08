@@ -1,9 +1,5 @@
 {
   "HomePage": {
-    "title": "Petra says hello",
-    "imgHeader": "Explore the World with Us",
-    "imgTitle": "Your Trusted Travel Partner for Unforgettable Journeys",
-    "bestPartners": "these are our best parntners",
     "navbar": {
       "home": "Home",
       "offer": "Group offers",
@@ -12,7 +8,18 @@
       "login": "Login",
       "logout": "Logout",
       "contact": "Contact us"
-    }
+    },
+    "title": "Petra says hello",
+    "imgHeader": "Explore the World with Us",
+    "imgTitle": "Your Trusted Travel Partner for Unforgettable Journeys",
+    "bestPartners": "our best parntners in airplanes  ",
+    "bestPartners2": "our best parntners in hotels",
+    "infoTitle": "Your Gateway to Unforgettable Journeys",
+    "infoParagraph": "  Discover the world like never before with our exceptional travel services. From luxurious hotels to reliable airlines and custom tour packages, we create unforgettable experiences tailored to your dreams.",
+    "infoAirelines": "Airline Companies",
+    "infoHotels": "Hotels",
+    "infoPackages": "Tour Packages",
+    "infoTravels": "Satisfied Travelers"
   },
 
   "Navigation": {

@@ -122,18 +122,17 @@ a {
   gap: 4rem;
   width: 100%;
   height: 100vh;
-  background-image: url("/homepage/frontImg.jpg");
+  background-image: url("/homepage/petra.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
-
 .marquee {
   padding: 2rem 20rem;
   max-width: 100%;
   overflow: hidden;
-  --speed: 8s;
+  --speed: 6s;
   --item-width: 100px;
   --item-gap: 250px;
   --num-items: 7;
@@ -172,22 +171,31 @@ a {
     transform: translateX(calc(-100% - var(--item-gap)));
   }
 }
-
-@keyframes marquee-move-rtl {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(100% + var(--item-gap)));
-  }
+.staticInfo {
+  padding: 1rem;
 }
-@keyframes marquee-move-ltr {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100% - var(--item-gap)));
-  }
+.countsDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.countDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.5rem 0.5rem 3rem inset #95615e;
+}
+.counNum {
+  color: #95615e;
+  font-weight: 500;
 }
 @media screen and (min-width: 336px) {
   h2 {
@@ -213,9 +221,6 @@ a {
   .nav {
     flex-wrap: wrap;
   }
-  /* .x {
-    margin-left: 10%;
-  } */
 
   .links {
     display: none;
@@ -230,6 +235,23 @@ a {
   .show-nav {
     display: flex;
     flex-direction: column;
+  }
+  .staticDiv {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 1rem;
+    padding: 1rem;
+  }
+  .staticImg {
+    border-radius: 1rem;
+  }
+  .staticInfo > h2 {
+    text-align: center;
+  }
+  .counNum {
+    font-size: 4rem;
   }
 }
 
@@ -266,7 +288,7 @@ a {
     position: relative;
     left: 0;
     top: 0;
-    transform: none; /* Adjust for the logo's width */
+    transform: none;
   }
 
   .links {
@@ -279,9 +301,20 @@ a {
     padding: 0.7rem 4.5rem;
     margin-top: 0rem;
   }
-  /* a {
-    font-size: 1rem;
-  } */
+  .staticDiv {
+    display: flex;
+    flex-direction: row;
+  }
+  .staticImg {
+    width: 40%;
+    height: 70rem;
+  }
+  .staticInfo {
+    width: 60%;
+  }
+  .counNum {
+    font-size: 4.4rem;
+  }
 }
 
 @media screen and (min-width: 785px) {
@@ -305,47 +338,16 @@ a {
   a {
     font-size: 1.5rem;
   }
-  /* .frontTitle {
-    font-size: 7rem;
+  .staticImg {
+    height: 80rem;
   }
-  .frontP {
-    font-size: 4rem;
+  .countsDiv {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
   .counNum {
     font-size: 4.7rem;
   }
-  .featured1 {
-    font-size: 6rem;
-  }
-  .aboutArticle {
-    top: 40%;
-  }
-  .pricingDiv {
-    min-height: 40rem;
-  }
-  .unitDiv {
-    flex-direction: row;
-    gap: 3rem;
-    padding: 3rem 5rem;
-  }
-  .testimonialArticle {
-    padding: 2rem 1rem 20rem 1rem;
-  }
-  .input {
-    font-weight: lighter;
-    font-size: 2rem;
-  }
-  .form {
-    width: 800px;
-  }
-  .inputLabel {
-    font-size: 2.2rem;
-    color: white;
-  }
-  .formStatusMessage {
-    color: white;
-    font-size: 2.2rem;
-  } */
 }
 @media screen and (min-width: 1200px) {
   h2 {
@@ -355,26 +357,17 @@ a {
   h3 {
     font-size: 2rem;
   }
-  /* .footerlink {
-    font-size: 1.5rem;
-    line-height: 1.6;
-  }
-  .footerReserved {
-    font-size: 1.5rem;
-    line-height: 1.6;
-  } */
+
   p {
     font-size: clamp(2.4rem, 1.5vw, 4rem);
     line-height: 1.6;
   }
-  /* a {
+  a {
     font-size: 1.5rem;
     line-height: 1.6;
-  } */
-  /* .footericon {
-    font-size: 2.8rem;
   }
+
   .counNum {
     font-size: 5.4rem;
-  } */
+  }
 }
