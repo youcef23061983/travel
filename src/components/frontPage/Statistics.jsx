@@ -5,10 +5,12 @@ import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
 import AnimatedText from "../AnimatedText";
 import AnimatedTextArabic from "../AnimatedTextArabic";
+import Word from "@/components/Word";
 
 const Statistics = () => {
   const locale = useLocale();
   const AnimatedComponent = locale === "en" ? AnimatedText : AnimatedTextArabic;
+  // const paragraph = t("infoParagraph");
 
   const t = useTranslations("HomePage");
   return (
@@ -21,14 +23,9 @@ const Statistics = () => {
       />
 
       <div className="staticInfo">
-        {/* <h2>{t("infoTitle")}</h2> */}
-        <AnimatedComponent
-          once
-          text={t("infoTitle")}
-          el="h2"
-          //   className="text-center font-extrabold mb-[30px] mt-[30px]"
-        />
-        <p>{t("infoParagraph")}</p>
+        <AnimatedComponent once text={t("infoTitle")} el="h2" />
+        {/* <p>{t("infoParagraph")}</p> */}
+        <Word paragraph={t("infoParagraph")} />
 
         <Counter />
       </div>

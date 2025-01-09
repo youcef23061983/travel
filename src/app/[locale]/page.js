@@ -7,7 +7,7 @@ import TextScroll from "@/components/frontPage/TextScroll";
 import Partnership2 from "@/components/frontPage/Partnership2";
 import TextScroll2 from "@/components/frontPage/TextScroll2";
 import Statistics from "@/components/frontPage/Statistics";
-
+import Word from "@/components/Word";
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
   const homePageMessages = messages["HomePage"];
@@ -18,8 +18,6 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 export default function HomePage() {
-  const t = useTranslations("HomePage");
-
   return (
     <div>
       <FrontImage />

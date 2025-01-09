@@ -17,9 +17,13 @@
     "infoTitle": "Your Gateway to Unforgettable Journeys",
     "infoParagraph": "  Discover the world like never before with our exceptional travel services. From luxurious hotels to reliable airlines and custom tour packages, we create unforgettable experiences tailored to your dreams.",
     "infoAirelines": "Airline Companies",
-    "infoHotels": "Hotels",
+    "infoHotels": "luxurious hotels",
     "infoPackages": "Tour Packages",
-    "infoTravels": "Satisfied Travelers"
+    "infoTravels": "Satisfied Travelers",
+    "company": "companies",
+    "traveler": "Million Travelers",
+    "hotel": "hotels",
+    "package": "packages"
   },
 
   "Navigation": {

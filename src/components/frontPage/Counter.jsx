@@ -2,8 +2,11 @@
 import React from "react";
 import AnimatedCounter from "../AnimatedCounter";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const Counter = () => {
+  const t = useTranslations("HomePage");
+
   const counter1 = {
     hidden: { opacity: 0 },
     visible: {
@@ -41,9 +44,9 @@ const Counter = () => {
         viewport={{ once: true }}
         className="countDiv"
       >
-        <p>FIDÈLE À PLUS DE</p>
-        <AnimatedCounter from={0} to={1100} duration={5} />
-        <p>MEMBRES</p>
+        <p>{t("infoAirelines")}</p>
+        <AnimatedCounter from={0} to={22} duration={5} />
+        <p>{t("company")}</p>
       </motion.div>
       <motion.div
         variants={counter2}
@@ -52,9 +55,9 @@ const Counter = () => {
         viewport={{ once: true }}
         className="countDiv"
       >
-        <p>JOUEZ À PLUS DE </p>
-        <AnimatedCounter from={0} to={5} duration={3} />
-        <p>LOCAUX</p>
+        <p>{t("infoHotels")}</p>
+        <AnimatedCounter from={0} to={73} duration={3} />
+        <p>{t("hotel")}</p>
       </motion.div>
       <motion.div
         variants={counter3}
@@ -63,9 +66,9 @@ const Counter = () => {
         viewport={{ once: true }}
         className="countDiv"
       >
-        <p>À VOTRE SERVICE DEPUIS</p>
-        <AnimatedCounter from={0} to={9} duration={4} />
-        <p>ANS</p>
+        <p>{t("infoPackages")}</p>
+        <AnimatedCounter from={0} to={30} duration={4} />
+        <p>{t("package")}</p>
       </motion.div>
       <motion.div
         variants={counter4}
@@ -74,9 +77,10 @@ const Counter = () => {
         viewport={{ once: true }}
         className="countDiv"
       >
-        <p>AIR PLANES</p>
-        <AnimatedCounter from={0} to={25} duration={4} />
-        <p>ANS</p>
+        <p>{t("infoTravels")}</p>
+        <AnimatedCounter from={0} to={14} duration={4} />
+
+        <p>{t("traveler")}</p>
       </motion.div>
     </main>
   );

@@ -132,11 +132,10 @@ a {
   padding: 2rem 20rem;
   max-width: 100%;
   overflow: hidden;
-  --speed: 6s;
-  --item-width: 100px;
-  --item-gap: 250px;
+  --speed: 7s;
+  --item-width: clamp(50px, 10vw, 100px);
+  --item-gap: clamp(100px, 15vw, 250px);
   --num-items: 7;
-
   --single-slide-speed: calc(var(--speed) / var(--num-items));
   --item-width-plus-gap: calc(var(--item-width) + var(--item-gap));
   --track-width: calc(var(--item-width-plus-gap) * var(--num-items));
@@ -146,7 +145,7 @@ a {
   display: flex;
   gap: var(--item-gap);
   animation: marquee-move var(--speed) linear infinite;
-  width: 100%;
+  width: var(--track-width);
 }
 
 .marquee.rtl .marquee-track {
