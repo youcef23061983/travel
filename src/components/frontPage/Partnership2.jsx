@@ -1,9 +1,15 @@
-import { useLocale } from "next-intl";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 
 const Partnership2 = () => {
+  const locale = useLocale();
+  const isRTL = locale === "ar";
+
   return (
-    <div className={"marquee fadeout-horizontal"} style={{ "--num-items": 7 }}>
+    <div
+      className={`marquee fadeout-horizontal ${isRTL ? "rtl" : ""}`}
+      style={{ "--num-items": 7 }}
+    >
       <div className="marquee-track">
         {[...Array(7)].map((_, index) => (
           <div

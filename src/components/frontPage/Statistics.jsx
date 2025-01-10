@@ -10,7 +10,6 @@ import Word from "@/components/Word";
 const Statistics = () => {
   const locale = useLocale();
   const AnimatedComponent = locale === "en" ? AnimatedText : AnimatedTextArabic;
-  // const paragraph = t("infoParagraph");
 
   const t = useTranslations("HomePage");
   return (
@@ -24,7 +23,6 @@ const Statistics = () => {
 
       <div className="staticInfo">
         <AnimatedComponent once text={t("infoTitle")} el="h2" />
-        {/* <p>{t("infoParagraph")}</p> */}
         <Word paragraph={t("infoParagraph")} />
 
         <Counter />

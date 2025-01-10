@@ -59,7 +59,7 @@ const AnimatedTextArabic = ({
         aria-hidden
         className="text-[40px]"
       >
-        {text}
+        <h2>{text}</h2>
       </motion.div>
     </Wrapper>
   );

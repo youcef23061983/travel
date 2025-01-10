@@ -16,7 +16,7 @@ function TextScroll2() {
         once
         text={t("bestPartners2")}
         el="h2"
-        className="text-center mt-[30px]"
+        className="text-center mt-[40px]"
       />
     </section>
   );

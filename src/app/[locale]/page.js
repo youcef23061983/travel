@@ -8,6 +8,7 @@ import Partnership2 from "@/components/frontPage/Partnership2";
 import TextScroll2 from "@/components/frontPage/TextScroll2";
 import Statistics from "@/components/frontPage/Statistics";
 import Word from "@/components/Word";
+import TopPackage from "@/components/frontPage/TopPackage";
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
   const homePageMessages = messages["HomePage"];
@@ -28,6 +29,7 @@ export default function HomePage() {
 
       <Partnership2 />
       <Statistics />
+      <TopPackage />
     </div>
   );
 }

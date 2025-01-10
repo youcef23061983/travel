@@ -23,7 +23,363 @@
     "company": "companies",
     "traveler": "Million Travelers",
     "hotel": "hotels",
-    "package": "packages"
+    "package": "packages",
+    "topHeader": "top destinations for you",
+
+    "packages": {
+      "package1": {
+        "id": "1",
+        "description": "Explore the vibrant culture and stunning landscapes of Morocco.",
+        "country": "Morocco",
+        "city": "Marrakech",
+        "review": "8.5",
+        "expertJudgement": "9",
+        "price": "750",
+        "journeyDays": "7",
+        "hotel": "La Mamounia Hotel, Marrakech",
+        "packagePlan": {
+          "day1": "Arrival in Marrakech and check-in at the hotel.",
+          "day2": "Explore the Medina and visit the Koutoubia Mosque.",
+          "day3": "Day trip to the Atlas Mountains.",
+          "day4": "Visit the Jardin Majorelle and Yves Saint Laurent Museum.",
+          "day5": "Discover the Saadian Tombs and Bahia Palace.",
+          "day6": "Shopping at the Souks and relaxing at a Hammam.",
+          "day7": "Departure from Marrakech."
+        }
+      },
+      "package2": {
+        "id": "2",
+        "description": "Discover the rich history and cuisine of Algeria.",
+        "country": "Algeria",
+        "city": "Algiers",
+        "review": "7.8",
+        "expertJudgement": "8",
+        "price": "600",
+        "journeyDays": "5",
+        "hotel": "Algeria Hotel, Algiers",
+        "packagePlan": {
+          "day1": "Arrival in Algiers and city tour.",
+          "day2": "Visit the Casbah and Notre Dame d'Afrique.",
+          "day3": "Explore the Roman ruins at Tipasa.",
+          "day4": "Relax at the beaches of Algiers.",
+          "day5": "Departure from Algiers."
+        }
+      },
+      "package3": {
+        "id": "3",
+        "description": "Experience the wonders of ancient Egypt.",
+        "country": "Egypt",
+        "city": "Cairo",
+        "review": "9.2",
+        "expertJudgement": "9.5",
+        "price": "950",
+        "journeyDays": "7",
+        "hotel": "Jefferson Hotel, Cairo",
+        "packagePlan": {
+          "day1": "Arrival in Cairo and check-in at the hotel.",
+          "day2": "Visit the Pyramids of Giza and the Sphinx.",
+          "day3": "Explore the Egyptian Museum.",
+          "day4": "Day trip to Alexandria.",
+          "day5": "Discover Old Cairo and Khan El Khalili Bazaar.",
+          "day6": "Cruise on the Nile River.",
+          "day7": "Departure from Cairo."
+        }
+      },
+      "package4": {
+        "id": "4",
+        "description": "Enjoy the modern luxury and heritage of Saudi Arabia.",
+        "country": "Saudi Arabia",
+        "city": "Riyadh",
+        "review": "8.7",
+        "expertJudgement": "9",
+        "price": "850",
+        "journeyDays": "6",
+        "hotel": "Al Faisaliah Hotel, Riyadh",
+        "packagePlan": {
+          "day1": "Arrival in Riyadh and city tour.",
+          "day2": "Visit the National Museum and Masmak Fortress.",
+          "day3": "Explore Diriyah, the UNESCO World Heritage Site.",
+          "day4": "Relax at the Edge of the World.",
+          "day5": "Shopping at Riyadh's luxury malls.",
+          "day6": "Departure from Riyadh."
+        }
+      },
+      "package5": {
+        "id": "5",
+        "description": "Explore the futuristic cities of the UAE.",
+        "country": "United Arab Emirates",
+        "city": "Dubai",
+        "review": "9.5",
+        "expertJudgement": "10",
+        "price": "1200",
+        "journeyDays": "5",
+        "hotel": "Burj Al Arab Hotel, Dubai",
+        "packagePlan": {
+          "day1": "Arrival in Dubai and check-in at the hotel.",
+          "day2": "Visit the Burj Khalifa and Dubai Mall.",
+          "day3": "Relax at Jumeirah Beach and visit Palm Jumeirah.",
+          "day4": "Explore the Dubai Desert Safari.",
+          "day5": "Departure from Dubai."
+        }
+      },
+      "package6": {
+        "id": "6",
+        "description": "Experience the culture and beauty of Qatar.",
+        "country": "Qatar",
+        "city": "Doha",
+        "review": "8.9",
+        "expertJudgement": "9.2",
+        "price": "900",
+        "journeyDays": "5",
+        "hotel": "The St. Regis Doha",
+        "packagePlan": {
+          "day1": "Arrival in Doha and check-in at The St. Regis Doha.",
+          "day2": "Visit the Museum of Islamic Art and Souq Waqif.",
+          "day3": "Explore Katara Cultural Village and The Pearl.",
+          "day4": "Relax at the beaches and take a desert safari.",
+          "day5": "Departure from Doha."
+        }
+      },
+      "package7": {
+        "id": "7",
+        "description": "Discover the natural beauty and heritage of Oman.",
+        "country": "Oman",
+        "city": "Muscat",
+        "review": "9.0",
+        "expertJudgement": "9.2",
+        "price": "850",
+        "journeyDays": "6",
+        "hotel": "Al Bustan Palace, A Ritz-Carlton Hotel",
+        "packagePlan": {
+          "day1": "Arrival in Muscat and check-in at Al Bustan Palace.",
+          "day2": "Visit the Sultan Qaboos Grand Mosque and Mutrah Souq.",
+          "day3": "Explore the Al Jalali and Al Mirani forts.",
+          "day4": "Day trip to Nizwa and Jebel Akhdar.",
+          "day5": "Relax at Qurum Beach.",
+          "day6": "Departure from Muscat."
+        }
+      },
+      "package8": {
+        "id": "8",
+        "description": "Experience the rich culture and historical landmarks of Turkey.",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "review": "9.3",
+        "expertJudgement": "9.5",
+        "price": "950",
+        "journeyDays": "7",
+        "hotel": "Four Seasons Hotel Istanbul at Sultanahmet",
+        "packagePlan": {
+          "day1": "Arrival in Istanbul and check-in at Four Seasons Hotel.",
+          "day2": "Visit Hagia Sophia and the Blue Mosque.",
+          "day3": "Explore Topkapi Palace and the Grand Bazaar.",
+          "day4": "Cruise on the Bosphorus.",
+          "day5": "Discover Dolmabahçe Palace and Istiklal Avenue.",
+          "day6": "Day trip to Cappadocia (optional).",
+          "day7": "Departure from Istanbul."
+        }
+      },
+      "package9": {
+        "id": "9",
+        "description": "Explore the ancient wonders of Iran.",
+        "country": "Iran",
+        "city": "Tehran",
+        "review": "8.7",
+        "expertJudgement": "9",
+        "price": "800",
+        "journeyDays": "6",
+        "hotel": "Espinas Palace Hotel",
+        "packagePlan": {
+          "day1": "Arrival in Tehran and check-in at Espinas Palace Hotel.",
+          "day2": "Visit Golestan Palace and Tehran Bazaar.",
+          "day3": "Explore the National Museum and Milad Tower.",
+          "day4": "Day trip to Kashan.",
+          "day5": "Relax at Laleh Park.",
+          "day6": "Departure from Tehran."
+        }
+      },
+      "package10": {
+        "id": "10",
+        "description": "Discover the stunning beaches and culture of Indonesia.",
+        "country": "Indonesia",
+        "city": "Bali",
+        "review": "9.5",
+        "expertJudgement": "10",
+        "price": "1100",
+        "journeyDays": "7",
+        "hotel": "The Mulia, Bali",
+        "packagePlan": {
+          "day1": "Arrival in Bali and check-in at The Mulia.",
+          "day2": "Relax at Nusa Dua Beach.",
+          "day3": "Visit Uluwatu Temple and enjoy a traditional Kecak dance.",
+          "day4": "Explore Ubud and the Tegallalang Rice Terraces.",
+          "day5": "Discover Mount Batur and hot springs.",
+          "day6": "Relax at Seminyak Beach.",
+          "day7": "Departure from Bali."
+        }
+      },
+      "package11": {
+        "id": "11",
+        "description": "Experience the modern and cultural highlights of Malaysia.",
+        "country": "Malaysia",
+        "city": "Kuala Lumpur",
+        "review": "9.0",
+        "expertJudgement": "9.3",
+        "price": "900",
+        "journeyDays": "6",
+        "hotel": "Mandarin Oriental, Kuala Lumpur",
+        "packagePlan": {
+          "day1": "Arrival in Kuala Lumpur and check-in at Mandarin Oriental.",
+          "day2": "Visit the Petronas Twin Towers and KLCC Park.",
+          "day3": "Explore Batu Caves and Chinatown.",
+          "day4": "Day trip to Malacca.",
+          "day5": "Discover Bukit Bintang and Jalan Alor food street.",
+          "day6": "Departure from Kuala Lumpur."
+        }
+      },
+      "package12": {
+        "id": "12",
+        "description": "Experience a spiritual journey with an Umrah package.",
+        "country": "Saudi Arabia",
+        "city": "Makkah",
+        "review": "9.8",
+        "expertJudgement": "10",
+        "price": "1200",
+        "journeyDays": "7",
+        "hotel": "Makkah Clock Royal Tower, A Fairmont Hotel",
+        "packagePlan": {
+          "day1": "Arrival in Jeddah and transfer to Makkah. Check-in at Makkah Clock Royal Tower.",
+          "day2": "Perform Umrah rituals at Masjid al-Haram.",
+          "day3": "Visit the Cave of Hira and Jabal al-Nour.",
+          "day4": "Explore Islamic historical sites in Makkah.",
+          "day5": "Relax and perform additional prayers at Masjid al-Haram.",
+          "day6": "Day trip to Ta'if for sightseeing.",
+          "day7": "Departure from Makkah."
+        }
+      },
+      "package13": {
+        "id": "13",
+        "description": "Join the sacred pilgrimage of Hajj.",
+        "country": "Saudi Arabia",
+        "city": "Makkah and Madinah",
+        "review": "10",
+        "expertJudgement": "10",
+        "price": "2500",
+        "journeyDays": "10",
+        "hotel": "Madinah Oberoi Hotel and Makkah Clock Royal Tower",
+        "packagePlan": {
+          "day1": "Arrival in Jeddah and transfer to Makkah. Check-in at Makkah Clock Royal Tower.",
+          "day2": "Perform Tawaf al-Qudum (arrival Tawaf) at Masjid al-Haram.",
+          "day3": "Travel to Mina and stay overnight.",
+          "day4": "Travel to Arafat for Wuquf (standing in Arafat).",
+          "day5": "Travel to Muzdalifah and collect pebbles for Rami.",
+          "day6": "Perform Rami al-Jamarat (stoning of the devil) and Tawaf al-Ifadah.",
+          "day7": "Travel back to Mina and perform additional Rami.",
+          "day8": "Return to Makkah for final Tawaf and Sa’i.",
+          "day9": "Travel to Madinah and visit Al-Masjid an-Nabawi.",
+          "day10": "Departure from Madinah."
+        }
+      },
+      "package14": {
+        "id": "14",
+        "description": "Discover the ancient wonders of Petra and Oman's rich heritage.",
+        "country": "Oman",
+        "city": "Petra",
+        "review": "9.2",
+        "expertJudgement": "9.5",
+        "price": "950",
+        "journeyDays": "6",
+        "hotel": "Petra Moon Hotel",
+        "packagePlan": {
+          "day1": "Arrival in Petra and check-in at Petra Moon Hotel.",
+          "day2": "Explore the ancient city of Petra, including the Treasury and the Siq.",
+          "day3": "Hike to the Monastery and enjoy panoramic views.",
+          "day4": "Day trip to Wadi Rum for desert adventures.",
+          "day5": "Visit Little Petra and experience traditional Bedouin culture.",
+          "day6": "Departure from Petra."
+        }
+      },
+      "package15": {
+        "id": "15",
+        "description": "Experience the romance and charm of France, from Paris to Provence.",
+        "country": "France",
+        "city": "Paris",
+        "review": "9.5",
+        "expertJudgement": "9.8",
+        "price": "1200",
+        "journeyDays": "7",
+        "hotel": "Hotel Le Meurice",
+        "packagePlan": {
+          "day1": "Arrival in Paris and check-in at Hotel Le Meurice.",
+          "day2": "Visit the Eiffel Tower and Louvre Museum.",
+          "day3": "Explore Montmartre and the Sacré-Cœur Basilica.",
+          "day4": "Day trip to Versailles Palace.",
+          "day5": "Cruise on the Seine River and visit Notre-Dame Cathedral.",
+          "day6": "Discover the Champs-Élysées and Arc de Triomphe.",
+          "day7": "Departure from Paris."
+        }
+      },
+      "package16": {
+        "id": "16",
+        "description": "Discover the history and beauty of the UK, from London to the countryside.",
+        "country": "UK",
+        "city": "London",
+        "review": "9",
+        "expertJudgement": "9.3",
+        "price": "1100",
+        "journeyDays": "7",
+        "hotel": "The Ritz London",
+        "packagePlan": {
+          "day1": "Arrival in London and check-in at The Ritz London.",
+          "day2": "Visit Buckingham Palace and the Tower of London.",
+          "day3": "Explore the British Museum and Covent Garden.",
+          "day4": "Day trip to Stonehenge and Bath.",
+          "day5": "Discover the London Eye and Tate Modern.",
+          "day6": "Visit Oxford or Cambridge for a day trip.",
+          "day7": "Departure from London."
+        }
+      },
+      "package17": {
+        "id": "17",
+        "description": "Experience the vibrant culture and sunny beaches of Spain.",
+        "country": "Spain",
+        "city": "Barcelona",
+        "review": "9.2",
+        "expertJudgement": "9.4",
+        "price": "1050",
+        "journeyDays": "6",
+        "hotel": "Hotel Arts Barcelona",
+        "packagePlan": {
+          "day1": "Arrival in Barcelona and check-in at Hotel Arts Barcelona.",
+          "day2": "Visit La Sagrada Familia and Park Güell.",
+          "day3": "Explore the Gothic Quarter and Barceloneta Beach.",
+          "day4": "Day trip to Montserrat Monastery.",
+          "day5": "Discover Casa Batlló and La Rambla.",
+          "day6": "Departure from Barcelona."
+        }
+      },
+      "package18": {
+        "id": "18",
+        "description": "Enjoy the art, history, and cuisine of Italy, from Rome to Florence.",
+        "country": "Italy",
+        "city": "Rome",
+        "review": "9.8",
+        "expertJudgement": "9.9",
+        "price": "1300",
+        "journeyDays": "8",
+        "hotel": "Hotel Hassler Roma",
+        "packagePlan": {
+          "day1": "Arrival in Rome and check-in at Hotel Hassler Roma.",
+          "day2": "Visit the Colosseum and Roman Forum.",
+          "day3": "Explore the Vatican City and St. Peter's Basilica.",
+          "day4": "Day trip to Florence and the Uffizi Gallery.",
+          "day5": "Discover the Trevi Fountain and Spanish Steps.",
+          "day6": "Visit Pompeii and Naples for a day trip.",
+          "day7": "Explore Trastevere and enjoy authentic Italian cuisine.",
+          "day8": "Departure from Rome."
+        }
+      }
+    }
   },
 
   "Navigation": {
