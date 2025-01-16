@@ -75,24 +75,20 @@ function FrontImgHead() {
 
   return (
     <div>
-      <section>
-        <AnimatedComponent
-          once
-          text={t("imgHeader")}
-          el="h2"
-          className="text-center font-extrabold mb-[30px]"
-        />
-      </section>
+      <AnimatedComponent
+        once
+        text={t("imgHeader")}
+        el="h2"
+        className="text-center font-extrabold mb-[30px]"
+      />
 
-      <section>
-        <AnimatedComponent
-          once
-          el="h3"
-          text={t("imgTitle")}
-          repeatDelay={10000}
-          className="text-center font-extrabold"
-        />
-      </section>
+      <AnimatedComponent
+        once
+        el="h3"
+        text={t("imgTitle")}
+        repeatDelay={10000}
+        className="text-center font-extrabold"
+      />
     </div>
   );
 }

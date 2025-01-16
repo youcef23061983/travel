@@ -48,14 +48,14 @@ function TextScroll() {
   const AnimatedComponent = locale === "en" ? AnimatedText : AnimatedTextArabic;
 
   return (
-    <section>
+    <>
       <AnimatedComponent
         once
         text={t("bestPartners")}
         el="h2"
         className="text-center mt-[40px]"
       />
-    </section>
+    </>
   );
 }
 

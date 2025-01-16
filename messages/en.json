@@ -25,358 +25,483 @@
     "hotel": "hotels",
     "package": "packages",
     "topHeader": "top destinations for you",
+    "popularHeader": "Popular destinations for you",
 
     "packages": {
       "package1": {
-        "id": "1",
-        "description": "Explore the vibrant culture and stunning landscapes of Morocco.",
+        "description": "Embark on an enchanting journey through Morocco, where vibrant culture, breathtaking landscapes, and timeless traditions come together to create an unforgettable experience.",
         "country": "Morocco",
         "city": "Marrakech",
-        "review": "8.5",
-        "expertJudgement": "9",
-        "price": "750",
-        "journeyDays": "7",
         "hotel": "La Mamounia Hotel, Marrakech",
         "packagePlan": {
-          "day1": "Arrival in Marrakech and check-in at the hotel.",
-          "day2": "Explore the Medina and visit the Koutoubia Mosque.",
-          "day3": "Day trip to the Atlas Mountains.",
-          "day4": "Visit the Jardin Majorelle and Yves Saint Laurent Museum.",
-          "day5": "Discover the Saadian Tombs and Bahia Palace.",
-          "day6": "Shopping at the Souks and relaxing at a Hammam.",
-          "day7": "Departure from Marrakech."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrive in Marrakech, the 'Red City' of Morocco, and check in at the luxurious La Mamounia Hotel. Take the evening to unwind in the hotel's lush gardens or explore the nearby vibrant streets."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Immerse yourself in the heart of Marrakech by exploring the bustling Medina. Visit the iconic Koutoubia Mosque, admire its intricate architecture, and experience the lively atmosphere of Jemaa el-Fnaa square."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Embark on a scenic day trip to the majestic Atlas Mountains. Enjoy breathtaking views, visit traditional Berber villages, and savor a local Moroccan meal amidst the serene mountain landscape."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Discover the artistic charm of Marrakech with a visit to the Jardin Majorelle, a tranquil botanical garden. Explore the Yves Saint Laurent Museum, showcasing the legendary designer's work and connection to Morocco."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Step back in time as you visit the Saadian Tombs and the opulent Bahia Palace. Marvel at the exquisite Moroccan craftsmanship and learn about the rich history of these architectural treasures."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Spend the day shopping in the colorful Souks, where you can find unique handicrafts, spices, and textiles. End the day with a relaxing Hammam experience, a traditional Moroccan spa treatment."
+          },
+          "day7": {
+            "day7": "Day 7",
+            "description7": "Enjoy a leisurely morning at the hotel before departing from Marrakech. Take with you unforgettable memories of Morocco's vibrant culture and stunning landscapes."
+          }
         }
       },
       "package2": {
-        "id": "2",
-        "description": "Discover the rich history and cuisine of Algeria.",
+        "description": "Immerse yourself in the rich history, vibrant culture, and exquisite cuisine of Algeria. From ancient ruins to stunning coastal views, experience the heart of Algiers in a truly unforgettable way.",
         "country": "Algeria",
         "city": "Algiers",
-        "review": "7.8",
-        "expertJudgement": "8",
-        "price": "600",
-        "journeyDays": "5",
         "hotel": "Algeria Hotel, Algiers",
         "packagePlan": {
-          "day1": "Arrival in Algiers and city tour.",
-          "day2": "Visit the Casbah and Notre Dame d'Afrique.",
-          "day3": "Explore the Roman ruins at Tipasa.",
-          "day4": "Relax at the beaches of Algiers.",
-          "day5": "Departure from Algiers."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrive in Algiers, the capital of Algeria, and embark on a guided city tour. Discover the blend of French colonial architecture and traditional Algerian charm as you visit key landmarks and enjoy your first taste of Algerian hospitality."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Step back in time as you explore the historic Casbah of Algiers, a UNESCO World Heritage site. Wander through its narrow streets, marvel at its ancient architecture, and visit the majestic Notre Dame d'Afrique with its breathtaking views of the Mediterranean Sea."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Take a journey to the Roman ruins at Tipasa, a coastal town steeped in history. Explore the well-preserved amphitheater, basilica, and other archaeological treasures while enjoying the stunning seaside backdrop."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Relax and unwind at the beautiful beaches of Algiers. Soak up the sun, enjoy the refreshing Mediterranean waters, and savor delicious Algerian seafood at nearby coastal restaurants."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Spend your final morning in Algiers enjoying a leisurely breakfast at the hotel or exploring the city one last time before departing with unforgettable memories of Algeria's rich history and vibrant culture."
+          }
         }
       },
+
       "package3": {
-        "id": "3",
-        "description": "Experience the wonders of ancient Egypt.",
+        "description": "Embark on a mesmerizing journey through the heart of Egypt, uncovering its ancient wonders, vibrant culture, and timeless beauty.",
         "country": "Egypt",
         "city": "Cairo",
-        "review": "9.2",
-        "expertJudgement": "9.5",
-        "price": "950",
-        "journeyDays": "7",
         "hotel": "Jefferson Hotel, Cairo",
         "packagePlan": {
-          "day1": "Arrival in Cairo and check-in at the hotel.",
-          "day2": "Visit the Pyramids of Giza and the Sphinx.",
-          "day3": "Explore the Egyptian Museum.",
-          "day4": "Day trip to Alexandria.",
-          "day5": "Discover Old Cairo and Khan El Khalili Bazaar.",
-          "day6": "Cruise on the Nile River.",
-          "day7": "Departure from Cairo."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrive in the bustling city of Cairo, where ancient history meets modern vibrancy. Check-in at the luxurious Jefferson Hotel, known for its elegant ambiance and exceptional service. Spend the evening unwinding while enjoying stunning views of the Nile River."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Start your day with a guided tour of the iconic Pyramids of Giza, one of the Seven Wonders of the Ancient World. Marvel at the grandeur of these timeless monuments and the enigmatic Sphinx, learning fascinating stories about their construction and significance. Capture unforgettable photos to commemorate the experience."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Dive into Egypt's rich history at the world-renowned Egyptian Museum. Wander through its vast halls, exploring an extensive collection of artifacts, including the treasures of King Tutankhamun. Let the stories of the pharaohs and ancient Egyptian civilization come alive as you admire these priceless relics."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Take a scenic day trip to Alexandria, the 'Pearl of the Mediterranean.' Visit the ancient Catacombs of Kom El Shoqafa, a unique blend of Roman and Egyptian styles. Explore the historic Citadel of Qaitbay, a fortress with panoramic sea views, and marvel at the stunning architecture of the modern Alexandria Library."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Explore the charm of Old Cairo with visits to the Hanging Church, a masterpiece of Coptic architecture, and the Ben Ezra Synagogue, steeped in legend. Later, immerse yourself in the lively atmosphere of the Khan El Khalili Bazaar, where you can shop for unique souvenirs, handcrafted jewelry, and traditional Egyptian spices while savoring local street food."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Enjoy a relaxing day with a serene cruise along the Nile River. Admire the picturesque landscapes as you glide through Egypt's lifeline. Savor a delightful onboard meal while soaking in the peaceful ambiance of this unforgettable experience."
+          },
+          "day7": {
+            "day7": "Day 7",
+            "description7": "Bid farewell to Cairo with cherished memories of your journey. Spend a leisurely morning reflecting on the experiences of the past week before departing for your onward journey, carrying with you the timeless essence of Egypt."
+          }
         }
       },
+
       "package4": {
-        "id": "4",
-        "description": "Enjoy the modern luxury and heritage of Saudi Arabia.",
+        "description": "Enjoy the perfect blend of modern luxury and rich heritage in Saudi Arabia, a land where ancient traditions meet contemporary elegance.",
         "country": "Saudi Arabia",
         "city": "Riyadh",
-        "review": "8.7",
-        "expertJudgement": "9",
-        "price": "850",
-        "journeyDays": "6",
         "hotel": "Al Faisaliah Hotel, Riyadh",
         "packagePlan": {
-          "day1": "Arrival in Riyadh and city tour.",
-          "day2": "Visit the National Museum and Masmak Fortress.",
-          "day3": "Explore Diriyah, the UNESCO World Heritage Site.",
-          "day4": "Relax at the Edge of the World.",
-          "day5": "Shopping at Riyadh's luxury malls.",
-          "day6": "Departure from Riyadh."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrive in the vibrant city of Riyadh and check-in at the luxurious Al Faisaliah Hotel. Embark on a guided city tour to discover the modern skyline and bustling streets of Saudi Arabia's capital, setting the tone for an exciting journey."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Dive into Saudi Arabia's rich history with a visit to the National Museum, home to captivating exhibits that narrate the story of the Arabian Peninsula. Continue to the iconic Masmak Fortress, a symbol of Saudi heritage and resilience."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Explore Diriyah, a UNESCO World Heritage Site and the birthplace of the Saudi state. Wander through its restored mud-brick architecture and immerse yourself in the historical and cultural legacy of this remarkable site."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Escape the city's hustle and unwind at the Edge of the World, a breathtaking natural wonder offering dramatic cliffs and panoramic views. Enjoy the serene atmosphere and marvel at the vast expanse of the Arabian desert."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Indulge in a day of luxury shopping at Riyadh's world-class malls. From high-end fashion brands to exquisite local handicrafts, explore the finest that the city has to offer in a sophisticated retail experience."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Bid farewell to Riyadh with a morning at leisure. Reflect on your memorable journey through Saudi Arabia's heritage and modernity before departing for your next destination."
+          }
         }
       },
+
       "package5": {
-        "id": "5",
-        "description": "Explore the futuristic cities of the UAE.",
+        "description": "Embark on a thrilling journey through the United Arab Emirates, where futuristic cities rise from the desert sands. Explore the stunning architecture, luxurious resorts, and world-class shopping experiences that define Dubai. From the towering Burj Khalifa to the iconic Burj Al Arab, this package offers an unforgettable adventure in one of the most innovative destinations on the planet. Immerse yourself in the opulence, modernity, and culture of the UAE, and create memories that will last a lifetime.",
         "country": "United Arab Emirates",
         "city": "Dubai",
-        "review": "9.5",
-        "expertJudgement": "10",
-        "price": "1200",
-        "journeyDays": "5",
         "hotel": "Burj Al Arab Hotel, Dubai",
         "packagePlan": {
-          "day1": "Arrival in Dubai and check-in at the hotel.",
-          "day2": "Visit the Burj Khalifa and Dubai Mall.",
-          "day3": "Relax at Jumeirah Beach and visit Palm Jumeirah.",
-          "day4": "Explore the Dubai Desert Safari.",
-          "day5": "Departure from Dubai."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrive in the dazzling city of Dubai, where modern luxury meets Arabian culture. Check in at the iconic Burj Al Arab Hotel, renowned for its sail-shaped architecture and unparalleled service, and enjoy a welcome drink while admiring the stunning views of the Arabian Gulf."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Start your day with a visit to the Burj Khalifa, the tallest building in the world, and take in breathtaking views of Dubai's skyline from its observation deck. Afterward, explore the Dubai Mall, the largest shopping center in the world, offering a blend of high-end fashion, entertainment, and dining options."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Unwind at Jumeirah Beach, where you can relax on pristine sands and enjoy the warm waters of the Arabian Gulf. Later, take a trip to the Palm Jumeirah, a man-made island shaped like a palm tree, and marvel at its luxurious resorts, restaurants, and stunning views of the city skyline."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Embark on an exhilarating Dubai Desert Safari. Experience the thrill of dune bashing, followed by a camel ride through the golden sands. Enjoy a traditional Bedouin-style dinner under the stars, complete with belly dancing and cultural performances that showcase the region's rich heritage."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "After a memorable stay in Dubai, it's time to bid farewell. Enjoy a final breakfast at the hotel, take in the magnificent views, and depart from Dubai, carrying with you unforgettable memories of the UAE's futuristic charm and rich culture."
+          }
         }
       },
       "package6": {
-        "id": "6",
-        "description": "Experience the culture and beauty of Qatar.",
+        "description": "Experience the culture and beauty of Qatar, a country that seamlessly blends modernity with rich traditions. This 5-day package offers a unique opportunity to explore Doha, Qatar's vibrant capital, where stunning skyscrapers meet ancient cultural sites. Immerse yourself in the art and history of Qatar with visits to world-renowned museums and markets, while also enjoying the serene beauty of its beaches and deserts. Whether you're seeking a cultural adventure or a relaxing getaway, this package offers a comprehensive and unforgettable experience in one of the most dynamic cities in the Middle East.",
         "country": "Qatar",
         "city": "Doha",
-        "review": "8.9",
-        "expertJudgement": "9.2",
-        "price": "900",
-        "journeyDays": "5",
         "hotel": "The St. Regis Doha",
         "packagePlan": {
-          "day1": "Arrival in Doha and check-in at The St. Regis Doha.",
-          "day2": "Visit the Museum of Islamic Art and Souq Waqif.",
-          "day3": "Explore Katara Cultural Village and The Pearl.",
-          "day4": "Relax at the beaches and take a desert safari.",
-          "day5": "Departure from Doha."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Doha and check-in at The St. Regis Doha. Begin your journey by settling into one of the most luxurious hotels in the city, offering unparalleled comfort and service. Relax and enjoy the world-class amenities, preparing for an exciting cultural exploration in the days ahead."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Visit the Museum of Islamic Art and Souq Waqif. Discover Qatar’s rich cultural heritage by exploring the Museum of Islamic Art, home to an extensive collection of Islamic art from across the world. Afterward, immerse yourself in the bustling atmosphere of Souq Waqif, where you can shop for traditional crafts, spices, and souvenirs."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Explore Katara Cultural Village and The Pearl. Spend the day at Katara Cultural Village, a hub of arts and culture, where you can experience performances, exhibitions, and more. Then, head to The Pearl, an artificial island that boasts luxurious shopping, dining, and entertainment options."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Relax at the beaches and take a desert safari. Unwind on the pristine beaches of Doha, enjoying the warm sun and crystal-clear waters. In the afternoon, embark on an exhilarating desert safari, where you can ride across the golden dunes, experience traditional Bedouin hospitality, and enjoy a thrilling adventure in the desert."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Departure from Doha. After a memorable journey, it’s time to say goodbye to Doha. Check out from The St. Regis Doha and head to the airport, taking with you unforgettable memories of Qatar’s beauty, culture, and hospitality."
+          }
         }
       },
       "package7": {
-        "id": "7",
-        "description": "Discover the natural beauty and heritage of Oman.",
-        "country": "Oman",
+        "description": "Discover the natural beauty and heritage of Oman, a country that offers a perfect blend of ancient history, stunning landscapes, and modern luxury. This 6-day package takes you through the enchanting city of Muscat, where you can explore its rich cultural heritage, magnificent architecture, and breathtaking natural wonders. From the grandeur of mosques to the serene beauty of beaches and mountains, this journey promises an unforgettable experience in one of the Middle East's most captivating destinations.",
+        "country": "Sultanate of Oman",
         "city": "Muscat",
-        "review": "9.0",
-        "expertJudgement": "9.2",
-        "price": "850",
-        "journeyDays": "6",
         "hotel": "Al Bustan Palace, A Ritz-Carlton Hotel",
         "packagePlan": {
-          "day1": "Arrival in Muscat and check-in at Al Bustan Palace.",
-          "day2": "Visit the Sultan Qaboos Grand Mosque and Mutrah Souq.",
-          "day3": "Explore the Al Jalali and Al Mirani forts.",
-          "day4": "Day trip to Nizwa and Jebel Akhdar.",
-          "day5": "Relax at Qurum Beach.",
-          "day6": "Departure from Muscat."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Muscat and check-in at Al Bustan Palace. Begin your journey with a stay at one of the most luxurious hotels in Muscat, offering exceptional service and stunning views of the Gulf of Oman. Relax and unwind, preparing for an exciting adventure through the rich culture and natural beauty of Oman."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Visit the Sultan Qaboos Grand Mosque and Mutrah Souq. Explore the architectural wonder of the Sultan Qaboos Grand Mosque, one of the largest and most beautiful mosques in the region. Later, immerse yourself in the lively atmosphere of Mutrah Souq, a traditional market where you can find spices, jewelry, and Omani handicrafts."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Explore the Al Jalali and Al Mirani forts. Discover the historical significance of the Al Jalali and Al Mirani forts, which have stood guard over Muscat for centuries. These forts offer panoramic views of the city and the sea, providing a glimpse into Oman's rich military history."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Day trip to Nizwa and Jebel Akhdar. Embark on a day trip to Nizwa, a city known for its ancient fort and vibrant souq. Then, head to Jebel Akhdar, also known as the 'Green Mountain,' where you can enjoy breathtaking views, cool temperatures, and explore terraced farms and orchards."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Relax at Qurum Beach. Unwind at Qurum Beach, a beautiful stretch of coastline where you can enjoy the sun, sea, and sand. Take a leisurely walk along the beach or simply relax and enjoy the serene atmosphere."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Departure from Muscat. After an unforgettable journey through Oman's natural wonders and cultural treasures, it’s time to check out from Al Bustan Palace and head to the airport, taking with you memories of a truly unique and enriching experience."
+          }
         }
       },
       "package8": {
-        "id": "8",
-        "description": "Experience the rich culture and historical landmarks of Turkey.",
+        "description": "Experience the rich culture and historical landmarks of Turkey, a country that bridges Europe and Asia, blending ancient traditions with modern vibrancy. This 7-day package takes you through Istanbul, a city known for its iconic landmarks, stunning architecture, and unique cultural heritage. From the majestic mosques to the opulent palaces and bustling bazaars, this journey will immerse you in the heart of Turkey’s fascinating history and vibrant atmosphere.",
         "country": "Turkey",
         "city": "Istanbul",
-        "review": "9.3",
-        "expertJudgement": "9.5",
-        "price": "950",
-        "journeyDays": "7",
         "hotel": "Four Seasons Hotel Istanbul at Sultanahmet",
         "packagePlan": {
-          "day1": "Arrival in Istanbul and check-in at Four Seasons Hotel.",
-          "day2": "Visit Hagia Sophia and the Blue Mosque.",
-          "day3": "Explore Topkapi Palace and the Grand Bazaar.",
-          "day4": "Cruise on the Bosphorus.",
-          "day5": "Discover Dolmabahçe Palace and Istiklal Avenue.",
-          "day6": "Day trip to Cappadocia (optional).",
-          "day7": "Departure from Istanbul."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Istanbul and check-in at Four Seasons Hotel. Begin your journey in one of Istanbul’s most luxurious hotels, offering exceptional service and views of the city’s stunning skyline. Take some time to relax and prepare for an exciting exploration of this vibrant metropolis."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Visit Hagia Sophia and the Blue Mosque. Explore two of Istanbul’s most iconic landmarks: the Hagia Sophia, a masterpiece of Byzantine architecture, and the Blue Mosque, famous for its stunning blue tiles and grandeur. Both sites are essential to understanding Istanbul’s rich history and religious significance."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Explore Topkapi Palace and the Grand Bazaar. Visit the Topkapi Palace, the former residence of Ottoman sultans, and admire its opulent rooms, courtyards, and the Harem. Later, dive into the vibrant atmosphere of the Grand Bazaar, where you can shop for everything from Turkish carpets to jewelry and spices."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Cruise on the Bosphorus. Enjoy a scenic cruise along the Bosphorus Strait, which separates Europe and Asia. The cruise offers stunning views of Istanbul’s skyline, including palaces, fortresses, and the famous Bosphorus Bridge, making it a perfect way to see the city from a different perspective."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Discover Dolmabahçe Palace and Istiklal Avenue. Visit Dolmabahçe Palace, an opulent symbol of the Ottoman Empire’s wealth and European influence. Then, take a stroll down Istiklal Avenue, a lively pedestrian street lined with shops, cafes, and cultural landmarks, offering a taste of modern Istanbul."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Day trip to Cappadocia (optional). For those seeking a more adventurous experience, take a day trip to Cappadocia, famous for its surreal landscapes, fairy chimneys, and hot air balloon rides. This optional excursion offers a unique glimpse into one of Turkey’s most extraordinary regions."
+          },
+          "day7": {
+            "day7": "Day 7",
+            "description7": "Departure from Istanbul. After an unforgettable journey through the cultural heart of Turkey, it’s time to check out from the Four Seasons Hotel and head to the airport, taking with you memories of Istanbul’s rich history and vibrant culture."
+          }
         }
       },
       "package9": {
-        "id": "9",
-        "description": "Explore the ancient wonders of Iran.",
+        "description": "Explore the ancient wonders of Iran, a land rich in history, culture, and architecture. This 6-day journey will take you through Tehran, the capital city, and other historical sites, offering a chance to discover Iran's deep-rooted traditions, stunning palaces, vibrant bazaars, and breathtaking landscapes. From the opulent Golestan Palace to the ancient city of Kashan, this package invites you to immerse yourself in the beauty and heritage of one of the world’s oldest civilizations.",
         "country": "Iran",
         "city": "Tehran",
-        "review": "8.7",
-        "expertJudgement": "9",
-        "price": "800",
-        "journeyDays": "6",
         "hotel": "Espinas Palace Hotel",
         "packagePlan": {
-          "day1": "Arrival in Tehran and check-in at Espinas Palace Hotel.",
-          "day2": "Visit Golestan Palace and Tehran Bazaar.",
-          "day3": "Explore the National Museum and Milad Tower.",
-          "day4": "Day trip to Kashan.",
-          "day5": "Relax at Laleh Park.",
-          "day6": "Departure from Tehran."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Tehran and check-in at Espinas Palace Hotel. Begin your adventure in Tehran with a stay at one of the city's most luxurious hotels, offering a perfect blend of modern comfort and traditional Persian hospitality. Take some time to relax and enjoy the hotel's amenities before starting your exploration of the city."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Visit Golestan Palace and Tehran Bazaar. Start your day with a visit to Golestan Palace, a UNESCO World Heritage site that showcases the splendor of Persian architecture and royal history. Later, explore the vibrant Tehran Bazaar, where you can shop for Persian carpets, spices, and other traditional goods."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Explore the National Museum and Milad Tower. Visit the National Museum of Iran to discover a vast collection of ancient artifacts that highlight the country’s rich cultural heritage. In the afternoon, head to Milad Tower, one of the tallest towers in the world, offering panoramic views of Tehran and its surroundings."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Day trip to Kashan. Take a day trip to Kashan, a charming city known for its beautiful gardens, traditional houses, and historical sites. Visit the Fin Garden, a UNESCO World Heritage site, and explore the historical houses, such as the Tabatabaei House, showcasing Persian architecture at its finest."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Relax at Laleh Park. After days of exploring Iran’s historical treasures, take some time to unwind at Laleh Park, a green oasis in the heart of Tehran. Enjoy a peaceful stroll, have a picnic, or simply relax in the serene surroundings before preparing for your departure."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Departure from Tehran. After an enriching journey through Iran’s ancient wonders, it’s time to check out from Espinas Palace Hotel and head to the airport, carrying with you unforgettable memories of the country’s history, culture, and hospitality."
+          }
         }
       },
       "package10": {
-        "id": "10",
-        "description": "Discover the stunning beaches and culture of Indonesia.",
+        "description": "Discover the stunning beaches, rich culture, and natural beauty of Indonesia. This 7-day journey in Bali offers a perfect blend of relaxation and exploration, from pristine beaches and ancient temples to lush rice terraces and volcanic landscapes. Immerse yourself in the island’s unique traditions and breathtaking scenery, making it a perfect getaway for nature lovers and culture enthusiasts alike.",
         "country": "Indonesia",
         "city": "Bali",
-        "review": "9.5",
-        "expertJudgement": "10",
-        "price": "1100",
-        "journeyDays": "7",
+
         "hotel": "The Mulia, Bali",
         "packagePlan": {
-          "day1": "Arrival in Bali and check-in at The Mulia.",
-          "day2": "Relax at Nusa Dua Beach.",
-          "day3": "Visit Uluwatu Temple and enjoy a traditional Kecak dance.",
-          "day4": "Explore Ubud and the Tegallalang Rice Terraces.",
-          "day5": "Discover Mount Batur and hot springs.",
-          "day6": "Relax at Seminyak Beach.",
-          "day7": "Departure from Bali."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Bali and check-in at The Mulia. Start your Balinese adventure with a luxurious stay at The Mulia, one of Bali’s most renowned resorts. Enjoy the resort's world-class amenities and unwind in your spacious suite, preparing for the exciting days ahead."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Relax at Nusa Dua Beach. Spend a leisurely day at Nusa Dua Beach, known for its crystal-clear waters and pristine white sands. Whether you prefer lounging by the beach or indulging in water sports, this serene location offers the perfect spot to relax and enjoy Bali’s natural beauty."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Visit Uluwatu Temple and enjoy a traditional Kecak dance. Head to the Uluwatu Temple, perched on a dramatic cliffside overlooking the ocean. After exploring the temple, enjoy a mesmerizing Kecak dance performance at sunset, a traditional Balinese art form that tells stories through music and movement."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Explore Ubud and the Tegallalang Rice Terraces. Visit the cultural heart of Bali, Ubud, known for its art galleries, temples, and vibrant markets. Explore the stunning Tegallalang Rice Terraces, a UNESCO World Heritage site, and take in the breathtaking views of the lush green landscapes."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Discover Mount Batur and hot springs. Embark on an early morning trek to Mount Batur, an active volcano, to witness a spectacular sunrise. Afterward, unwind in the nearby hot springs, where you can soak in the therapeutic waters while enjoying the surrounding natural beauty."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Relax at Seminyak Beach. Spend a day at Seminyak Beach, a popular destination known for its lively atmosphere, upscale beach clubs, and stunning sunset views. Take a leisurely stroll along the beach or enjoy a refreshing swim in the warm waters."
+          },
+          "day7": {
+            "day7": "Day 7",
+            "description7": "Departure from Bali. After a week of exploring Bali’s beauty and culture, check out from The Mulia and head to the airport, taking with you unforgettable memories of the island’s stunning landscapes, rich traditions, and tranquil beaches."
+          }
         }
       },
       "package11": {
-        "id": "11",
-        "description": "Experience the modern and cultural highlights of Malaysia.",
+        "description": "Experience the modern and cultural highlights of Malaysia. This 6-day journey through Kuala Lumpur combines the best of both worlds: from iconic skyscrapers and bustling shopping districts to sacred caves and rich heritage sites. Immerse yourself in Malaysia’s vibrant culture, architecture, and cuisine while staying at the luxurious Mandarin Oriental.",
         "country": "Malaysia",
         "city": "Kuala Lumpur",
-        "review": "9.0",
-        "expertJudgement": "9.3",
-        "price": "900",
-        "journeyDays": "6",
         "hotel": "Mandarin Oriental, Kuala Lumpur",
         "packagePlan": {
-          "day1": "Arrival in Kuala Lumpur and check-in at Mandarin Oriental.",
-          "day2": "Visit the Petronas Twin Towers and KLCC Park.",
-          "day3": "Explore Batu Caves and Chinatown.",
-          "day4": "Day trip to Malacca.",
-          "day5": "Discover Bukit Bintang and Jalan Alor food street.",
-          "day6": "Departure from Kuala Lumpur."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Kuala Lumpur and check-in at Mandarin Oriental. Begin your Malaysian adventure with a stay at the luxurious Mandarin Oriental, located in the heart of Kuala Lumpur. Enjoy the hotel's world-class amenities and breathtaking views of the city’s skyline as you settle in for the exciting days ahead."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Visit the Petronas Twin Towers and KLCC Park. Start your day by visiting the iconic Petronas Twin Towers, the tallest twin towers in the world. Explore the sky bridge and observation deck for stunning panoramic views of the city. Afterward, relax at KLCC Park, an urban oasis in the city center, perfect for a leisurely stroll."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Explore Batu Caves and Chinatown. Take a trip to the Batu Caves, a series of limestone caves housing Hindu shrines. Climb the colorful 272 steps to reach the main cave and enjoy the stunning views. In the afternoon, explore Chinatown, known for its vibrant markets, temples, and delicious street food."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Day trip to Malacca. Take a day trip to Malacca, a UNESCO World Heritage site known for its rich history and colonial architecture. Explore landmarks such as the A Famosa fortress, St. Paul’s Hill, and the Dutch Square, while learning about the region's fascinating cultural influences."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Discover Bukit Bintang and Jalan Alor food street. Spend the day in Bukit Bintang, Kuala Lumpur’s premier shopping and entertainment district. Afterward, head to Jalan Alor, a bustling food street where you can sample Malaysia’s diverse and delicious street food offerings, from satay to noodles and more."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Departure from Kuala Lumpur. After six days of exploring Kuala Lumpur’s modern landmarks, cultural sites, and culinary delights, check out from the Mandarin Oriental and head to the airport, taking with you unforgettable memories of Malaysia’s vibrant city life."
+          }
         }
       },
       "package12": {
-        "id": "12",
-        "description": "Experience a spiritual journey with an Umrah package.",
+        "description": "Experience a spiritual journey with an Umrah package. This 7-day pilgrimage to Makkah offers a deep and meaningful connection with your faith. Perform the sacred Umrah rituals, explore historic Islamic sites, and enjoy the comfort of staying at the luxurious Makkah Clock Royal Tower, A Fairmont Hotel, as you immerse yourself in the spiritual atmosphere of Makkah.",
         "country": "Saudi Arabia",
         "city": "Makkah",
-        "review": "9.8",
-        "expertJudgement": "10",
-        "price": "1200",
-        "journeyDays": "7",
         "hotel": "Makkah Clock Royal Tower, A Fairmont Hotel",
         "packagePlan": {
-          "day1": "Arrival in Jeddah and transfer to Makkah. Check-in at Makkah Clock Royal Tower.",
-          "day2": "Perform Umrah rituals at Masjid al-Haram.",
-          "day3": "Visit the Cave of Hira and Jabal al-Nour.",
-          "day4": "Explore Islamic historical sites in Makkah.",
-          "day5": "Relax and perform additional prayers at Masjid al-Haram.",
-          "day6": "Day trip to Ta'if for sightseeing.",
-          "day7": "Departure from Makkah."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Jeddah and transfer to Makkah. Check-in at Makkah Clock Royal Tower. Begin your spiritual journey with a smooth arrival in Jeddah, followed by a scenic transfer to Makkah. Upon arrival, check-in at the luxurious Makkah Clock Royal Tower, offering magnificent views of the Masjid al-Haram and the Kaaba."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Perform Umrah rituals at Masjid al-Haram. Today marks the beginning of your sacred Umrah journey. Perform the essential rituals of Umrah at the Masjid al-Haram, including Tawaf (circumambulating the Kaaba), Sa'i (walking between Safa and Marwah), and other acts of devotion, as you connect with the divine."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Visit the Cave of Hira and Jabal al-Nour. In the morning, visit the Cave of Hira, where the Prophet Muhammad (PBUH) received the first revelation of the Quran. Continue to Jabal al-Nour, the mountain that houses the cave, for a reflective and spiritual experience amidst the serenity of the area."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Explore Islamic historical sites in Makkah. Dedicate today to exploring the rich Islamic heritage of Makkah. Visit historical sites such as the birthplace of Prophet Muhammad (PBUH), the Masjid al-Taniim, and other significant landmarks that hold great spiritual importance in Islam."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Relax and perform additional prayers at Masjid al-Haram. Take a day of reflection and tranquility, where you can perform additional prayers at Masjid al-Haram, seeking peace and spiritual connection. Spend time in the blessed atmosphere of the mosque, focusing on worship and devotion."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Day trip to Ta'if for sightseeing. Take a scenic day trip to Ta'if, a city known for its beautiful landscapes, fragrant rose gardens, and historical significance. Visit landmarks such as the Shubra Palace and explore the charming markets of this highland city."
+          },
+          "day7": {
+            "day7": "Day 7",
+            "description7": "Departure from Makkah. After a week of spiritual reflection and devotion, check out from Makkah Clock Royal Tower and head to the airport, leaving with a heart full of blessings and a renewed sense of faith."
+          }
         }
       },
       "package13": {
-        "id": "13",
-        "description": "Join the sacred pilgrimage of Hajj.",
+        "description": "Join the sacred pilgrimage of Hajj. This 10-day spiritual journey takes you through the heart of Islam, where you will perform the essential rituals of Hajj in the holy cities of Makkah and Madinah. Stay at luxurious hotels like the Madinah Oberoi Hotel and Makkah Clock Royal Tower, and experience the deep spiritual connection of the pilgrimage, all while enjoying comfort and guidance throughout your journey.",
         "country": "Saudi Arabia",
         "city": "Makkah and Madinah",
-        "review": "10",
-        "expertJudgement": "10",
-        "price": "2500",
-        "journeyDays": "10",
         "hotel": "Madinah Oberoi Hotel and Makkah Clock Royal Tower",
         "packagePlan": {
-          "day1": "Arrival in Jeddah and transfer to Makkah. Check-in at Makkah Clock Royal Tower.",
-          "day2": "Perform Tawaf al-Qudum (arrival Tawaf) at Masjid al-Haram.",
-          "day3": "Travel to Mina and stay overnight.",
-          "day4": "Travel to Arafat for Wuquf (standing in Arafat).",
-          "day5": "Travel to Muzdalifah and collect pebbles for Rami.",
-          "day6": "Perform Rami al-Jamarat (stoning of the devil) and Tawaf al-Ifadah.",
-          "day7": "Travel back to Mina and perform additional Rami.",
-          "day8": "Return to Makkah for final Tawaf and Sa’i.",
-          "day9": "Travel to Madinah and visit Al-Masjid an-Nabawi.",
-          "day10": "Departure from Madinah."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Jeddah and transfer to Makkah. Check-in at Makkah Clock Royal Tower. Upon your arrival in Jeddah, you will be transferred to Makkah, where you will check in at the Makkah Clock Royal Tower, located just steps away from the Masjid al-Haram. This marks the beginning of your sacred journey."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Perform Tawaf al-Qudum (arrival Tawaf) at Masjid al-Haram. After settling in, you will perform Tawaf al-Qudum, the arrival Tawaf, at the Masjid al-Haram. This is an important act of worship as you approach the Kaaba with reverence and devotion."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Travel to Mina and stay overnight. Today, you will travel to Mina, where you will spend the night in a tent city. Mina is the site where pilgrims gather before proceeding to Arafat, and it is an essential part of the Hajj journey."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Travel to Arafat for Wuquf (standing in Arafat). On this significant day, you will journey to Arafat for Wuquf, the standing in Arafat, which is the most important ritual of Hajj. Here, you will pray for forgiveness and make supplications to Allah in a state of deep reflection and devotion."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Travel to Muzdalifah and collect pebbles for Rami. After the day of Wuquf, you will travel to Muzdalifah, where you will spend the night under the open sky. You will also collect pebbles, which are used for the Rami ritual."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Perform Rami al-Jamarat (stoning of the devil) and Tawaf al-Ifadah. Today, you will perform Rami al-Jamarat, the stoning of the devil, by throwing pebbles at the stone pillars. Afterward, you will return to Makkah to perform Tawaf al-Ifadah, another important Hajj ritual."
+          },
+          "day7": {
+            "day7": "Day 7",
+            "description7": "Travel back to Mina and perform additional Rami. After performing Tawaf al-Ifadah, you will return to Mina to perform additional Rami, completing another essential step of the pilgrimage."
+          },
+          "day8": {
+            "day8": "Day 8",
+            "description8": "Return to Makkah for final Tawaf and Sa’i. You will return to Makkah to perform the final Tawaf and Sa’i, marking the completion of the main rituals of Hajj."
+          },
+          "day9": {
+            "day9": "Day 9",
+            "description9": "Travel to Madinah and visit Al-Masjid an-Nabawi. After completing the rituals in Makkah, you will travel to Madinah to visit Al-Masjid an-Nabawi, the mosque of the Prophet Muhammad (PBUH). Here, you will offer prayers and pay your respects."
+          },
+          "day10": {
+            "day10": "Day 10",
+            "description10": "Departure from Madinah. After a spiritually fulfilling journey, you will check out from your hotel in Madinah and depart for your return journey home, carrying with you the blessings and peace of Hajj."
+          }
         }
       },
       "package14": {
-        "id": "14",
-        "description": "Discover the ancient wonders of Petra and Oman's rich heritage.",
-        "country": "Oman",
+        "description": "Discover the ancient wonders of Petra and Oman's rich heritage. This 6-day journey takes you through the historical marvels of Petra, including the Treasury and Monastery, and immerses you in the desert adventures of Wadi Rum. Experience the culture of the Bedouin people and explore the stunning landscapes of Jordan. Stay at the comfortable Petra Moon Hotel and enjoy guided tours to make the most of your time in this remarkable destination.",
+        "country": "Hashemite Kingdom of Jordan",
         "city": "Petra",
-        "review": "9.2",
-        "expertJudgement": "9.5",
-        "price": "950",
-        "journeyDays": "6",
         "hotel": "Petra Moon Hotel",
         "packagePlan": {
-          "day1": "Arrival in Petra and check-in at Petra Moon Hotel.",
-          "day2": "Explore the ancient city of Petra, including the Treasury and the Siq.",
-          "day3": "Hike to the Monastery and enjoy panoramic views.",
-          "day4": "Day trip to Wadi Rum for desert adventures.",
-          "day5": "Visit Little Petra and experience traditional Bedouin culture.",
-          "day6": "Departure from Petra."
-        }
-      },
-      "package15": {
-        "id": "15",
-        "description": "Experience the romance and charm of France, from Paris to Provence.",
-        "country": "France",
-        "city": "Paris",
-        "review": "9.5",
-        "expertJudgement": "9.8",
-        "price": "1200",
-        "journeyDays": "7",
-        "hotel": "Hotel Le Meurice",
-        "packagePlan": {
-          "day1": "Arrival in Paris and check-in at Hotel Le Meurice.",
-          "day2": "Visit the Eiffel Tower and Louvre Museum.",
-          "day3": "Explore Montmartre and the Sacré-Cœur Basilica.",
-          "day4": "Day trip to Versailles Palace.",
-          "day5": "Cruise on the Seine River and visit Notre-Dame Cathedral.",
-          "day6": "Discover the Champs-Élysées and Arc de Triomphe.",
-          "day7": "Departure from Paris."
-        }
-      },
-      "package16": {
-        "id": "16",
-        "description": "Discover the history and beauty of the UK, from London to the countryside.",
-        "country": "UK",
-        "city": "London",
-        "review": "9",
-        "expertJudgement": "9.3",
-        "price": "1100",
-        "journeyDays": "7",
-        "hotel": "The Ritz London",
-        "packagePlan": {
-          "day1": "Arrival in London and check-in at The Ritz London.",
-          "day2": "Visit Buckingham Palace and the Tower of London.",
-          "day3": "Explore the British Museum and Covent Garden.",
-          "day4": "Day trip to Stonehenge and Bath.",
-          "day5": "Discover the London Eye and Tate Modern.",
-          "day6": "Visit Oxford or Cambridge for a day trip.",
-          "day7": "Departure from London."
-        }
-      },
-      "package17": {
-        "id": "17",
-        "description": "Experience the vibrant culture and sunny beaches of Spain.",
-        "country": "Spain",
-        "city": "Barcelona",
-        "review": "9.2",
-        "expertJudgement": "9.4",
-        "price": "1050",
-        "journeyDays": "6",
-        "hotel": "Hotel Arts Barcelona",
-        "packagePlan": {
-          "day1": "Arrival in Barcelona and check-in at Hotel Arts Barcelona.",
-          "day2": "Visit La Sagrada Familia and Park Güell.",
-          "day3": "Explore the Gothic Quarter and Barceloneta Beach.",
-          "day4": "Day trip to Montserrat Monastery.",
-          "day5": "Discover Casa Batlló and La Rambla.",
-          "day6": "Departure from Barcelona."
-        }
-      },
-      "package18": {
-        "id": "18",
-        "description": "Enjoy the art, history, and cuisine of Italy, from Rome to Florence.",
-        "country": "Italy",
-        "city": "Rome",
-        "review": "9.8",
-        "expertJudgement": "9.9",
-        "price": "1300",
-        "journeyDays": "8",
-        "hotel": "Hotel Hassler Roma",
-        "packagePlan": {
-          "day1": "Arrival in Rome and check-in at Hotel Hassler Roma.",
-          "day2": "Visit the Colosseum and Roman Forum.",
-          "day3": "Explore the Vatican City and St. Peter's Basilica.",
-          "day4": "Day trip to Florence and the Uffizi Gallery.",
-          "day5": "Discover the Trevi Fountain and Spanish Steps.",
-          "day6": "Visit Pompeii and Naples for a day trip.",
-          "day7": "Explore Trastevere and enjoy authentic Italian cuisine.",
-          "day8": "Departure from Rome."
+          "day1": {
+            "day1": "Day 1",
+            "description1": "Arrival in Petra and check-in at Petra Moon Hotel. Upon arrival in Petra, you will check in at the Petra Moon Hotel, a short distance from the famous archaeological site. Settle in and prepare for an exciting adventure."
+          },
+          "day2": {
+            "day2": "Day 2",
+            "description2": "Explore the ancient city of Petra, including the Treasury and the Siq. Today, you will visit Petra, one of the New Seven Wonders of the World. Begin your exploration by walking through the Siq, a narrow gorge that leads to the Treasury, the most iconic monument in Petra."
+          },
+          "day3": {
+            "day3": "Day 3",
+            "description3": "Hike to the Monastery and enjoy panoramic views. On this day, you will embark on a hike to the Monastery, another breathtaking site in Petra. The hike offers stunning views of the surrounding mountains and valleys, giving you a chance to appreciate the beauty of this ancient city."
+          },
+          "day4": {
+            "day4": "Day 4",
+            "description4": "Day trip to Wadi Rum for desert adventures. Today, you will venture into the desert of Wadi Rum, famous for its dramatic landscapes. Enjoy a jeep tour through the desert, exploring its towering sand dunes, rock formations, and ancient petroglyphs."
+          },
+          "day5": {
+            "day5": "Day 5",
+            "description5": "Visit Little Petra and experience traditional Bedouin culture. On this day, you will visit Little Petra, a smaller but equally fascinating site. You will also have the opportunity to meet local Bedouins, learn about their way of life, and experience traditional hospitality."
+          },
+          "day6": {
+            "day6": "Day 6",
+            "description6": "Departure from Petra. After a fulfilling journey through the ancient wonders of Petra and the desert landscapes of Wadi Rum, you will check out from your hotel and depart for your next destination or return home."
+          }
         }
       }
     }

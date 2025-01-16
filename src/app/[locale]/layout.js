@@ -4,11 +4,11 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
-import LocolSwitcher from "@/components/LocolSwitcher";
 import AuthProvider from "./(component)/AuthProvider";
 
 export default async function LocaleLayout({ children, params }) {
-  const { locale } = params;
+  // const { locale } = params;
+  const { locale = "ar" } = params;
 
   if (!routing.locales.includes(locale)) {
     notFound();
@@ -22,7 +22,6 @@ export default async function LocaleLayout({ children, params }) {
         <NextIntlClientProvider messages={messages}>
           <AuthProvider>
             <Navbar />
-            {/* <LocolSwitcher /> */}
             {children}
           </AuthProvider>
         </NextIntlClientProvider>

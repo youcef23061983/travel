@@ -1,0 +1,335 @@
+{
+  "dd": {
+    "package15": {
+      "id": "15",
+      "description": "Experience the romance and charm of France, from the iconic city of Paris to the picturesque region of Provence. This 7-day journey takes you through the heart of France, visiting historical landmarks, stunning architecture, and enjoying the beauty of the French countryside. Stay at the luxurious Hotel Le Meurice and explore the best of French culture, art, and history.",
+      "country": "France",
+      "city": "Paris",
+      "review": "9.53",
+      "expertJudgement": "9.83",
+      "price": "1200",
+      "journeyDays": "7",
+      "hotel": "Hotel Le Meurice",
+      "packagePlan": {
+        "day1": {
+          "day1": "Day 1",
+          "description1": "Arrival in Paris and check-in at Hotel Le Meurice. Upon arrival in Paris, you will check in at the luxurious Hotel Le Meurice, located in the heart of the city. Settle in and prepare for an exciting exploration of Paris."
+        },
+        "day2": {
+          "day2": "Day 2",
+          "description2": "Visit the Eiffel Tower and Louvre Museum. Start your adventure with a visit to the Eiffel Tower, one of the most iconic landmarks in the world. Later, explore the Louvre Museum, home to thousands of works of art, including the famous Mona Lisa."
+        },
+        "day3": {
+          "day3": "Day 3",
+          "description3": "Explore Montmartre and the Sacré-Cœur Basilica. Today, immerse yourself in the artistic charm of Montmartre. Visit the Sacré-Cœur Basilica, perched atop the hill, and enjoy panoramic views of Paris."
+        },
+        "day4": {
+          "day4": "Day 4",
+          "description4": "Day trip to Versailles Palace. Take a day trip to the Palace of Versailles, a symbol of French opulence and grandeur. Explore the magnificent palace and its stunning gardens."
+        },
+        "day5": {
+          "day5": "Day 5",
+          "description5": "Cruise on the Seine River and visit Notre-Dame Cathedral. Enjoy a relaxing Seine River cruise, offering views of Paris's most famous landmarks. Later, visit the Notre-Dame Cathedral, a masterpiece of Gothic architecture."
+        },
+        "day6": {
+          "day6": "Day 6",
+          "description6": "Discover the Champs-Élysées and Arc de Triomphe. Today, stroll along the famous Champs-Élysées avenue, lined with shops and cafes. Visit the Arc de Triomphe, a symbol of French national pride."
+        },
+        "day7": {
+          "day7": "Day 7",
+          "description7": "Departure from Paris. After a memorable journey through the best of Paris, you will check out from your hotel and depart for your next destination or return home."
+        }
+      }
+    },
+    "package16": {
+      "id": "16",
+      "description": "Discover the rich history and scenic beauty of the United Kingdom, from the bustling streets of London to the tranquil countryside. This 7-day journey offers a blend of iconic landmarks, cultural experiences, and historical sites, all while staying at the luxurious Ritz London.",
+      "country": "UK",
+      "city": "London",
+      "review": "9.04",
+      "expertJudgement": "9.34",
+      "price": "1100",
+      "journeyDays": "7",
+      "hotel": "The Ritz London",
+      "packagePlan": {
+        "day1": {
+          "day1": "Day 1",
+          "description1": "Arrival in London and check-in at The Ritz London. Upon arrival, check-in at the luxurious Ritz London, one of the city's most iconic hotels. Take the rest of the day to relax or enjoy the hotel's opulent amenities."
+        },
+        "day2": {
+          "day2": "Day 2",
+          "description2": "Visit Buckingham Palace and the Tower of London. Begin your exploration with a visit to Buckingham Palace, the official residence of the British monarch. Then, head to the Tower of London, a historic fortress and home to the Crown Jewels."
+        },
+        "day3": {
+          "day3": "Day 3",
+          "description3": "Explore the British Museum and Covent Garden. Spend the day at the British Museum, one of the world’s greatest museums. Later, visit Covent Garden for shopping, street performances, and dining."
+        },
+        "day4": {
+          "day4": "Day 4",
+          "description4": "Day trip to Stonehenge and Bath. Take a day trip to the prehistoric monument of Stonehenge, followed by a visit to the charming city of Bath, known for its Roman baths and Georgian architecture."
+        },
+        "day5": {
+          "day5": "Day 5",
+          "description5": "Discover the London Eye and Tate Modern. Experience panoramic views of London from the London Eye, followed by a visit to the Tate Modern, a museum housing contemporary art."
+        },
+        "day6": {
+          "day6": "Day 6",
+          "description6": "Visit Oxford or Cambridge for a day trip. Choose between a visit to Oxford or Cambridge, two of the world’s most prestigious universities. Explore their historic campuses and beautiful architecture."
+        },
+        "day7": {
+          "day7": "Day 7",
+          "description7": "Departure from London. After a fulfilling journey, check out from your hotel and depart for your next destination or return home."
+        }
+      }
+    },
+    "package17": {
+      "id": "17",
+      "description": "Experience the vibrant culture, stunning architecture, and sunny beaches of Spain. This 6-day journey through Barcelona offers a mix of world-renowned landmarks, historic sites, and relaxation by the sea, all while staying at the luxurious Hotel Arts Barcelona.",
+      "country": "Spain",
+      "city": "Barcelona",
+      "review": "9.25",
+      "expertJudgement": "9.45",
+      "price": "1050",
+      "journeyDays": "6",
+      "hotel": "Hotel Arts Barcelona",
+      "packagePlan": {
+        "day1": {
+          "day1": "Day 1",
+          "description1": "Arrival in Barcelona and check-in at Hotel Arts Barcelona. Upon arrival, check-in at the luxurious Hotel Arts Barcelona. Enjoy the rest of the day at leisure, either exploring the hotel's amenities or relaxing."
+        },
+        "day2": {
+          "day2": "Day 2",
+          "description2": "Visit La Sagrada Familia and Park Güell. Begin your Barcelona adventure with a visit to the iconic La Sagrada Familia, designed by Antoni Gaudí. Later, explore Park Güell, another masterpiece by Gaudí, offering stunning views of the city."
+        },
+        "day3": {
+          "day3": "Day 3",
+          "description3": "Explore the Gothic Quarter and Barceloneta Beach. Wander through the narrow streets of the Gothic Quarter, full of history and charm. Then, relax at Barceloneta Beach, one of the most famous beaches in Barcelona."
+        },
+        "day4": {
+          "day4": "Day 4",
+          "description4": "Day trip to Montserrat Monastery. Take a day trip to Montserrat Monastery, located on a stunning mountain range. Visit the monastery and enjoy the breathtaking views of the surrounding landscapes."
+        },
+        "day5": {
+          "day5": "Day 5",
+          "description5": "Discover Casa Batlló and La Rambla. Visit Casa Batlló, a unique and colorful building designed by Gaudí. Later, stroll down La Rambla, a lively street filled with shops, cafes, and street performers."
+        },
+        "day6": {
+          "day6": "Day 6",
+          "description6": "Departure from Barcelona. After a memorable trip, check out from your hotel and depart for your next destination or return home."
+        }
+      }
+    },
+    "package18": {
+      "id": "18",
+      "description": "Enjoy the art, history, and cuisine of Italy, from the ancient ruins of Rome to the Renaissance treasures of Florence. This 8-day journey offers a mix of historical landmarks, cultural experiences, and delicious Italian cuisine, with a stay at the luxurious Hotel Hassler Roma.",
+      "country": "Italy",
+      "city": "Rome",
+      "review": "9.86",
+      "expertJudgement": "9.96",
+      "price": "1300",
+      "journeyDays": "8",
+      "hotel": "Hotel Hassler Roma",
+      "packagePlan": {
+        "day1": {
+          "day1": "Day 1",
+          "description1": "Arrival in Rome and check-in at Hotel Hassler Roma. Upon arrival, check-in at the luxurious Hotel Hassler Roma. Spend the rest of the day at leisure, enjoying the hotel's world-class amenities or exploring the nearby attractions."
+        },
+        "day2": {
+          "day2": "Day 2",
+          "description2": "Visit the Colosseum and Roman Forum. Explore the iconic Colosseum, one of the most famous landmarks of Ancient Rome. Then, visit the Roman Forum, the heart of the ancient Roman Empire."
+        },
+        "day3": {
+          "day3": "Day 3",
+          "description3": "Explore Vatican City and St. Peter's Basilica. Visit the Vatican Museums, home to an extraordinary collection of art, and marvel at Michelangelo's Sistine Chapel. End the day with a visit to the magnificent St. Peter's Basilica."
+        },
+        "day4": {
+          "day4": "Day 4",
+          "description4": "Day trip to Florence and the Uffizi Gallery. Take a day trip to Florence, the birthplace of the Renaissance. Visit the renowned Uffizi Gallery and explore the city's artistic and architectural wonders."
+        },
+        "day5": {
+          "day5": "Day 5",
+          "description5": "Discover the Trevi Fountain and Spanish Steps. Visit the famous Trevi Fountain and make a wish by tossing a coin into the water. Then, climb the Spanish Steps for stunning views of the city."
+        },
+        "day6": {
+          "day6": "Day 6",
+          "description6": "Visit Pompeii and Naples for a day trip. Take a day trip to the ancient ruins of Pompeii, a city frozen in time by the eruption of Mount Vesuvius. Afterward, visit Naples for a taste of authentic Italian pizza."
+        },
+        "day7": {
+          "day7": "Day 7",
+          "description7": "Explore Trastevere and enjoy authentic Italian cuisine. Discover the charming Trastevere neighborhood, known for its narrow streets and vibrant atmosphere. Enjoy a traditional Italian dinner in one of the area's renowned restaurants."
+        },
+        "day8": {
+          "day8": "Day 8",
+          "description8": "Departure from Rome. After a memorable trip, check out from your hotel and depart for your next destination or return home."
+        }
+      }
+    }
+  },
+  "ss": {
+    "package15": {
+      "id": "15",
+      "description": "اختبر الرومانسية وسحر فرنسا، من باريس إلى بروفانس. استمتع بالإقامة في فندق لو ميريس واستكشف المعالم الشهيرة مثل برج إيفل وقصر فرساي.",
+      "country": "فرنسا",
+      "city": "باريس",
+      "review": "9.53",
+      "expertJudgement": "9.83",
+      "price": "1200",
+      "journeyDays": "7",
+      "hotel": "فندق لو ميريس",
+      "packagePlan": {
+        "day1": {
+          "day1": "اليوم الأول",
+          "description1": "الوصول إلى باريس وتسجيل الوصول في فندق لو ميريس. عند الوصول إلى باريس، يتم تسجيل الوصول في فندق لو ميريس الفاخر الذي يقع في قلب العاصمة."
+        },
+        "day2": {
+          "day2": "اليوم الثاني",
+          "description2": "زيارة برج إيفل ومتحف اللوفر. في اليوم الثاني، يتم زيارة معلم برج إيفل الشهير والتجول في متحف اللوفر للاستمتاع بأروع الأعمال الفنية."
+        },
+        "day3": {
+          "day3": "اليوم الثالث",
+          "description3": "استكشاف مونمارتر وكاتدرائية القلب المقدس. في اليوم الثالث، يتم زيارة حي مونمارتر الجميل وزيارة كاتدرائية القلب المقدس."
+        },
+        "day4": {
+          "day4": "اليوم الرابع",
+          "description4": "رحلة يومية إلى قصر فرساي. في اليوم الرابع، يتم الذهاب في رحلة يومية إلى قصر فرساي الفخم، أحد أبرز معالم فرنسا التاريخية."
+        },
+        "day5": {
+          "day5": "اليوم الخامس",
+          "description5": "جولة بحرية على نهر السين وزيارة كاتدرائية نوتردام. في اليوم الخامس، يتم الاستمتاع بجولة بحرية على نهر السين وزيارة كاتدرائية نوتردام."
+        },
+        "day6": {
+          "day6": "اليوم السادس",
+          "description6": "اكتشاف الشانزليزيه وقوس النصر. في اليوم السادس، يتم استكشاف الشانزليزيه الشهير وزيارة قوس النصر."
+        },
+        "day7": {
+          "day7": "اليوم السابع",
+          "description7": "المغادرة من باريس. في اليوم السابع، يتم تسجيل الخروج من فندق لو ميريس والمغادرة بعد قضاء وقت مميز في باريس."
+        }
+      }
+    },
+    "package16": {
+      "id": "16",
+      "description": "اكتشف تاريخ وجمال المملكة المتحدة، من لندن إلى الريف. استمتع بالإقامة في فندق ريتز لندن واكتشاف المعالم التاريخية مثل قصر باكنغهام وستونهنج.",
+      "country": "المملكة المتحدة",
+      "city": "لندن",
+      "review": "9.04",
+      "expertJudgement": "9.34",
+      "price": "1100",
+      "journeyDays": "7",
+      "hotel": "فندق ريتز لندن",
+      "packagePlan": {
+        "day1": {
+          "day1": "اليوم الأول",
+          "description1": "الوصول إلى لندن وتسجيل الوصول في فندق ريتز لندن. عند الوصول إلى لندن، يتم تسجيل الوصول في فندق ريتز الفاخر الذي يقع في قلب المدينة."
+        },
+        "day2": {
+          "day2": "اليوم الثاني",
+          "description2": "زيارة قصر باكنغهام وبرج لندن. في اليوم الثاني، يتم زيارة قصر باكنغهام الشهير وبرج لندن الذي يضم تاريخاً غنياً."
+        },
+        "day3": {
+          "day3": "اليوم الثالث",
+          "description3": "استكشاف المتحف البريطاني وحديقة كوفنت غاردن. في اليوم الثالث، يتم زيارة المتحف البريطاني الرائع وحديقة كوفنت غاردن الشهيرة."
+        },
+        "day4": {
+          "day4": "اليوم الرابع",
+          "description4": "رحلة يومية إلى ستونهنج وباث. في اليوم الرابع، يتم الذهاب في رحلة يومية إلى معالم ستونهنج القديمة ومدينة باث الجميلة."
+        },
+        "day5": {
+          "day5": "اليوم الخامس",
+          "description5": "اكتشاف عجلة لندن ومعرض تيت مودرن. في اليوم الخامس، يتم زيارة عجلة لندن الشهيرة ومعرض تيت مودرن للفن المعاصر."
+        },
+        "day6": {
+          "day6": "اليوم السادس",
+          "description6": "زيارة أكسفورد أو كامبريدج في رحلة يومية. في اليوم السادس، يتم التوجه في رحلة يومية إلى أكسفورد أو كامبريدج لاستكشاف أقدم الجامعات."
+        },
+        "day7": {
+          "day7": "اليوم السابع",
+          "description7": "المغادرة من لندن. في اليوم السابع، يتم تسجيل الخروج من فندق ريتز والمغادرة بعد قضاء أسبوع ممتع في لندن."
+        }
+      }
+    },
+
+    "package17": {
+      "id": "17",
+      "description": "اختبر الثقافة النابضة بالحياة والشواطئ المشمسة في إسبانيا. استمتع بالإقامة في فندق آرتس برشلونة واكتشف معالم المدينة الجميلة مثل لا ساغرادا فاميليا وحديقة غويل.",
+      "country": "إسبانيا",
+      "city": "برشلونة",
+      "review": "9.25",
+      "expertJudgement": "9.45",
+      "price": "1050",
+      "journeyDays": "6",
+      "hotel": "فندق آرتس برشلونة",
+      "packagePlan": {
+        "day1": {
+          "day1": "اليوم الأول",
+          "description1": "الوصول إلى برشلونة وتسجيل الوصول في فندق آرتس برشلونة. عند الوصول، يتم تسجيل الوصول في فندق آرتس الفاخر في قلب برشلونة."
+        },
+        "day2": {
+          "day2": "اليوم الثاني",
+          "description2": "زيارة لا ساغرادا فاميليا وحديقة غويل. في اليوم الثاني، يتم زيارة لا ساغرادا فاميليا، المعلم الأكثر شهرة في برشلونة، بالإضافة إلى حديقة غويل المدهشة."
+        },
+        "day3": {
+          "day3": "اليوم الثالث",
+          "description3": "استكشاف الحي القوطي وشاطئ برشلونة. في اليوم الثالث، يتم زيارة الحي القوطي التاريخي والتجول على شاطئ برشلونة المشمس."
+        },
+        "day4": {
+          "day4": "اليوم الرابع",
+          "description4": "رحلة يومية إلى دير مونتسيرات. في اليوم الرابع، يتم التوجه في رحلة يومية إلى دير مونتسيرات للاستمتاع بالمناظر الجبلية المدهشة."
+        },
+        "day5": {
+          "day5": "اليوم الخامس",
+          "description5": "اكتشاف كازا باتيو ولا رامبلا. في اليوم الخامس، يتم زيارة كازا باتيو المذهلة ثم التنزه في شارع لا رامبلا الشهير."
+        },
+        "day6": {
+          "day6": "اليوم السادس",
+          "description6": "المغادرة من برشلونة. في اليوم السادس، يتم تسجيل الخروج من فندق آرتس والمغادرة بعد رحلة مليئة بالتجارب الممتعة في برشلونة."
+        }
+      }
+    },
+    "package18": {
+      "id": "18",
+      "description": "استمتع بالفن والتاريخ والمأكولات الإيطالية، من روما إلى فلورنسا. استكشف معالم تاريخية رائعة في روما، واستمتع بالفن في فلورنسا، وتذوق المأكولات الإيطالية التقليدية.",
+      "country": "إيطاليا",
+      "city": "روما",
+      "review": "9.86",
+      "expertJudgement": "9.96",
+      "price": "1300",
+      "journeyDays": "8",
+      "hotel": "فندق هاسلر روما",
+      "packagePlan": {
+        "day1": {
+          "day1": "اليوم الأول",
+          "description1": "الوصول إلى روما وتسجيل الوصول في فندق هاسلر روما. عند الوصول إلى روما، يتم تسجيل الوصول في فندق هاسلر الفاخر، الذي يتمتع بإطلالات رائعة على المدينة."
+        },
+        "day2": {
+          "day2": "اليوم الثاني",
+          "description2": "زيارة الكولوسيوم والمنتدى الروماني. اليوم الثاني يتضمن زيارة الكولوسيوم الشهير، وأطلال المنتدى الروماني التي تحكي تاريخ الإمبراطورية الرومانية."
+        },
+        "day3": {
+          "day3": "اليوم الثالث",
+          "description3": "استكشاف مدينة الفاتيكان وكنيسة سانت بيتر. في اليوم الثالث، يتم زيارة مدينة الفاتيكان وكنيسة سانت بيتر الرائعة، التي تعتبر واحدة من أروع المعالم المسيحية في العالم."
+        },
+        "day4": {
+          "day4": "اليوم الرابع",
+          "description4": "رحلة يومية إلى فلورنسا ومعرض أوفيزي. في اليوم الرابع، يتم التوجه إلى فلورنسا لزيارة معرض أوفيزي، أحد أرقى المتاحف الفنية في العالم."
+        },
+        "day5": {
+          "day5": "اليوم الخامس",
+          "description5": "اكتشاف نافورة تريفي وسلالم إسبانية. اليوم الخامس يتضمن زيارة نافورة تريفي الشهيرة ورحلة إلى السلالم الإسبانية، واحدة من أجمل معالم روما."
+        },
+        "day6": {
+          "day6": "اليوم السادس",
+          "description6": "زيارة بومبي ونابولي في رحلة يومية. في اليوم السادس، يمكن للزوار اكتشاف أطلال بومبي التاريخية ثم زيارة مدينة نابولي لتذوق بيتزا نابولي الأصلية."
+        },
+        "day7": {
+          "day7": "اليوم السابع",
+          "description7": "استكشاف تراستيفيري والاستمتاع بالمأكولات الإيطالية الأصيلة. اليوم السابع يتضمن زيارة حي تراستيفيري، المعروف بمقاهيها وأجوائها التقليدية، بالإضافة إلى تذوق المأكولات الإيطالية الأصيلة."
+        },
+        "day8": {
+          "day8": "اليوم الثامن",
+          "description8": "المغادرة من روما. في اليوم الأخير، يتم تسجيل الخروج من الفندق والمغادرة بعد قضاء وقت لا يُنسى في روما وفلورنسا."
+        }
+      }
+    }
+  }
+}
