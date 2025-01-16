@@ -14,7 +14,7 @@ body {
   overflow: hidden;
 }
 
-.swiper-slide .slide-container {
+.testimonialsSwiper .swiper-slide .slide-container {
   display: grid;
   grid-template-columns: 48% 50%;
   grid-template-rows: 100%;
@@ -59,19 +59,19 @@ body {
   line-height: 1.5;
   opacity: 0;
 }
-.swiper-slide-active .info {
+.testimonialsSwiper .swiper-slide-active .info {
   opacity: 1;
 }
 
-.swiper-slide-active .info h1,
-.swiper-slide-active .info p {
+.testimonialsSwiper .swiper-slide-active .info h1,
+.testimonialsSwiper .swiper-slide-active .info p {
   animation: moveDown 0.8s ease-in forwards;
 }
 
-.swiper-slide-active .info h1 {
+.testimonialsSwiper .swiper-slide-active .info h1 {
   animation-delay: 0.2s;
 }
-.swiper-slide-active .info p {
+.testimonialsSwiper .swiper-slide-active .info p {
   animation-delay: 1s;
 }
 
@@ -175,7 +175,7 @@ body {
     top: 0%;
   }
 }
-.swiper-slide img {
+.testimonialsSwiper .swiper-slide img {
   display: block;
   width: calc(var(--width) / 2);
   filter: drop-shadow(5px 6px 5px rgb(255, 253, 253));
@@ -184,7 +184,7 @@ body {
   z-index: 1;
 }
 
-.swiper-slide-active img {
+.testimonialsSwiper .swiper-slide-active img {
   animation: itemMoveDown 0.8s ease-in forwards 1.4s;
 }
 
@@ -199,7 +199,7 @@ body {
     opacity: 1;
   }
 }
-.swiper-pagination-bullet {
+.testimonialsSwiper .swiper-pagination-bullet {
   width: 18px;
   height: 18px;
   background-color: grey;
@@ -207,7 +207,7 @@ body {
   transition: all 0.6s ease-in-out;
 }
 
-.swiper-pagination-bullet-active {
+.testimonialsSwiper .swiper-pagination-bullet-active {
   height: 36px;
   background-color: rgb(199, 199, 199);
   border-radius: 14px;
@@ -222,7 +222,7 @@ body {
   :root {
     --width: 400px;
   }
-  .swiper-slide .slide-container {
+  .testimonialsSwiper .swiper-slide .slide-container {
     column-gap: 20px;
   }
   .info {
@@ -239,7 +239,7 @@ body {
   }
 }
 @media (max-width: 790px) {
-  .swiper-slide .slide-container {
+  .testimonialsSwiper .swiper-slide .slide-container {
     grid-template-columns: 100%;
     grid-template-rows: 60% 35%;
 
@@ -261,11 +261,11 @@ body {
     width: unset;
     line-height: 1.1;
   }
-  .swiper-pagination-bullet {
+  .testimonialsSwiper .swiper-pagination-bullet {
     width: 14px;
     height: 14px;
   }
-  .swiper-pagination-bullet-active {
+  .testimonialsSwiper .swiper-pagination-bullet-active {
     height: 28px;
   }
 }
