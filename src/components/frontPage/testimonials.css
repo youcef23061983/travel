@@ -7,7 +7,8 @@ body {
   position: relative;
   height: 100%;
 }
-.swiper {
+/* .swiper { */
+.testimonialsSwiper {
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -40,7 +41,7 @@ body {
   opacity: 0;
 }
 
-[data-color="purple"] {
+[data-color="purpule"] {
   color: rgb(87, 1, 167);
 }
 [data-color="green"] {
@@ -177,7 +178,7 @@ body {
 .swiper-slide img {
   display: block;
   width: calc(var(--width) / 2);
-  filter: drop-shadow(5px 6px 5px #95615e);
+  filter: drop-shadow(5px 6px 5px rgb(255, 253, 253));
   user-select: none;
   opacity: 0;
   z-index: 1;

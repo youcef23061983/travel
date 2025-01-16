@@ -53,6 +53,7 @@ const Testimonials = () => {
         thresholdDelta: 50,
         sensitivity: 1,
       }}
+      className="testimonialsSwiper"
     >
       {slidesData.map((slide, i) => {
         return (
