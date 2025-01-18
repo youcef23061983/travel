@@ -17,6 +17,22 @@ export const routing = defineRouting({
       ar: "/خدماتنا",
       en: "/our-service",
     },
+    "/policy": {
+      ar: "/سياسة الخصوصية",
+      en: "/policy",
+    },
+    "/term": {
+      ar: "/الشروط والأحكام",
+      en: "/Terms & Conditions",
+    },
+    "/cookies": {
+      ar: "/سياسة ملفات تعريف الارتباط",
+      en: "/Cookies Policy",
+    },
+    "/faq": {
+      ar: "/الأسئلة الشائعة",
+      en: "/FAQ",
+    },
   },
 });
 

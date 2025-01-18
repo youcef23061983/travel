@@ -7,7 +7,11 @@
       "about": "About Us",
       "login": "Login",
       "logout": "Logout",
-      "contact": "Contact us"
+      "contact": "Contact us",
+      "policy": " Privacy Policy",
+      "term": "Terms & Conditions",
+      "cookies": "Cookies Policy",
+      "faq": "FAQ"
     },
     "title": "Petra says hello",
     "imgHeader": "Explore the World with Us",
@@ -26,9 +30,12 @@
     "package": "packages",
     "topHeader": "top destinations for you",
     "popularHeader": "Popular destinations for you",
+    "reserve": "© 2025 Petra Tourist Agency. All rights reserved.",
+    "discover": "discover more",
 
     "packages": {
       "package1": {
+        "id": 1,
         "description": "Embark on an enchanting journey through Morocco, where vibrant culture, breathtaking landscapes, and timeless traditions come together to create an unforgettable experience.",
         "country": "Morocco",
         "city": "Marrakech",
@@ -65,6 +72,7 @@
         }
       },
       "package2": {
+        "id": 2,
         "description": "Immerse yourself in the rich history, vibrant culture, and exquisite cuisine of Algeria. From ancient ruins to stunning coastal views, experience the heart of Algiers in a truly unforgettable way.",
         "country": "Algeria",
         "city": "Algiers",
@@ -94,6 +102,7 @@
       },
 
       "package3": {
+        "id": 3,
         "description": "Embark on a mesmerizing journey through the heart of Egypt, uncovering its ancient wonders, vibrant culture, and timeless beauty.",
         "country": "Egypt",
         "city": "Cairo",
@@ -131,6 +140,7 @@
       },
 
       "package4": {
+        "id": 4,
         "description": "Enjoy the perfect blend of modern luxury and rich heritage in Saudi Arabia, a land where ancient traditions meet contemporary elegance.",
         "country": "Saudi Arabia",
         "city": "Riyadh",
@@ -164,6 +174,7 @@
       },
 
       "package5": {
+        "id": 5,
         "description": "Embark on a thrilling journey through the United Arab Emirates, where futuristic cities rise from the desert sands. Explore the stunning architecture, luxurious resorts, and world-class shopping experiences that define Dubai. From the towering Burj Khalifa to the iconic Burj Al Arab, this package offers an unforgettable adventure in one of the most innovative destinations on the planet. Immerse yourself in the opulence, modernity, and culture of the UAE, and create memories that will last a lifetime.",
         "country": "United Arab Emirates",
         "city": "Dubai",
@@ -192,6 +203,7 @@
         }
       },
       "package6": {
+        "id": 6,
         "description": "Experience the culture and beauty of Qatar, a country that seamlessly blends modernity with rich traditions. This 5-day package offers a unique opportunity to explore Doha, Qatar's vibrant capital, where stunning skyscrapers meet ancient cultural sites. Immerse yourself in the art and history of Qatar with visits to world-renowned museums and markets, while also enjoying the serene beauty of its beaches and deserts. Whether you're seeking a cultural adventure or a relaxing getaway, this package offers a comprehensive and unforgettable experience in one of the most dynamic cities in the Middle East.",
         "country": "Qatar",
         "city": "Doha",
@@ -220,6 +232,7 @@
         }
       },
       "package7": {
+        "id": 7,
         "description": "Discover the natural beauty and heritage of Oman, a country that offers a perfect blend of ancient history, stunning landscapes, and modern luxury. This 6-day package takes you through the enchanting city of Muscat, where you can explore its rich cultural heritage, magnificent architecture, and breathtaking natural wonders. From the grandeur of mosques to the serene beauty of beaches and mountains, this journey promises an unforgettable experience in one of the Middle East's most captivating destinations.",
         "country": "Sultanate of Oman",
         "city": "Muscat",
@@ -252,6 +265,7 @@
         }
       },
       "package8": {
+        "id": 8,
         "description": "Experience the rich culture and historical landmarks of Turkey, a country that bridges Europe and Asia, blending ancient traditions with modern vibrancy. This 7-day package takes you through Istanbul, a city known for its iconic landmarks, stunning architecture, and unique cultural heritage. From the majestic mosques to the opulent palaces and bustling bazaars, this journey will immerse you in the heart of Turkey’s fascinating history and vibrant atmosphere.",
         "country": "Turkey",
         "city": "Istanbul",
@@ -288,6 +302,7 @@
         }
       },
       "package9": {
+        "id": 9,
         "description": "Explore the ancient wonders of Iran, a land rich in history, culture, and architecture. This 6-day journey will take you through Tehran, the capital city, and other historical sites, offering a chance to discover Iran's deep-rooted traditions, stunning palaces, vibrant bazaars, and breathtaking landscapes. From the opulent Golestan Palace to the ancient city of Kashan, this package invites you to immerse yourself in the beauty and heritage of one of the world’s oldest civilizations.",
         "country": "Iran",
         "city": "Tehran",
@@ -320,6 +335,7 @@
         }
       },
       "package10": {
+        "id": 10,
         "description": "Discover the stunning beaches, rich culture, and natural beauty of Indonesia. This 7-day journey in Bali offers a perfect blend of relaxation and exploration, from pristine beaches and ancient temples to lush rice terraces and volcanic landscapes. Immerse yourself in the island’s unique traditions and breathtaking scenery, making it a perfect getaway for nature lovers and culture enthusiasts alike.",
         "country": "Indonesia",
         "city": "Bali",
@@ -357,6 +373,7 @@
         }
       },
       "package11": {
+        "id": 11,
         "description": "Experience the modern and cultural highlights of Malaysia. This 6-day journey through Kuala Lumpur combines the best of both worlds: from iconic skyscrapers and bustling shopping districts to sacred caves and rich heritage sites. Immerse yourself in Malaysia’s vibrant culture, architecture, and cuisine while staying at the luxurious Mandarin Oriental.",
         "country": "Malaysia",
         "city": "Kuala Lumpur",
@@ -389,9 +406,10 @@
         }
       },
       "package12": {
+        "id": 12,
         "description": "Experience a spiritual journey with an Umrah package. This 7-day pilgrimage to Makkah offers a deep and meaningful connection with your faith. Perform the sacred Umrah rituals, explore historic Islamic sites, and enjoy the comfort of staying at the luxurious Makkah Clock Royal Tower, A Fairmont Hotel, as you immerse yourself in the spiritual atmosphere of Makkah.",
         "country": "Saudi Arabia",
-        "city": "Makkah",
+        "city": "Umrah",
         "hotel": "Makkah Clock Royal Tower, A Fairmont Hotel",
         "packagePlan": {
           "day1": {
@@ -425,9 +443,10 @@
         }
       },
       "package13": {
+        "id": 13,
         "description": "Join the sacred pilgrimage of Hajj. This 10-day spiritual journey takes you through the heart of Islam, where you will perform the essential rituals of Hajj in the holy cities of Makkah and Madinah. Stay at luxurious hotels like the Madinah Oberoi Hotel and Makkah Clock Royal Tower, and experience the deep spiritual connection of the pilgrimage, all while enjoying comfort and guidance throughout your journey.",
         "country": "Saudi Arabia",
-        "city": "Makkah and Madinah",
+        "city": "Hadj",
         "hotel": "Madinah Oberoi Hotel and Makkah Clock Royal Tower",
         "packagePlan": {
           "day1": {
@@ -473,6 +492,7 @@
         }
       },
       "package14": {
+        "id": 14,
         "description": "Discover the ancient wonders of Petra and Oman's rich heritage. This 6-day journey takes you through the historical marvels of Petra, including the Treasury and Monastery, and immerses you in the desert adventures of Wadi Rum. Experience the culture of the Bedouin people and explore the stunning landscapes of Jordan. Stay at the comfortable Petra Moon Hotel and enjoy guided tours to make the most of your time in this remarkable destination.",
         "country": "Hashemite Kingdom of Jordan",
         "city": "Petra",
@@ -504,9 +524,97 @@
           }
         }
       }
+    },
+    "testimonials": {
+      "testimonial1": {
+        "id": "1",
+        "name": "Ali",
+        "profession": "Tour Guide",
+        "description": "Ali is a passionate tour guide who has dedicated his life to showcasing the breathtaking landscapes and cultural richness of Algeria. With years of experience, he ensures that every visitor leaves with unforgettable memories."
+      },
+      "testimonial2": {
+        "id": "2",
+        "name": "Mohamed",
+        "profession": "Photographer",
+        "description": "Exploring Egypt through my lens was a dream come true. The grandeur of the pyramids, the serenity of the Nile, and the stories etched in ancient temples left me inspired. Egypt's beauty is truly timeless."
+      },
+      "testimonial3": {
+        "id": "3",
+        "name": "Nadia",
+        "profession": "Travel Blogger",
+        "description": "The Emirates offered me a blend of modern luxury and traditional charm. Walking through the bustling souks and marveling at the architectural wonders like the Burj Khalifa were experiences I'll cherish forever."
+      },
+      "testimonial4": {
+        "id": "4",
+        "name": "Hamza",
+        "profession": "Historian",
+        "description": "Visiting pilgrimage sites was a deeply spiritual journey. The sense of history and devotion I felt in these sacred places left a profound impact on me, reminding me of the power of faith and unity."
+      },
+      "testimonial5": {
+        "id": "5",
+        "name": "Houda",
+        "profession": "Cultural Enthusiast",
+        "description": "Indonesia captivated me with its breathtaking landscapes and vibrant traditions. From the serene rice terraces of Bali to the lively markets of Jakarta, every moment was a celebration of life and culture."
+      },
+      "testimonial6": {
+        "id": "6",
+        "name": "Karima",
+        "profession": "Food Critic",
+        "description": "Iran's culinary scene was a revelation. The intricate flavors of saffron-infused dishes and the hospitality of the locals made my food journey an extraordinary experience."
+      },
+      "testimonial7": {
+        "id": "7",
+        "name": "Omar",
+        "profession": "Architect",
+        "description": "Istanbul is a city where history and modernity collide beautifully. Walking through the Hagia Sophia and the Blue Mosque was like stepping into a masterpiece of architectural genius."
+      },
+      "testimonial8": {
+        "id": "8",
+        "name": "Anas",
+        "profession": "Nature Lover",
+        "description": "Malaysia's natural beauty is unparalleled. Exploring the rainforests and witnessing the vibrant wildlife was a humbling experience that reminded me of nature's wonders."
+      },
+      "testimonial9": {
+        "id": "9",
+        "name": "Mourad",
+        "profession": "Artisan",
+        "description": "Morocco's colorful souks and intricate artistry left me in awe. The energy of Marrakech and the serenity of the Atlas Mountains offered a perfect blend of adventure and peace."
+      },
+      "testimonial10": {
+        "id": "10",
+        "name": "Khaled",
+        "profession": "Marine Biologist",
+        "description": "Muscat's coastline is a treasure trove of marine life. Snorkeling in its crystal-clear waters and studying the vibrant coral reefs was an experience I'll always treasure."
+      },
+      "testimonial11": {
+        "id": "11",
+        "name": "Said",
+        "profession": "Pilgrim",
+        "description": "Performing Umrah was a life-changing experience. The peace and spirituality I felt in these sacred places gave me a new perspective on life and faith."
+      },
+      "testimonial12": {
+        "id": "12",
+        "name": "Reda",
+        "profession": "Adventurer",
+        "description": "Petra's ancient ruins were like stepping back in time. Exploring its carved rose-red city and learning about its history was an adventure I'll never forget."
+      },
+      "testimonial13": {
+        "id": "13",
+        "name": "Catherine",
+        "profession": "Luxury Traveler",
+        "description": "Qatar offered me a taste of luxury like no other. From staying in world-class resorts to experiencing the vibrant culture of Doha, every moment was pure indulgence."
+      },
+      "testimonial14": {
+        "id": "14",
+        "name": "John",
+        "profession": "Wildlife Photographer",
+        "description": "Saudi Arabia's deserts are a photographer's paradise. The golden dunes, unique wildlife, and breathtaking sunsets provided endless opportunities to capture nature's raw beauty."
+      }
     }
   },
-
+  "Detail": {
+    "title": "package"
+  },
   "Navigation": {
     "home": "Home",
     "about": "about"

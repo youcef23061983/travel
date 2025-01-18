@@ -32,7 +32,15 @@ const Navbar = () => {
 
       if (scrollHeight > navCenterHeight) {
         navCenter.current.style.position = "fixed";
-        navCenter.current.style.background = "white";
+        navCenter.current.style.background =
+          "linear-gradient( \
+        to right bottom, \
+        #f3e1c8,  \
+        #edd2a8, \
+        #e6c49a,  \
+        #d8b38a \
+      )";
+
         navCenter.current.style.transition = "all 0.8s linear";
       } else {
         navCenter.current.style.background = "transparent";

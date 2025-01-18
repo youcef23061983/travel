@@ -81,9 +81,13 @@ a {
 
 .link {
   color: white;
-  background-color: black;
+  background-color: #e5b9a2;
   padding: 0.7rem 1.7rem;
   border-radius: 0.7rem;
+  transition: transform 0.3s ease, scale 0.3s ease;
+}
+.link:hover {
+  scale: 0.9;
 }
 .headerimages {
   display: flex;
@@ -249,6 +253,40 @@ a {
   color: #95615e;
   font-weight: 500;
 }
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+
+  gap: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.5rem 0.5rem 3rem #95615e;
+  background: linear-gradient(
+    to right bottom,
+    #f3e1c8,
+    /* Pale beige for soft highlights */ #edd2a8,
+    /* Light golden sand */ #e6c49a,
+    /* Warm sandy tone */ #d8b38a /* Soft earthy brown */
+  );
+}
+.footerIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.5rem 0.5rem 3rem #95615e;
+  width: 300px;
+}
+.footerLogo {
+  transition: transform 0.3s ease, scale 0.3s ease;
+}
+.footerLogo:hover {
+  scale: 1.1;
+}
 @media screen and (min-width: 336px) {
   h2 {
     font-size: 2.4rem;
@@ -263,11 +301,18 @@ a {
   a {
     font-size: 1.2rem;
   }
+  .footerIcon {
+    font-size: 2rem;
+  }
   .x {
     position: absolute;
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
+    transition: transform 0.3s ease, scale 0.3s ease;
+  }
+  .x:hover {
+    scale: 1.1;
   }
 
   .nav {
@@ -304,6 +349,18 @@ a {
   }
   .counNum {
     font-size: 4rem;
+  }
+  .footerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    border-radius: 0.8rem;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.7rem #95615e;
   }
 }
 
@@ -366,6 +423,12 @@ a {
   }
   .counNum {
     font-size: 4.4rem;
+  }
+  .footerLinks {
+    flex-direction: row;
+  }
+  .footerIcon {
+    font-size: 2rem;
   }
 }
 

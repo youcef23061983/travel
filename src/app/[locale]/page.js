@@ -43,6 +43,7 @@ import Statistics from "@/components/frontPage/Statistics";
 import Testimonials from "@/components/frontPage/Testimonials";
 import TopPackageSlider from "@/components/frontPage/TopPackageSlider";
 import PopularPackagesSlider from "@/components/frontPage/PopularPackagesSlider";
+import GetallPackages from "@/components/GetallPackages";
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
@@ -53,18 +54,8 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-async function getData(locale) {
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/${locale}/api/packages`
-  );
-  if (!response.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return response.json();
-}
-
 const HomePage = async ({ params: { locale } }) => {
-  const PackagesData = await getData(locale);
+  const PackagesData = await GetallPackages(locale);
 
   return (
     <div>

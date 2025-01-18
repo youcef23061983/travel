@@ -5,18 +5,20 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./testimonials.css";
+import { useLocale, useTranslations } from "next-intl";
 
 const Testimonials = () => {
+  const locale = useLocale();
+  const t = useTranslations("HomePage");
+
   const slidesData = [
     {
-      name: "Ali",
-      profession: "Tour Guide",
-      description:
-        "My journey through Algeria has been nothing short of magical. From the stunning Sahara dunes to the vibrant streets of Algiers, every moment was filled with awe. The warmth of the people and the richness of the culture made it unforgettable.",
+      id: "testimonial1",
       color: "purple",
       image: "/testimonials/algeriaTourist.jpg",
     },
     {
+      id: "testimonial2",
       name: "Mohamed",
       profession: "Photographer",
       description:
@@ -25,6 +27,7 @@ const Testimonials = () => {
       image: "/testimonials/egyptTourist.jpg",
     },
     {
+      id: "testimonial3",
       name: "Nadia",
       profession: "Travel Blogger",
       description:
@@ -33,6 +36,7 @@ const Testimonials = () => {
       image: "/testimonials/emiratesTourist.jpg",
     },
     {
+      id: "testimonial4",
       name: "Hamza",
       profession: "Historian",
       description:
@@ -41,6 +45,7 @@ const Testimonials = () => {
       image: "/testimonials/hadjTourist.jpg",
     },
     {
+      id: "testimonial5",
       name: "Houda",
       profession: "Cultural Enthusiast",
       description:
@@ -49,6 +54,7 @@ const Testimonials = () => {
       image: "/testimonials/indonesia.jpg",
     },
     {
+      id: "testimonial6",
       name: "Karima",
       profession: "Food Critic",
       description:
@@ -57,6 +63,7 @@ const Testimonials = () => {
       image: "/testimonials/iran.jpg",
     },
     {
+      id: "testimonial7",
       name: "Omar",
       profession: "Architect",
       description:
@@ -65,6 +72,7 @@ const Testimonials = () => {
       image: "/testimonials/istanbulTourist.jpg",
     },
     {
+      id: "testimonial8",
       name: "Anas",
       profession: "Nature Lover",
       description:
@@ -73,6 +81,7 @@ const Testimonials = () => {
       image: "/testimonials/malaysia.jpg",
     },
     {
+      id: "testimonial9",
       name: "Mourad",
       profession: "Artisan",
       description:
@@ -81,6 +90,7 @@ const Testimonials = () => {
       image: "/testimonials/moroccoTourist.jpg",
     },
     {
+      id: "testimonial10",
       name: "Khaled",
       profession: "Marine Biologist",
       description:
@@ -89,6 +99,7 @@ const Testimonials = () => {
       image: "/testimonials/muscat.jpg",
     },
     {
+      id: "testimonial11",
       name: "Said",
       profession: "Pilgrim",
       description:
@@ -97,6 +108,7 @@ const Testimonials = () => {
       image: "/testimonials/oumraTourist.jpg",
     },
     {
+      id: "testimonial12",
       name: "Reda",
       profession: "Adventurer",
       description:
@@ -105,6 +117,7 @@ const Testimonials = () => {
       image: "/testimonials/petraTourist.jpg",
     },
     {
+      id: "testimonial13",
       name: "Catherine",
       profession: "Luxury Traveler",
       description:
@@ -113,6 +126,7 @@ const Testimonials = () => {
       image: "/testimonials/qatarTourist.jpg",
     },
     {
+      id: "testimonial14",
       name: "John",
       profession: "Wildlife Photographer",
       description:
@@ -123,7 +137,6 @@ const Testimonials = () => {
   ];
 
   return (
-    // <div className="testimonial">
     <Swiper
       modules={[Mousewheel, Pagination]}
       direction={"vertical"}
@@ -138,16 +151,20 @@ const Testimonials = () => {
       }}
       className="testimonialsSwiper"
     >
-      {slidesData.map((slide, i) => {
+      {slidesData.map((slide) => {
+        const name = t(`testimonials.${slide.id}.name`);
+        const profession = t(`testimonials.${slide.id}.profession`);
+        const description = t(`testimonials.${slide.id}.description`);
+
         return (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={slide.id}>
             {({ isActive }) => {
               return (
                 <div className="slide-container">
                   <div className="info">
-                    <h1 data-color={slide.color}>{slide.name}</h1>
-                    <h1 data-color={slide.color}>{slide.profession}</h1>
-                    <p>{slide.description}</p>
+                    <h1 data-color={slide.color}>{name}</h1>
+                    <h1 data-color={slide.color}>{profession}</h1>
+                    <p>{description}</p>
                   </div>
                   <div className="item">
                     <div
@@ -163,7 +180,6 @@ const Testimonials = () => {
         );
       })}
     </Swiper>
-    // </div>
   );
 };
 

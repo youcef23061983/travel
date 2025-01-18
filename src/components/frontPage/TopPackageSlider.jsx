@@ -139,16 +139,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/effect-cube";
 import "swiper/css/controller";
 import "./style.css";
-
 import "swiper/css";
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import AnimatedText from "../AnimatedText";
 import AnimatedTextArabic from "../AnimatedTextArabic";
-// import { PackagesData } from "../PackagesData";
 import Word from "@/components/Word";
+import { Link } from "@/i18n/routing";
 const TopPackageSlider = ({ PackagesData }) => {
-  // const TopPackageSlider = () => {
   const [textSlider, setTextSlider] = useState(null);
   const [cubeSlider, setCubeSlider] = useState(null);
   const locale = useLocale();
@@ -183,7 +181,7 @@ const TopPackageSlider = ({ PackagesData }) => {
               const city = t(`packages.${pack.key}.city`);
               const description = t(`packages.${pack.key}.description`);
               return (
-                <SwiperSlide>
+                <SwiperSlide key={pack.id}>
                   <AnimatedComponent
                     once
                     text={country}
@@ -197,6 +195,9 @@ const TopPackageSlider = ({ PackagesData }) => {
                     className="text-center mt-[40px]"
                   />{" "}
                   <Word paragraph={description} />
+                  <Link href={`${locale}/${pack.id}`} className="link">
+                    {t("discover")}
+                  </Link>
                 </SwiperSlide>
               );
             })}
