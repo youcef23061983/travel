@@ -44,26 +44,26 @@ export { generateMetadata };
 //   return [{ id: "1" }, { id: "2" }, { id: "3" }, { id: "4" }];
 // }
 
-export async function generateStaticParams({ params: { locale } }) {
-  try {
-    const packages = await GetallPackages(locale);
+// export async function generateStaticParams({ params: { locale } }) {
+//   try {
+//     const packages = await GetallPackages(locale);
 
-    if (!packages || packages.length === 0) {
-      console.error(`No packages found for locale: ${locale}`);
-      return [];
-    }
+//     if (!packages || packages.length === 0) {
+//       console.error(`No packages found for locale: ${locale}`);
+//       return [];
+//     }
 
-    const packs = packages?.map((pack) => ({
-      id: pack.id.toString(),
-    }));
+//     const packs = packages?.map((pack) => ({
+//       id: pack.id.toString(),
+//     }));
 
-    console.log(`Generated static params:`, packs);
-    return packs;
-  } catch (error) {
-    console.error(`Error in generateStaticParams for locale: ${locale}`, error);
-    return [];
-  }
-}
+//     console.log(`Generated static params:`, packs);
+//     return packs;
+//   } catch (error) {
+//     console.error(`Error in generateStaticParams for locale: ${locale}`, error);
+//     return [];
+//   }
+// }
 export default async function page({ params: { locale, id } }) {
   const pack = await GetsinglePackage(locale, id);
   console.log(pack);
@@ -73,6 +73,9 @@ export default async function page({ params: { locale, id } }) {
       <h1>...Loading</h1>
     </div>
   );
+  if (!BASE_API_URL) {
+    return null;
+  }
 
   return (
     <div
