@@ -1,13 +1,11 @@
-// import React from "react";
-
-import { BASE_API_URL } from "../../utils/Url";
-
 // const GetsinglePackage = async (locale, id) => {
 //   const data = await fetch(
 //     `${process.env.NEXT_PUBLIC_API_URL}/${locale}/api/packages/${id}`
 //   );
 //   return data.json();
 // };
+
+import { BASE_API_URL } from "../../utils/Url";
 
 // export default GetsinglePackage;
 
@@ -21,6 +19,5 @@ export default async function GetsinglePackage(locale, id) {
   //   `${process.env.NEXT_PUBLIC_API_URL}/${locale}/api/packages/${id}`
   // );
   const response = await fetch(`${BASE_API_URL}/${locale}/api/packages/${id}`);
-  const data = await response.json();
-  return data;
+  return response.json();
 }

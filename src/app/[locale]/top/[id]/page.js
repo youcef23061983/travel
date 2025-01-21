@@ -45,11 +45,7 @@ export default async function page({ params: { locale, id } }) {
     </div>
   );
   if (!pack) {
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <h1>Package not found</h1>
-      </div>
-    );
+    return null;
   }
 
   return (
