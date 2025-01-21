@@ -38,32 +38,33 @@ import FrontImage from "@/components/frontPage/FrontImage";
 import DetailSlider from "./DetailSlider";
 import { Suspense } from "react";
 import Detaildata from "./Detaildata";
+import { BASE_API_URL } from "../../../../utils/Url";
 
 export { generateMetadata };
 // export async function generateStaticParams({ params: { locale } }) {
 //   return [{ id: "1" }, { id: "2" }, { id: "3" }, { id: "4" }];
 // }
 
-// export async function generateStaticParams({ params: { locale } }) {
-//   try {
-//     const packages = await GetallPackages(locale);
+export async function generateStaticParams({ params: { locale } }) {
+  try {
+    const packages = await GetallPackages(locale);
 
-//     if (!packages || packages.length === 0) {
-//       console.error(`No packages found for locale: ${locale}`);
-//       return [];
-//     }
+    if (!packages || packages.length === 0) {
+      console.error(`No packages found for locale: ${locale}`);
+      return [];
+    }
 
-//     const packs = packages?.map((pack) => ({
-//       id: pack.id.toString(),
-//     }));
+    const packs = packages?.map((pack) => ({
+      id: pack.id.toString(),
+    }));
 
-//     console.log(`Generated static params:`, packs);
-//     return packs;
-//   } catch (error) {
-//     console.error(`Error in generateStaticParams for locale: ${locale}`, error);
-//     return [];
-//   }
-// }
+    console.log(`Generated static params:`, packs);
+    return packs;
+  } catch (error) {
+    console.error(`Error in generateStaticParams for locale: ${locale}`, error);
+    return [];
+  }
+}
 export default async function page({ params: { locale, id } }) {
   const pack = await GetsinglePackage(locale, id);
   console.log(pack);
@@ -91,9 +92,9 @@ export default async function page({ params: { locale, id } }) {
         header2={"imgTitle"}
         translateName={"Detail"}
       />
-      {/* <Suspense fallback={detaildataLoading}> */}
-      <Detaildata pack={pack} />
-      {/* </Suspense> */}
+      <Suspense fallback={detaildataLoading}>
+        <Detaildata pack={pack} />
+      </Suspense>
       <PackageDetail locale={locale} />
 
       <DetailSlider />

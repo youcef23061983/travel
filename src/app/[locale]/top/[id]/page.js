@@ -6,28 +6,37 @@ import FrontImage from "@/components/frontPage/FrontImage";
 import DetailSlider from "./DetailSlider";
 import { Suspense } from "react";
 import Detaildata from "./Detaildata";
+import { BASE_API_URL } from "../../../../../utils/Url";
 
 export { generateMetadata };
 // export async function generateStaticParams({ params: { locale } }) {
 //   return [{ id: "1" }, { id: "2" }, { id: "3" }, { id: "4" }];
 // }
 
-// export async function generateStaticParams({ params: { locale } }) {
-//   try {
-//     const packages = await GetallPackages(locale);
+export async function generateStaticParams({ params: { locale } }) {
+  try {
+    const packages = await GetallPackages(locale);
 
-//     const packs = packages?.map((pack) => ({
-//       id: pack.id.toString(),
-//     }));
+    if (!packages || packages.length === 0) {
+      console.error("No packages found");
+      return [];
+    }
 
-//     console.log(`Generated static params:`, packs);
-//     return packs;
-//   } catch (error) {
-//     console.error(`Error in generateStaticParams for locale: ${locale}`, error);
-//     return [];
-//   }
-// }
+    const packs = packages.map((pack) => ({
+      id: pack.id.toString(),
+    }));
+
+    console.log(`Generated static params:`, packs);
+    return packs;
+  } catch (error) {
+    console.error(`Error in generateStaticParams for locale: ${locale}`, error);
+    return [];
+  }
+}
 export default async function page({ params: { locale, id } }) {
+  if (!BASE_API_URL) {
+    return null;
+  }
   const pack = await GetsinglePackage(locale, id);
   const detaildataLoading = (
     <div className="flex items-center justify-center h-screen">
@@ -42,9 +51,7 @@ export default async function page({ params: { locale, id } }) {
       </div>
     );
   }
-  if (!BASE_API_URL) {
-    return null;
-  }
+
   return (
     <div
       style={{

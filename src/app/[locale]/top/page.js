@@ -5,10 +5,10 @@ import FrontImage from "@/components/frontPage/FrontImage";
 import { BASE_API_URL } from "../../../../utils/Url";
 
 const page = async ({ params: { locale } }) => {
-  const PackagesData = await GetallPackages(locale);
   if (!BASE_API_URL) {
     return null;
   }
+  const PackagesData = await GetallPackages(locale);
 
   return (
     <div>
