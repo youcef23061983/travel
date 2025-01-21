@@ -27,7 +27,7 @@ export async function GET(request, { params }) {
 
   try {
     // Find the package with the matching ID
-    const pack = data.find((item) => item.id === id);
+    const pack = data.find((item) => item.id === parseInt(id));
 
     // If the package doesn't exist, return a 404 error
     if (!pack) {
