@@ -29,9 +29,6 @@ export async function GET(request, { params }) {
     return new Response(JSON.stringify(pack));
   } catch (error) {
     console.error("Error fetching package details:", error);
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "yes server error" }, { status: 500 });
   }
 }
