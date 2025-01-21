@@ -18,6 +18,7 @@ import AnimatedText from "../AnimatedText";
 import AnimatedTextArabic from "../AnimatedTextArabic";
 // import { PackagesData } from "../PackagesData";
 import Word from "@/components/Word";
+import { Link } from "@/i18n/routing";
 const PopularPackagesSlider = ({ PackagesData }) => {
   // const PopularPackagesSlider = () => {
   const [textSlider, setTextSlider] = useState(null);
@@ -69,6 +70,9 @@ const PopularPackagesSlider = ({ PackagesData }) => {
                     className="text-center mt-[40px]"
                   />{" "}
                   <Word paragraph={description} />
+                  <Link href={`${locale}/${pack.id}`} className="slidelink">
+                    {t("discover")}
+                  </Link>
                 </SwiperSlide>
               );
             })}

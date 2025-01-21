@@ -61,15 +61,49 @@
 // }
 
 // export default FrontImgHead;
+// import { useTranslations } from "next-intl";
+// import { useLocale } from "next-intl";
+
+// import AnimatedText from "../AnimatedText";
+// import AnimatedTextArabic from "../AnimatedTextArabic";
+
+// function FrontImgHead() {
+//   const locale = useLocale();
+//   const t = useTranslations("HomePage");
+
+//   const AnimatedComponent = locale === "en" ? AnimatedText : AnimatedTextArabic;
+
+//   return (
+//     <div>
+//       <AnimatedComponent
+//         once
+//         text={t("imgHeader")}
+//         el="h2"
+//         className="text-center font-extrabold mb-[30px]"
+//       />
+
+//       <AnimatedComponent
+//         once
+//         el="h3"
+//         text={t("imgTitle")}
+//         repeatDelay={10000}
+//         className="text-center font-extrabold"
+//       />
+//     </div>
+//   );
+// }
+
+// export default FrontImgHead;
+
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
 
 import AnimatedText from "../AnimatedText";
 import AnimatedTextArabic from "../AnimatedTextArabic";
 
-function FrontImgHead() {
+function FrontImgHead({ translateName, header1, header2 }) {
   const locale = useLocale();
-  const t = useTranslations("HomePage");
+  const t = useTranslations(translateName);
 
   const AnimatedComponent = locale === "en" ? AnimatedText : AnimatedTextArabic;
 
@@ -77,7 +111,7 @@ function FrontImgHead() {
     <div>
       <AnimatedComponent
         once
-        text={t("imgHeader")}
+        text={t(`${header1}`)}
         el="h2"
         className="text-center font-extrabold mb-[30px]"
       />
@@ -85,7 +119,7 @@ function FrontImgHead() {
       <AnimatedComponent
         once
         el="h3"
-        text={t("imgTitle")}
+        text={t(`${header2}`)}
         repeatDelay={10000}
         className="text-center font-extrabold"
       />

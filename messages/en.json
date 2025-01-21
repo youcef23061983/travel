@@ -613,7 +613,9 @@
     }
   },
   "Detail": {
-    "title": "package"
+    "title": "package",
+    "imgHeader": "Discover the Details of Your Dream Getaway",
+    "imgTitle": "Tourist Package Details"
   },
   "Navigation": {
     "home": "Home",
@@ -636,7 +638,7 @@
   },
   "Offer": {
     "title": "gropu offer",
-    "country": "mekka",
-    "period": "10 days"
+    "imgHeader": "Explore Our Exclusive Tourist Packages",
+    "imgTitle": "Your Next Adventure Awaits"
   }
 }

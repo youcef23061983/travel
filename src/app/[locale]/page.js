@@ -44,6 +44,7 @@ import Testimonials from "@/components/frontPage/Testimonials";
 import TopPackageSlider from "@/components/frontPage/TopPackageSlider";
 import PopularPackagesSlider from "@/components/frontPage/PopularPackagesSlider";
 import GetallPackages from "@/components/GetallPackages";
+import { BASE_API_URL } from "../../../utils/Url";
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
@@ -56,10 +57,18 @@ export async function generateMetadata({ params: { locale } }) {
 
 const HomePage = async ({ params: { locale } }) => {
   const PackagesData = await GetallPackages(locale);
+  if (!BASE_API_URL) {
+    return null;
+  }
 
   return (
     <div>
-      <FrontImage />
+      <FrontImage
+        image={"/homepage/petra.jpg"}
+        header1={"imgHeader"}
+        header2={"imgTitle"}
+        translateName={"HomePage"}
+      />
       <TextScroll />
       <PartnersImages />
       <TextScroll2 />

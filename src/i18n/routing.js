@@ -33,6 +33,10 @@ export const routing = defineRouting({
       ar: "/الأسئلة الشائعة",
       en: "/FAQ",
     },
+    "/top": {
+      ar: "/الافضل",
+      en: "/top",
+    },
   },
 });
 

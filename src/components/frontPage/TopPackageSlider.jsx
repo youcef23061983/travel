@@ -195,7 +195,7 @@ const TopPackageSlider = ({ PackagesData }) => {
                     className="text-center mt-[40px]"
                   />{" "}
                   <Word paragraph={description} />
-                  <Link href={`${locale}/${pack.id}`} className="link">
+                  <Link href={`${locale}/${pack.id}`} className="slidelink">
                     {t("discover")}
                   </Link>
                 </SwiperSlide>
