@@ -16,9 +16,9 @@ function delay(ms) {
 }
 
 export default async function GetsinglePackage(locale, id) {
-  if (!BASE_API_URL) {
-    return null;
-  }
+  // if (!BASE_API_URL) {
+  //   return null;
+  // }
   await delay(1000);
   // const response = await fetch(
   //   `${process.env.NEXT_PUBLIC_API_URL}/${locale}/api/packages/${id}`

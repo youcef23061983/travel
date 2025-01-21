@@ -11,7 +11,7 @@ const Detaildata = ({ pack }) => {
         <p>Price: {pack.price}</p>
         <p>reviews : {pack.review}</p>
         <p>Price: {pack.journeyDays}</p>
-        {daysimages.map((im, i) => {
+        {daysimages?.map((im, i) => {
           return <Image key={i} width={40} height={40} src={im} alt="" />;
         })}
       </div>
