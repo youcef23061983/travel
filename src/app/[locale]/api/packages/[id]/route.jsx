@@ -26,7 +26,7 @@ export async function GET(request, { params }) {
   try {
     const pack = data.find((item) => item.id === parseInt(id));
 
-    return NextResponse.json(pack);
+    return new Response(JSON.stringify(pack));
   } catch (error) {
     console.error("Error fetching package details:", error);
     return NextResponse.json(

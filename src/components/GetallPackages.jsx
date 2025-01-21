@@ -1,9 +1,6 @@
 import { BASE_API_URL } from "../../utils/Url";
 
 const GetallPackages = async (locale) => {
-  if (!BASE_API_URL) {
-    return null;
-  }
   // const response = await fetch(
   //   `${process.env.NEXT_PUBLIC_API_URL}/${locale}/api/packages`
   // );

@@ -56,10 +56,10 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 const HomePage = async ({ params: { locale } }) => {
-  const PackagesData = await GetallPackages(locale);
   if (!BASE_API_URL) {
     return null;
   }
+  const PackagesData = await GetallPackages(locale);
 
   return (
     <div>
