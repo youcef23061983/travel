@@ -59,6 +59,7 @@ const HomePage = async ({ params: { locale } }) => {
   if (!BASE_API_URL) {
     return null;
   }
+
   const PackagesData = await GetallPackages(locale);
 
   return (

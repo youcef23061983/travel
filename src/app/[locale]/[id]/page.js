@@ -65,7 +65,7 @@ export async function generateStaticParams({ params: { locale } }) {
     return [];
   }
 }
-export default async function page({ params: { locale, id } }) {
+const page = async ({ params: { locale, id } }) => {
   const pack = await GetsinglePackage(locale, id);
   console.log(pack);
   const detaildataLoading = (
@@ -100,4 +100,5 @@ export default async function page({ params: { locale, id } }) {
       <DetailSlider />
     </div>
   );
-}
+};
+export default page;

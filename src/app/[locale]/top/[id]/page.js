@@ -33,7 +33,7 @@ export async function generateStaticParams({ params: { locale } }) {
     return [];
   }
 }
-export default async function page({ params: { locale, id } }) {
+const page = async ({ params: { locale, id } }) => {
   if (!BASE_API_URL) {
     return null;
   }
@@ -70,4 +70,5 @@ export default async function page({ params: { locale, id } }) {
       <DetailSlider />
     </div>
   );
-}
+};
+export default page;
