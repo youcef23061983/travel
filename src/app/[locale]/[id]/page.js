@@ -91,9 +91,9 @@ export default async function page({ params: { locale, id } }) {
         header2={"imgTitle"}
         translateName={"Detail"}
       />
-      <Suspense fallback={detaildataLoading}>
-        <Detaildata pack={pack} />
-      </Suspense>
+      {/* <Suspense fallback={detaildataLoading}> */}
+      <Detaildata pack={pack} />
+      {/* </Suspense> */}
       <PackageDetail locale={locale} />
 
       <DetailSlider />
