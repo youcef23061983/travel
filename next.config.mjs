@@ -9,10 +9,10 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // reactStrictMode: true,
-  // experimental: {
-  //   forceSwcTransforms: true,
-  // },
+  reactStrictMode: true,
+  experimental: {
+    forceSwcTransforms: true,
+  },
   images: {
     remotePatterns: [
       {
