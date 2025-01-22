@@ -59,6 +59,7 @@ export async function generateStaticParams({ params: { locale } }) {
     }));
 
     console.log(`Generated static params:`, packs);
+
     return packs;
   } catch (error) {
     console.error(`Error in generateStaticParams for locale: ${locale}`, error);
@@ -67,13 +68,16 @@ export async function generateStaticParams({ params: { locale } }) {
 }
 const page = async ({ params: { locale, id } }) => {
   const pack = await GetsinglePackage(locale, id);
-  console.log(pack);
+
   const detaildataLoading = (
     <div className="flex items-center justify-center h-screen">
       <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-orange-400"></div>
       <h1>...Loading</h1>
     </div>
   );
+  if (!pack) {
+    return null;
+  }
   if (!BASE_API_URL) {
     return null;
   }

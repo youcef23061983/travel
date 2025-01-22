@@ -639,6 +639,8 @@
   "Offer": {
     "title": "gropu offer",
     "imgHeader": "Explore Our Exclusive Tourist Packages",
-    "imgTitle": "Your Next Adventure Awaits"
+    "imgTitle": "Your Next Adventure Awaits",
+    "name": "special offer",
+    "price": "200"
   }
 }

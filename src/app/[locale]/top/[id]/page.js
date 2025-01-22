@@ -44,6 +44,7 @@ const page = async ({ params: { locale, id } }) => {
   if (!pack) {
     return null;
   }
+  console.log(pack);
 
   return (
     <div

@@ -14,8 +14,8 @@ const page = () => {
 
   return (
     <div>
-      <h1>{t("country")}</h1>
-      <h1>{t("period")}</h1>
+      <h1>{t("name")}</h1>
+      <h1>{t("price")}</h1>
     </div>
   );
 };

@@ -4,6 +4,9 @@ import Image from "next/image";
 const Detaildata = ({ pack }) => {
   const t = useTranslations("HomePage");
   const daysimages = pack ? pack?.daysImages : [];
+  if (!pack) {
+    return null;
+  }
   return (
     <div>
       <div>
