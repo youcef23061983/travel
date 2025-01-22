@@ -20,14 +20,8 @@ function delay(ms) {
 
 export default async function GetsinglePackage(locale, id) {
   const response = await fetch(`${BASE_API_URL}/${locale}/api/packages/${id}`);
-  const rawResponse = await response.text();
-  console.log("Raw API Response:", rawResponse);
-
-  try {
-    const json = JSON.parse(rawResponse);
-    return json;
-  } catch (error) {
-    console.error("Error parsing JSON:", error, "Raw response:", rawResponse);
-    throw error;
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
   }
+  return response.json();
 }
