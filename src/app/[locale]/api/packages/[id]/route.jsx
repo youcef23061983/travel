@@ -6,8 +6,8 @@ export async function GET(request, { params }) {
 
   try {
     const product = data.find((pro) => pro.id === parent(id));
-    // return new Response(JSON.stringify(product));
-    return NextResponse.json(product);
+    return new Response(JSON.stringify(product));
+    // return NextResponse.json(product);
   } catch (error) {
     console.error("Error fetching package details:", error);
     return NextResponse.json(
