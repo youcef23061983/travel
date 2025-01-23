@@ -32,6 +32,14 @@
     "popularHeader": "Popular destinations for you",
     "reserve": "© 2025 Petra Tourist Agency. All rights reserved.",
     "discover": "discover more",
+    "detail": "package detail",
+    "country": "country",
+    "city": "city",
+    "journeyDays": "journey days",
+    "price": "price",
+    "review": "client review",
+    "expertJudgement": "expert judgement",
+    "hotelName": "hotel",
 
     "packages": {
       "package1": {

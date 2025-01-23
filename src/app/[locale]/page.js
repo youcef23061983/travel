@@ -55,7 +55,7 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-const HomePage = async ({ params: { locale } }) => {
+const page = async ({ params: { locale } }) => {
   if (!BASE_API_URL) {
     return null;
   }
@@ -63,7 +63,7 @@ const HomePage = async ({ params: { locale } }) => {
   const PackagesData = await GetallPackages(locale);
 
   return (
-    <div>
+    <div style={{ marginBottom: "3rem" }}>
       <FrontImage
         image={"/homepage/petra.jpg"}
         header1={"imgHeader"}
@@ -82,4 +82,4 @@ const HomePage = async ({ params: { locale } }) => {
   );
 };
 
-export default HomePage;
+export default page;
