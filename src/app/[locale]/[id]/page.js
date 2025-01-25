@@ -40,42 +40,39 @@ import { BASE_API_URL } from "../../../../utils/Url";
 import DetailInfo from "./DetailInfo";
 
 export { generateMetadata };
-export async function generateStaticParams({ params: { locale } }) {
-  return [
-    { id: "1" },
-    { id: "2" },
-    { id: "3" },
-    { id: "4" },
+export async function generateStaticParams() {
+  try {
+    const locales = ["en", "ar"]; // Define your locales here
 
-    { id: "5" },
-    { id: "6" },
-    { id: "7" },
-    { id: "8" },
-    { id: "9" },
-    { id: "10" },
+    // Fetch all package IDs for each locale from your API or data source
+    const params = await Promise.all(
+      locales.map(async (locale) => {
+        const response = await fetch(`${BASE_API_URL}/${locale}/api/packages`);
+        if (!response.ok) {
+          throw new Error(
+            `Failed to fetch packages for locale ${locale}: ${response.status} ${response.statusText}`
+          );
+        }
+        const packages = await response.json();
 
-    { id: "11" },
-    { id: "12" },
-    { id: "13" },
-    { id: "14" },
-  ];
+        // Generate an array of params objects for each locale
+        return packages.map((pack) => ({
+          locale,
+          id: pack.id,
+        }));
+      })
+    );
+
+    // Flatten the array of arrays
+    const flattenedParams = params.flat();
+
+    console.log("Generated static params:", flattenedParams);
+    return flattenedParams;
+  } catch (error) {
+    console.error("Error in generateStaticParams:", error);
+    throw error;
+  }
 }
-
-// export async function generateStaticParams({ params: { locale, id } }) {
-//   const response = await fetch(`${BASE_API_URL}/${locale}/api/packages`);
-//   if (!response.ok) {
-//     throw new Error(
-//       `Failed to fetch packages for locale ${locale}: ${response.status} ${response.statusText}`
-//     );
-//   }
-//   const packages = await response.json();
-
-//   // Generate an array of params objects for each locale
-//   return packages.map((pack) => ({
-//     locale,
-//     id: pack.id,
-//   }));
-// }
 
 const page = async ({ params: { locale, id } }) => {
   if (!BASE_API_URL) {
