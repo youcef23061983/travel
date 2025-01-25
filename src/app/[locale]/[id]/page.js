@@ -40,9 +40,9 @@ import { BASE_API_URL } from "../../../../utils/Url";
 import DetailInfo from "./DetailInfo";
 
 export { generateMetadata };
-export async function generateStaticParams({ params: { locale } }) {
-  return [{ id: "1" }, { id: "2" }, { id: "3" }, { id: "4" }];
-}
+// export async function generateStaticParams({ params: { locale } }) {
+//   return [{ id: "1" }, { id: "2" }, { id: "3" }, { id: "4" }];
+// }
 
 export async function generateStaticParams({ params: { locale } }) {
   try {
