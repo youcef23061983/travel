@@ -46,23 +46,32 @@ export { generateMetadata };
 
 export async function generateStaticParams() {
   try {
-    // Fetch all package IDs from your API or data source
-    const response = await fetch(`${BASE_API_URL}/api/packages`);
-    if (!response.ok) {
-      throw new Error(
-        `Failed to fetch packages: ${response.status} ${response.statusText}`
-      );
-    }
-    const packages = await response.json();
+    const locales = ["en", "ar"]; // Define your locales here
 
-    // Generate an array of params objects
-    const params = packages.map((pack) => ({
-      locale: "en", // or 'ar' if you have multiple locales
-      id: pack.id,
-    }));
+    // Fetch all package IDs for each locale from your API or data source
+    const params = await Promise.all(
+      locales.map(async (locale) => {
+        const response = await fetch(`${BASE_API_URL}/${locale}/api/packages`);
+        if (!response.ok) {
+          throw new Error(
+            `Failed to fetch packages for locale ${locale}: ${response.status} ${response.statusText}`
+          );
+        }
+        const packages = await response.json();
 
-    console.log("Generated static params:", params);
-    return params;
+        // Generate an array of params objects for each locale
+        return packages.map((pack) => ({
+          locale,
+          id: pack.id,
+        }));
+      })
+    );
+
+    // Flatten the array of arrays
+    const flattenedParams = params.flat();
+
+    console.log("Generated static params:", flattenedParams);
+    return flattenedParams;
   } catch (error) {
     console.error("Error in generateStaticParams:", error);
     throw error;
