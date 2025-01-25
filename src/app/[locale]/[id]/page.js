@@ -1,35 +1,3 @@
-// import GetallPackages from "@/components/GetallPackages";
-// import GetsinglePackage from "@/components/GetsinglePackage";
-// import { useTranslations } from "next-intl";
-// import { getMessages } from "next-intl/server";
-
-// export async function generateMetadata({ params: { locale, id } }) {
-//   const messages = await getMessages({ locale });
-//   const detailMessages = messages["Detail"];
-//   const t = useTranslations(`package${id}`);
-
-//   return {
-//     title: detailMessages
-//       ? `${detailMessages.title} ${t("city")}`
-//       : "Default Title",
-//   };
-// }
-// export async function generateStaticParams() {
-//   const packages = await GetallPackages();
-//   return packages.map((pack) => ({
-//     id: pack.id,
-//   }));
-// }
-
-// export default async function Page({ params: { locale, id } }) {
-//   const pack = await GetsinglePackage(locale, id);
-
-//   return (
-//     <div>
-//       <h1>{pack.price}</h1>
-//     </div>
-//   );
-// }
 import GetallPackages from "@/components/GetallPackages";
 import GetsinglePackage from "@/components/GetsinglePackage";
 import { generateMetadata } from "./generateMetadata";
@@ -42,38 +10,27 @@ import DetailInfo from "./DetailInfo";
 export { generateMetadata };
 export async function generateStaticParams() {
   try {
-    const locales = ["en", "ar"]; // Define your locales here
+    if (!BASE_API_URL) {
+      return [];
+    }
 
-    // Fetch all package IDs for each locale from your API or data source
-    const params = await Promise.all(
-      locales.map(async (locale) => {
-        const response = await fetch(`${BASE_API_URL}/${locale}/api/packages`);
-        if (!response.ok) {
-          throw new Error(
-            `Failed to fetch packages for locale ${locale}: ${response.status} ${response.statusText}`
-          );
-        }
-        const packages = await response.json();
+    const packages = await GetallPackages();
+    if (!packages) {
+      return [];
+    }
 
-        // Generate an array of params objects for each locale
-        return packages.map((pack) => ({
-          locale,
-          id: pack.id,
-        }));
-      })
+    const locales = ["en", "ar"];
+    return packages.flatMap((pack) =>
+      locales.map((locale) => ({
+        locale,
+        id: pack.id.toString(),
+      }))
     );
-
-    // Flatten the array of arrays
-    const flattenedParams = params.flat();
-
-    console.log("Generated static params:", flattenedParams);
-    return flattenedParams;
   } catch (error) {
-    console.error("Error in generateStaticParams:", error);
-    throw error;
+    console.error("Error generating static params:", error);
+    return [];
   }
 }
-
 const page = async ({ params: { locale, id } }) => {
   if (!BASE_API_URL) {
     return null;
