@@ -1,13 +1,4 @@
-// const GetsinglePackage = async (locale, id) => {
-//   const data = await fetch(
-//     `${process.env.NEXT_PUBLIC_API_URL}/${locale}/api/packages/${id}`
-//   );
-//   return data.json();
-// };
-
 import { BASE_API_URL } from "../../utils/Url";
-
-// export default GetsinglePackage;
 
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
