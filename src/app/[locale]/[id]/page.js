@@ -44,21 +44,21 @@ export { generateMetadata };
 //   return [{ id: "1" }, { id: "2" }, { id: "3" }, { id: "4" }];
 // }
 
-export async function generateStaticParams({ params: { locale, id } }) {
-  const response = await fetch(`${BASE_API_URL}/${locale}/api/packages`);
-  if (!response.ok) {
-    throw new Error(
-      `Failed to fetch packages for locale ${locale}: ${response.status} ${response.statusText}`
-    );
-  }
-  const packages = await response.json();
+// export async function generateStaticParams({ params: { locale, id } }) {
+//   const response = await fetch(`${BASE_API_URL}/${locale}/api/packages`);
+//   if (!response.ok) {
+//     throw new Error(
+//       `Failed to fetch packages for locale ${locale}: ${response.status} ${response.statusText}`
+//     );
+//   }
+//   const packages = await response.json();
 
-  // Generate an array of params objects for each locale
-  return packages.map((pack) => ({
-    locale,
-    id: pack.id,
-  }));
-}
+//   // Generate an array of params objects for each locale
+//   return packages.map((pack) => ({
+//     locale,
+//     id: pack.id,
+//   }));
+// }
 
 const page = async ({ params: { locale, id } }) => {
   if (!BASE_API_URL) {
