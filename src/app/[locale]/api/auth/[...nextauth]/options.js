@@ -112,13 +112,7 @@ export const options = {
       },
     }),
   ],
-  // pages: {
-  //   signIn: "/[locale]/auth/signin",
-  //   signOut: "/[locale]/auth/signout",
-  //   error: "/[locale]/auth/error", // Error code passed in query string as ?error=
-  //   verifyRequest: "/[locale]/auth/verify-request", // (used for check email message)
-  //   newUser: "/[locale]/auth/new-user", // New users will be directed here on first sign in (leave the property out if not of interest)
-  // },
+
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user }) {
