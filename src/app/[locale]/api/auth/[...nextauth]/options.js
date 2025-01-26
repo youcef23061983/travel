@@ -63,10 +63,11 @@
 //   },
 // };
 
+import NextAuth from "next-auth";
 import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
-import CredentialsProvider from "next-auth/providers/credentials";
 import FacebookProvider from "next-auth/providers/facebook";
+import CredentialsProvider from "next-auth/providers/credentials";
 
 export const options = {
   providers: [
@@ -85,11 +86,7 @@ export const options = {
     CredentialsProvider({
       name: "Credentials",
       credentials: {
-        email: {
-          label: "email:",
-          type: "text",
-          placeholder: "your-email",
-        },
+        email: { label: "email:", type: "text", placeholder: "your-email" },
         password: {
           label: "password:",
           type: "password",
@@ -115,15 +112,24 @@ export const options = {
       },
     }),
   ],
-  secret: process.env.NEXTAUTH_SECRET, // Add this line
+  // pages: {
+  //   signIn: "/[locale]/auth/signin",
+  //   signOut: "/[locale]/auth/signout",
+  //   error: "/[locale]/auth/error", // Error code passed in query string as ?error=
+  //   verifyRequest: "/[locale]/auth/verify-request", // (used for check email message)
+  //   newUser: "/[locale]/auth/new-user", // New users will be directed here on first sign in (leave the property out if not of interest)
+  // },
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user }) {
       if (user) token.role = user.role;
       return token;
     },
     async session({ session, token }) {
-      if (session?.user) session.user.role = token.role;
+      session.user.role = token.role;
       return session;
     },
   },
 };
+
+export default NextAuth(options);

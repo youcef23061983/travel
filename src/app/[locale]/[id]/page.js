@@ -8,29 +8,36 @@ import { BASE_API_URL } from "../../../../utils/Url";
 import DetailInfo from "./DetailInfo";
 
 export { generateMetadata };
-export async function generateStaticParams() {
-  try {
-    if (!BASE_API_URL) {
-      return [];
-    }
+// export async function generateStaticParams() {
+//   try {
+//     if (!BASE_API_URL) {
+//       console.log("No BASE_API_URL found");
+//       return [];
+//     }
 
-    const packages = await GetallPackages();
-    if (!packages) {
-      return [];
-    }
+//     const packages = await GetallPackages();
+//     console.log("Fetched packages:", packages);
 
-    const locales = ["en", "ar"];
-    return packages.flatMap((pack) =>
-      locales.map((locale) => ({
-        locale,
-        id: pack.id.toString(),
-      }))
-    );
-  } catch (error) {
-    console.error("Error generating static params:", error);
-    return [];
-  }
-}
+//     if (!packages || !Array.isArray(packages)) {
+//       console.log("No packages found or invalid response");
+//       return [];
+//     }
+
+//     const params = [];
+//     for (const pack of packages) {
+//       params.push(
+//         { locale: "en", id: String(pack.id) },
+//         { locale: "ar", id: String(pack.id) }
+//       );
+//     }
+
+//     console.log("Generated params:", params);
+//     return params;
+//   } catch (error) {
+//     console.error("Error generating static params:", error);
+//     return [];
+//   }
+// }
 const page = async ({ params: { locale, id } }) => {
   if (!BASE_API_URL) {
     return null;

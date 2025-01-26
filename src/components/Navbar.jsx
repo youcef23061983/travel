@@ -2,7 +2,7 @@
 
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/routing";
 import { FaX } from "react-icons/fa6";
 import { FaAlignJustify } from "react-icons/fa";
@@ -15,6 +15,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const navCenter = useRef(null);
   const pathname = usePathname();
+  const locale = useLocale();
 
   const { data: session } = useSession();
 
@@ -110,12 +111,15 @@ const Navbar = () => {
               {session?.user?.name?.slice(0, 6)}...
             </span>
 
-            <Link className="link" href="/api/auth/signout?callbackUrl=/">
+            <Link
+              className="link"
+              href={`/api/auth/signout?callbackUrl=/${locale}`}
+            >
               {t("navbar.logout")}
             </Link>
           </div>
         ) : (
-          <Link className="link" href="/api/auth/signin">
+          <Link className="link" href={`/api/auth/signin/${locale}`}>
             {t("navbar.login")}
           </Link>
         )}
