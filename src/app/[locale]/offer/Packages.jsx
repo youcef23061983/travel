@@ -4,7 +4,6 @@ import Package from "./Package";
 
 const Packages = ({ PackagesData }) => {
   const t = useTranslations("Offer");
-  console.log(Packages);
 
   return (
     <div>

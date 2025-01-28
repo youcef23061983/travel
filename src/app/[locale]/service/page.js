@@ -15,7 +15,7 @@ export async function generateMetadata({ params: { locale } }) {
 }
 const page = () => {
   const t = useTranslations("Service");
-  const phoneNumber = "+213698422907"; // Replace with your phone number
+  const phoneNumber = "+213698422907";
   const message = "Hello! I would like to know more about your services.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message

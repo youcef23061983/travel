@@ -631,13 +631,16 @@
   },
   "About": {
     "title": "we are the best",
-    "booking": "our company",
-    "p": "We are a travel agency dedicated to providing unforgettable travel experiences. We offer a wide range of tours to suit all preferences, from exploring historical and cultural landmarks to adventures in breathtaking natural landscapes. Our experienced team ensures that your journey is comfortable and filled with moments you'll cherish forever. Let us take you on a unique journey to the most beautiful destinations around the world."
+    "imgHeader": "Your Gateway to Unforgettable Adventures",
+    "imgTitle": "Welcome to Our Travel Agency",
+    "paragraph": "Founded in 1989, our travel agency has been dedicated to providing exceptional travel experiences to clients around the world. Over the years, we have built strong partnerships with 22 leading airlines, 73 renowned hotels, and offer more than 30 unique travel packages to cater to a wide range of preferences and budgets. Whether you're seeking a relaxing beach escape, an adventurous mountain trek, or a cultural exploration, we have something for everyone.Our commitment to excellence and customer satisfaction has earned us the trust of over 14 million satisfied clients. We pride ourselves on delivering personalized services, ensuring that each trip is seamless and memorable. With a team of experienced travel experts, we are here to help you plan and book your next dream vacation. Let us take you on a journey of a lifetime!"
   },
   "Contact": {
     "title": "contct-us",
-    "email": " this is our email",
-    "full name": " youcef hank"
+    "imgHeader": "We’re Here to Help",
+    "imgTitle": "Get in Touch",
+    "paragraph": "Whether you have questions about our travel packages, need assistance planning your dream vacation, or want to provide feedback, our team is here for you. Reach out to us via phone, email, or by visiting our office. We strive to respond to all inquiries promptly to ensure you receive the best service possible. Let us help make your travel experience seamless and unforgettable.",
+    "WhatsApp": " Chat with us on WhatsApp"
   },
   "Service": {
     "title": "our-service",
@@ -647,12 +650,52 @@
     "imgTitle": "International Driving License, Car Rental, & Flight Booking Services",
     "paragraph": "Discover a seamless travel experience with our comprehensive services. Whether you need an International Driving License to drive abroad, a reliable car rental for your adventures, or assistance in booking your next flight, we are here to make it happen. For inquiries or to book a service, call us , reach us on WhatsApp below, or visit our Contact page. Let us help you make your journey unforgettable!",
     "phoneNumber": "phone number",
-    "WhatsApp": " Chat with us on WhatsApp"
+    "WhatsApp": " Chat with us on WhatsApp",
+    "selectDate": "Select Date",
+    "flightscountry": "Flights Country",
+    "price": "Price",
+    "filter": "Filter Flights",
+    "destination": "Destination",
+    "date": "Date",
+    "flights": {
+      "flight1": { "id": 1, "country": "Casa Blanca" },
+      "flight2": { "id": 2, "country": "Algiers" },
+      "flight3": { "id": 3, "country": "Jadah" },
+      "flight4": { "id": 4, "country": "Dubai" },
+      "flight5": { "id": 5, "country": "Istanbul" },
+      "flight6": { "id": 6, "country": "Dawha" },
+      "flight7": { "id": 7, "country": "Cairo" },
+      "flight8": { "id": 8, "country": "Muskat" },
+      "flight9": { "id": 9, "country": "Kuala Lumpur" },
+      "flight10": { "id": 10, "country": "Jakarta" },
+      "flight11": { "id": 11, "country": "Tehran" },
+      "flight12": { "id": 12, "country": "Paris" },
+      "flight13": { "id": 13, "country": "London" },
+      "flight14": { "id": 14, "country": "Berlin" },
+      "flight15": { "id": 15, "country": "Madrid" },
+      "flight16": { "id": 16, "country": "Rome" },
+      "flight17": { "id": 17, "country": "Vienna" },
+      "flight18": { "id": 18, "country": "Amsterdam" },
+      "flight19": { "id": 19, "country": "Brussels" },
+      "flight20": { "id": 20, "country": "Lisbon" },
+      "flight21": { "id": 21, "country": "Dubai" },
+      "flight22": { "id": 22, "country": "Dubai" },
+      "flight23": { "id": 23, "country": "Paris" },
+      "flight24": { "id": 24, "country": "Paris" },
+      "flight25": { "id": 25, "country": "London" },
+      "flight26": { "id": 26, "country": "London" }
+    }
   },
   "Offer": {
     "title": "gropu offer",
     "imgHeader": "Explore Our Exclusive Tourist Packages",
     "imgTitle": "Your Next Adventure Awaits",
     "paragraph": "Travel is more meaningful when shared with friends, family, or colleagues. With our exclusive group packages, you can explore the world together while enjoying unparalleled benefits. From ancient landmarks and breathtaking natural wonders to luxurious resorts and vibrant cityscapes, our itineraries are crafted to cater to your group’s unique interests. Enjoy discounted rates, private tours, and dedicated travel coordinators to ensure every detail is seamless. Whether you’re planning a reunion, a corporate retreat, or a special celebration, our group packages promise unforgettable experiences filled with joy, connection, and adventure. Let us take care of the logistics while you focus on making memories that last a lifetime."
+  },
+  "Faq": {
+    "title": "FAQ",
+    "imgHeader": "Find Answers to Your Travel Questions",
+    "imgTitle": "Frequently Asked Questions",
+    "paragraph": "We understand that planning a trip can come with many questions. That’s why we’ve compiled a list of the most frequently asked questions to help you. From booking procedures and payment options to travel policies and package details, you’ll find clear and helpful answers here. If you don’t see your question listed, feel free to contact us directly. Our team is always ready to assist you in making your travel plans as smooth as possible."
   }
 }

@@ -1,30 +1,43 @@
 "use client";
 import React, { useEffect, useState, useCallback } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const FlightSearchPage = () => {
-  const flights = [
-    { id: 1, country: "Casa Blanca", price: 200, date: "2025-12-06" },
-    { id: 2, country: "Algiers", price: 300, date: "2025-12-07" },
-    { id: 3, country: "jadah", price: 400, date: "2025-12-08" },
-    { id: 4, country: "Dubai", price: 500, date: "2025-12-09" },
-    { id: 5, country: "istanbul", price: 600, date: "2025-12-10" },
-    { id: 6, country: "dawha", price: 700, date: "2025-12-11" },
-    { id: 7, country: "cairo", price: 800, date: "2025-12-12" },
-    { id: 8, country: "muskat", price: 900, date: "2025-12-13" },
-    { id: 9, country: "kwala lampur", price: 1000, date: "2025-12-14" },
-    { id: 10, country: "jakarta", price: 1100, date: "2025-12-15" },
-    { id: 11, country: "tahran", price: 1200, date: "2025-12-16" },
-    { id: 12, country: "Paris", price: 1300, date: "2025-01-10" },
-    { id: 13, country: "London", price: 1400, date: "2025-02-15" },
-    { id: 14, country: "Berlin", price: 1500, date: "2025-03-20" },
-    { id: 15, country: "Madrid", price: 1600, date: "2025-04-25" },
-    { id: 16, country: "Rome", price: 1700, date: "2025-05-30" },
-    { id: 17, country: "Vienna", price: 1800, date: "2025-06-05" },
-    { id: 18, country: "Amsterdam", price: 1900, date: "2025-07-10" },
-    { id: 19, country: "Brussels", price: 2000, date: "2025-08-15" },
-    { id: 20, country: "Lisbon", price: 2100, date: "2025-09-20" },
+  const t = useTranslations("Service");
+
+  let flights = [
+    { id: 1, price: 200, date: "2025-12-06" },
+    { id: 2, price: 300, date: "2025-12-07" },
+    { id: 3, price: 400, date: "2025-12-08" },
+    { id: 4, price: 500, date: "2025-12-09" },
+    { id: 5, price: 600, date: "2025-12-10" },
+    { id: 6, price: 700, date: "2025-12-11" },
+    { id: 7, price: 800, date: "2025-12-12" },
+    { id: 8, price: 900, date: "2025-12-13" },
+    { id: 9, price: 1000, date: "2025-12-14" },
+    { id: 10, price: 1100, date: "2025-12-15" },
+    { id: 11, price: 1200, date: "2025-12-16" },
+    { id: 12, price: 1300, date: "2025-01-10" },
+    { id: 13, price: 1400, date: "2025-02-15" },
+    { id: 14, price: 1500, date: "2025-03-20" },
+    { id: 15, price: 1600, date: "2025-04-25" },
+    { id: 16, price: 1700, date: "2025-05-30" },
+    { id: 17, price: 1800, date: "2025-06-05" },
+    { id: 18, price: 1900, date: "2025-07-10" },
+    { id: 19, price: 2000, date: "2025-08-15" },
+    { id: 20, price: 2100, date: "2025-09-20" },
+    { id: 21, price: 550, date: "2025-12-20" },
+    { id: 22, price: 600, date: "2025-12-25" },
+    { id: 23, price: 1350, date: "2025-02-01" },
+    { id: 24, price: 1400, date: "2025-03-05" },
+    { id: 25, price: 1450, date: "2025-04-10" },
+    { id: 26, price: 1500, date: "2025-05-15" },
   ];
+  flights = flights.map((flight) => ({
+    ...flight,
+    country: t(`flights.flight${flight.id}.country`),
+  }));
 
   const initialUserState = {
     country: "all",
@@ -50,10 +63,9 @@ const FlightSearchPage = () => {
     if (user.date !== "") params.set("date", user.date);
     if (user.price > 0 && user.price > minPrice) {
       params.set("price", user.price);
-    } else if (user.price === 200) {
+    } else {
       params.delete("price");
     }
-
     return params.toString();
   }, [user]);
 
@@ -63,11 +75,9 @@ const FlightSearchPage = () => {
   };
 
   const handleFilter = () => {
-    // Update the query string in the URL
     const queryString = createQueryString();
     router.replace(pathname + "?" + queryString);
 
-    // Filter the flights
     const filtered = flights.filter((flight) => {
       const flightCountry =
         user.country === "all" || flight.country === user.country;
@@ -82,7 +92,7 @@ const FlightSearchPage = () => {
     const updatedUserState = {
       ...initialUserState,
       country: searchParams.get("country") || "all",
-      price: parseInt(searchParams.get("price"), 10) || 0,
+      price: searchParams.get("price") || 0,
       date: searchParams.get("date") || "",
     };
     setUser(updatedUserState);
@@ -92,59 +102,91 @@ const FlightSearchPage = () => {
     "all",
     ...new Set(flights?.map((flight) => flight.country)),
   ];
+  const selectDate = t("selectDate");
+  const flightscountry = t("flightscountry");
+  const price = t("price");
+  const filter = t("filter");
+  const destination = t("destination");
+  const date = t("date");
 
   return (
-    <div>
-      <h2>FlightSearch</h2>
-      <div>
-        <label htmlFor="date">Select Date:</label>
-        <input
-          id="date"
-          type="date"
-          name="date"
-          value={user.date}
-          onChange={handleInputChange}
-        />
+    <div className="p-4 mt-[30px] ">
+      <div
+        className="flex flex-wrap gap-4 mb-4 p-4 bg-gray-100 shadow-md rounded-lg"
+        style={{
+          background:
+            "linear-gradient(to right bottom, #f3e1c8, #f8aa4a, #d8b38a)",
+        }}
+      >
+        <div className="flex-1">
+          <label htmlFor="date" className="block mb-2">
+            {selectDate}:
+          </label>
+          <input
+            id="date"
+            type="date"
+            name="date"
+            value={user.date}
+            onChange={handleInputChange}
+            className="w-full p-2 border rounded"
+          />
+        </div>
+        <div className="flex-1">
+          <label htmlFor="country" className="block mb-2">
+            {flightscountry}:
+          </label>
+          <select
+            name="country"
+            id="country"
+            value={user.country}
+            onChange={handleInputChange}
+            className="w-full p-2 border rounded"
+          >
+            {countries.map((country, index) => (
+              <option value={country} key={index}>
+                {country}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="flex-1">
+          <label htmlFor="price" className=" mb-2 flex ">
+            {price}: {user.price}$
+          </label>
+          <input
+            type="range"
+            name="price"
+            id="price"
+            value={user.price}
+            min={minPrice}
+            max={maxPrice}
+            onChange={handleInputChange}
+            className="w-full"
+          />
+        </div>
       </div>
-      <div className="searchElement">
-        <label htmlFor="country">Flights Country</label>
-        <select
-          name="country"
-          id="country"
-          value={user.country}
-          onChange={handleInputChange}
-          className="formSelect"
-        >
-          {countries.map((country, index) => (
-            <option value={country} key={index}>
-              {country}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div className="searchElement">
-        <label htmlFor="price">price: {user.price} $</label>
-        <input
-          type="range"
-          name="price"
-          id="price"
-          value={user.price}
-          min={minPrice}
-          max={maxPrice}
-          onChange={handleInputChange}
-          className="formSelect"
-        />
-      </div>
-      <button onClick={handleFilter}>Filter Flights</button>
-      <div>
-        <h3>Filtered Flights:</h3>
-        <ul>
+      <button onClick={handleFilter} className="link mt-[10px] mb-[10px]">
+        {filter}
+      </button>
+      <div className="mt-4">
+        <div className="flex flex-wrap gap-4">
           {filteredFlights.map((flight) => (
-            <li key={flight.id}>
-              {flight.country} - ${flight.price} - {formatDate(flight.date)}
-            </li>
+            <div
+              key={flight.id}
+              className="flex p-4 bg-white text-black  w-full justify-between items-center rounded-lg shadow-[0.5rem_0.5rem_3rem_inset_#95615e]"
+            >
+              <p className="mb-0 flex">
+                {destination}: {flight.country}
+              </p>
+              <p className="mb-0 flex">
+                {price}: {flight.price}$
+              </p>
+              <p className="mb-0 flex">
+                {date}: {formatDate(flight.date)}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
