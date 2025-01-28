@@ -37,30 +37,37 @@ const FlightSearchPage = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const minPrice = Math.min(...flights.map((flight) => flight.price));
+  const maxPrice = Math.max(...flights.map((flight) => flight.price));
+  const formatDate = (date) => {
+    const [year, month, day] = date.split("-");
+    return `${month}-${day}-${year}`;
+  };
+  const createQueryString = useCallback(() => {
+    const params = new URLSearchParams();
 
-  const createQueryString = useCallback(
-    (name, value) => {
-      const params = new URLSearchParams(searchParams);
-      if (value === "" || value === "0" || value === "all" || value === "200") {
-        params.delete(name);
-      } else {
-        params.set(name, value);
-      }
-      return params.toString();
-    },
-    [searchParams]
-  );
+    if (user.country !== "all") params.set("country", user.country);
+    if (user.date !== "") params.set("date", user.date);
+    if (user.price > 0 && user.price > minPrice) {
+      params.set("price", user.price);
+    } else if (user.price === 200) {
+      params.delete("price");
+    }
 
-  const handleChange = (e) => {
+    return params.toString();
+  }, [user]);
+
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setUser((prevUser) => {
-      const updatedUser = { ...prevUser, [name]: value };
-      router.replace(pathname + "?" + createQueryString(name, value));
-      return updatedUser;
-    });
+    setUser((prevUser) => ({ ...prevUser, [name]: value }));
   };
 
   const handleFilter = () => {
+    // Update the query string in the URL
+    const queryString = createQueryString();
+    router.replace(pathname + "?" + queryString);
+
+    // Filter the flights
     const filtered = flights.filter((flight) => {
       const flightCountry =
         user.country === "all" || flight.country === user.country;
@@ -75,25 +82,20 @@ const FlightSearchPage = () => {
     const updatedUserState = {
       ...initialUserState,
       country: searchParams.get("country") || "all",
-      price: searchParams.get("price") || 0,
+      price: parseInt(searchParams.get("price"), 10) || 0,
       date: searchParams.get("date") || "",
     };
     setUser(updatedUserState);
   }, [searchParams]);
+
   const countries = [
     "all",
     ...new Set(flights?.map((flight) => flight.country)),
   ];
-  const minPrice = Math.min(...flights.map((flight) => flight.price));
-  const maxPrice = Math.max(...flights.map((flight) => flight.price));
-  const formatDate = (date) => {
-    const [year, month, day] = date.split("-");
-    return `${month}-${day}-${year}`;
-  };
+
   return (
     <div>
       <h2>FlightSearch</h2>
-      <h2>{user.date}</h2>
       <div>
         <label htmlFor="date">Select Date:</label>
         <input
@@ -101,7 +103,7 @@ const FlightSearchPage = () => {
           type="date"
           name="date"
           value={user.date}
-          onChange={handleChange}
+          onChange={handleInputChange}
         />
       </div>
       <div className="searchElement">
@@ -110,7 +112,7 @@ const FlightSearchPage = () => {
           name="country"
           id="country"
           value={user.country}
-          onChange={handleChange}
+          onChange={handleInputChange}
           className="formSelect"
         >
           {countries.map((country, index) => (
@@ -129,7 +131,7 @@ const FlightSearchPage = () => {
           value={user.price}
           min={minPrice}
           max={maxPrice}
-          onChange={handleChange}
+          onChange={handleInputChange}
           className="formSelect"
         />
       </div>
