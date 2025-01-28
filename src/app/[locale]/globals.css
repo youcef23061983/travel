@@ -298,6 +298,22 @@ a {
 .slidelink:hover {
   scale: 0.9;
 }
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.package {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  box-shadow: 0.5rem 0.5rem 3rem inset#95615e;
+  border-radius: 0.5rem;
+  background-color: white;
+}
 @media screen and (min-width: 336px) {
   h2 {
     font-size: 2.4rem;

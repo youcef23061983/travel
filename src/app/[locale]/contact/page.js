@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { getMessages } from "next-intl/server";
+import ContactUs from "./ContactUs";
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
@@ -16,6 +17,7 @@ const page = () => {
     <div>
       <h1>{t("email")}</h1>
       <h1>{t("full name")}</h1>
+      <ContactUs />
     </div>
   );
 };

@@ -1,13 +1,21 @@
 import { useTranslations } from "next-intl";
-import React from "react";
+import React, { Suspense } from "react";
+import Package from "./Package";
 
-const Packages = ({ Packages }) => {
+const Packages = ({ PackagesData }) => {
   const t = useTranslations("Offer");
+  console.log(Packages);
 
   return (
     <div>
-      <h1>{t("name")}</h1>
-      <h1>{t("price")}</h1>
+      <p className="px-[10px] text-center mt-[40px]">{t("paragraph")}</p>
+      <div className="packages">
+        {PackagesData?.map((pack) => (
+          <Suspense fallback="...loading">
+            <Package pack={pack} />
+          </Suspense>
+        ))}
+      </div>
     </div>
   );
 };

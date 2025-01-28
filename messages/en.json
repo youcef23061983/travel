@@ -642,13 +642,17 @@
   "Service": {
     "title": "our-service",
     "lease": "Car rental",
-    "booking": "booking hotel"
+    "booking": "booking hotel",
+    "imgHeader": "Your Gateway to Global Adventures",
+    "imgTitle": "International Driving License, Car Rental, & Flight Booking Services",
+    "paragraph": "Discover a seamless travel experience with our comprehensive services. Whether you need an International Driving License to drive abroad, a reliable car rental for your adventures, or assistance in booking your next flight, we are here to make it happen. For inquiries or to book a service, call us , reach us on WhatsApp below, or visit our Contact page. Let us help you make your journey unforgettable!",
+    "phoneNumber": "phone number",
+    "WhatsApp": " Chat with us on WhatsApp"
   },
   "Offer": {
     "title": "gropu offer",
     "imgHeader": "Explore Our Exclusive Tourist Packages",
     "imgTitle": "Your Next Adventure Awaits",
-    "name": "special offer",
-    "price": "200"
+    "paragraph": "Travel is more meaningful when shared with friends, family, or colleagues. With our exclusive group packages, you can explore the world together while enjoying unparalleled benefits. From ancient landmarks and breathtaking natural wonders to luxurious resorts and vibrant cityscapes, our itineraries are crafted to cater to your group’s unique interests. Enjoy discounted rates, private tours, and dedicated travel coordinators to ensure every detail is seamless. Whether you’re planning a reunion, a corporate retreat, or a special celebration, our group packages promise unforgettable experiences filled with joy, connection, and adventure. Let us take care of the logistics while you focus on making memories that last a lifetime."
   }
 }

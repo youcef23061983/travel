@@ -13,6 +13,7 @@ import { BASE_API_URL } from "../../../utils/Url";
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
+
   const homePageMessages = messages["HomePage"];
 
   return {
@@ -26,6 +27,7 @@ const page = async ({ params: { locale } }) => {
   }
 
   const PackagesData = await GetallPackages(locale);
+  console.log(PackagesData);
 
   return (
     <div style={{ marginBottom: "3rem" }}>

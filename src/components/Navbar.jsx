@@ -101,8 +101,6 @@ const Navbar = () => {
         >
           {t("navbar.contact")}
         </Link>
-        {/* <input type="datetime-local" />
-          <input type="date" /> */}
       </ul>
       <div className="logDiv">
         {session ? (
