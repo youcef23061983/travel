@@ -253,9 +253,7 @@ a {
   color: #95615e;
   font-weight: 500;
 }
-/* .x {
-  font-size: 16px;
-} */
+
 .footerDiv {
   display: flex;
   flex-direction: column;

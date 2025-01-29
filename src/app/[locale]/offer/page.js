@@ -51,7 +51,7 @@ const page = async ({ params: { locale } }) => {
   }
 
   return (
-    <div style={{ marginBottom: "3rem" }}>
+    <div style={{ paddingBottom: "3rem" }}>
       <FrontImage
         image={"/pageImages/groupoffer.jpg"}
         header1={"imgHeader"}

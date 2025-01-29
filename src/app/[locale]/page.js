@@ -30,7 +30,7 @@ const page = async ({ params: { locale } }) => {
   console.log(PackagesData);
 
   return (
-    <div style={{ marginBottom: "3rem" }}>
+    <div style={{ paddingBottom: "3rem" }}>
       <FrontImage
         image={"/homepage/petra.jpg"}
         header1={"imgHeader"}

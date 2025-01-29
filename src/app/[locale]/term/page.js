@@ -1,9 +1,10 @@
-import FrontImage from "@/components/frontPage/FrontImage";
+import React from "react";
 import { useTranslations } from "next-intl";
+import FrontImage from "@/components/frontPage/FrontImage";
 import { getMessages } from "next-intl/server";
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
-  const homePageMessages = messages["Faq"];
+  const homePageMessages = messages["Terms"];
 
   return {
     title: homePageMessages ? homePageMessages.title : "Default Title",
@@ -11,18 +12,18 @@ export async function generateMetadata({ params: { locale } }) {
 }
 
 const page = () => {
-  const t = useTranslations("Faq");
+  const t = useTranslations("Terms");
 
   return (
     <div>
       <FrontImage
-        image={"/pageImages/faq.jpg"}
-        header1={"imgHeader"}
-        header2={"imgTitle"}
-        translateName={"Faq"}
+        image="/pageImages/terms.jpg"
+        header1="imgHeader"
+        header2="imgTitle"
+        translateName="Terms"
       />
-      <div className="px-[10px] ">
-        <p className="px-[10px]  mt-[40px]">{t("paragraph")}</p>
+      <div className="px-[10px]">
+        <p className="px-[10px] mt-[40px]">{t("paragraph")}</p>
       </div>
       <div className="flex flex-wrap justify-center gap-4">
         <div
@@ -30,104 +31,94 @@ const page = () => {
           style={{ boxShadow: "0.5rem 0.5rem 3rem #95615e" }}
         >
           <h2 className="text-3xl font-bold text-[#95615e] text-center mb-6">
-            {t("general")}
+            {t("termsAndConditions")}
           </h2>
           <div className="space-y-4">
             <div>
               <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("general1")}
+                {t("introduction")}
               </h2>
-              <p className="text-2xl">{t("general1P")}</p>
+              <p className="text-2xl">{t("introductionP")}</p>
             </div>
           </div>
           <div className="space-y-4">
             <div>
               <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("general2")}
+                {t("servicesProvided")}
               </h2>
-              <p className="text-2xl">{t("general2P")}</p>
+              <p className="text-2xl">{t("servicesProvidedP")}</p>
             </div>
           </div>
           <div className="space-y-4">
             <div>
               <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("general3")}
+                {t("bookingAndPayment")}
               </h2>
-              <p className="text-2xl">{t("general3P")}</p>
+              <p className="text-2xl">{t("bookingAndPaymentP")}</p>
             </div>
           </div>
           <div className="space-y-4">
             <div>
               <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("general4")}
+                {t("cancellationAndRefundPolicy")}
               </h2>
-              <p className="text-2xl">{t("general4P")}</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="w-full max-w-4xl p-12 rounded-2xl shadow-lg bg-white"
-          style={{ boxShadow: "0.5rem 0.5rem 3rem #95615e" }}
-        >
-          <h2 className="text-3xl font-bold text-[#95615e] text-center mb-6">
-            {t("bookingPayment")}
-          </h2>
-          <div className="space-y-4">
-            <div>
-              <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("bookingPayment1")}
-              </h2>
-              <p className="text-2xl">{t("bookingPayment1P")}</p>
+              <p className="text-2xl">{t("cancellationAndRefundPolicyP")}</p>
             </div>
           </div>
           <div className="space-y-4">
             <div>
               <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("bookingPayment2")}
+                {t("travelInsurance")}
               </h2>
-              <p className="text-2xl">{t("bookingPayment2P")}</p>
+              <p className="text-2xl">{t("travelInsuranceP")}</p>
             </div>
           </div>
           <div className="space-y-4">
             <div>
               <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("bookingPayment3")}
+                {t("visaAndTravelDocumentation")}
               </h2>
-              <p className="text-2xl">{t("bookingPayment3P")}</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="w-full max-w-4xl p-12 rounded-2xl shadow-lg bg-white"
-          style={{ boxShadow: "0.5rem 0.5rem 3rem #95615e" }}
-        >
-          <h2 className="text-3xl font-bold text-[#95615e] text-center mb-6">
-            {t("travelRequirements")}
-          </h2>
-          <div className="space-y-4">
-            <div>
-              <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("travelRequirements1")}
-              </h2>
-              <p className="text-2xl">{t("travelRequirements1P")}</p>
+              <p className="text-2xl">{t("visaAndTravelDocumentationP")}</p>
             </div>
           </div>
           <div className="space-y-4">
             <div>
               <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("travelRequirements2")}
+                {t("changesToBookings")}
               </h2>
-              <p className="text-2xl">{t("travelRequirements2P")}</p>
+              <p className="text-2xl">{t("changesToBookingsP")}</p>
             </div>
           </div>
           <div className="space-y-4">
             <div>
               <h2 className="text-3xl text-[#95615e] font-medium">
-                {t("travelRequirements3")}
+                {t("liability")}
               </h2>
-              <p className="text-2xl">{t("travelRequirements3P")}</p>
+              <p className="text-2xl">{t("liabilityP")}</p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div>
+              <h2 className="text-3xl text-[#95615e] font-medium">
+                {t("localLawsAndRegulations")}
+              </h2>
+              <p className="text-2xl">{t("localLawsAndRegulationsP")}</p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div>
+              <h2 className="text-3xl text-[#95615e] font-medium">
+                {t("privacyAndDataProtection")}
+              </h2>
+              <p className="text-2xl">{t("privacyAndDataProtectionP")}</p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div>
+              <h2 className="text-3xl text-[#95615e] font-medium">
+                {t("governingLaw")}
+              </h2>
+              <p className="text-2xl">{t("governingLawP")}</p>
             </div>
           </div>
         </div>

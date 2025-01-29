@@ -22,7 +22,7 @@ const page = () => {
   )}`;
 
   return (
-    <div>
+    <div style={{ paddingBottom: "3rem" }}>
       <FrontImage
         image={"/pageImages/service.jpg"}
         header1={"imgHeader"}

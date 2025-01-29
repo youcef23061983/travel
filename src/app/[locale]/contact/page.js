@@ -4,6 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 import FrontImage from "@/components/frontPage/FrontImage";
 import Link from "next/link";
+import ContactPage from "./ContactPage";
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
@@ -29,7 +30,7 @@ const page = () => {
         header2={"imgTitle"}
         translateName={"Contact"}
       />
-      <p className="px-[10px] ">
+      <div className="px-[10px] ">
         <p className="px-[10px]  mt-[40px]">{t("paragraph")}</p>
         <Link
           href={whatsappLink}
@@ -40,7 +41,8 @@ const page = () => {
           <FaWhatsapp className="mr-2 text-2xl" />
           {t("WhatsApp")}
         </Link>
-      </p>
+      </div>
+      <ContactPage t={t} />
     </div>
   );
 };

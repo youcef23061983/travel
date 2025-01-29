@@ -15,12 +15,12 @@ export default function About() {
   const t = useTranslations("About");
 
   return (
-    <div>
+    <div style={{ paddingBottom: "3rem" }}>
       <FrontImage
-        image={"/pageImages/about.jpg"}
-        header1={"imgHeader"}
-        header2={"imgTitle"}
-        translateName={"About"}
+        image="/pageImages/about.jpg"
+        header1="imgHeader"
+        header2="imgTitle"
+        translateName="About"
       />
       <p className="px-[10px] text-center mt-[40px]">{t("paragraph")}</p>
     </div>
