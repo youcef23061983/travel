@@ -1,13 +1,13 @@
-import GetallPackages from "@/components/GetallPackages";
+// import GetallPackages from "@/components/GetallPackages";
 import GetsinglePackage from "@/components/GetsinglePackage";
-import { generateMetadata } from "./generateMetadata";
 import PackageDetail from "./PackageDetail";
 import FrontImage from "@/components/frontPage/FrontImage";
 import { Suspense } from "react";
 import { BASE_API_URL } from "../../../../utils/Url";
 import DetailInfo from "./DetailInfo";
 
-export { generateMetadata };
+export { generateMetadata } from "./generateMetadata";
+
 // export async function generateStaticParams() {
 //   const locales = ["en", "ar"];
 //   const params = [];
