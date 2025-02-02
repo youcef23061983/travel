@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import FrontImage from "@/components/frontPage/FrontImage";
+import { getMessages } from "next-intl/server";
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
   const homePageMessages = messages["Cookies"];

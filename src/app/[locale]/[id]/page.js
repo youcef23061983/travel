@@ -1,36 +1,53 @@
-// import GetallPackages from "@/components/GetallPackages";
 import GetsinglePackage from "@/components/GetsinglePackage";
 import PackageDetail from "./PackageDetail";
 import FrontImage from "@/components/frontPage/FrontImage";
 import { Suspense } from "react";
 import { BASE_API_URL } from "../../../../utils/Url";
 import DetailInfo from "./DetailInfo";
+import { getMessages } from "next-intl/server";
 
-export { generateMetadata } from "./generateMetadata";
+export async function generateMetadata({ params: { locale, id } }) {
+  const pack = await GetsinglePackage(locale, id);
+  const messages = await getMessages({ locale });
+  const detailMessages = messages?.Detail;
+  const city = messages?.HomePage?.packages?.[`package${id}`]?.city;
+  const description =
+    messages?.HomePage?.packages?.[`package${id}`]?.description;
 
-// export async function generateStaticParams() {
-//   const locales = ["en", "ar"];
-//   const params = [];
+  return {
+    title: detailMessages?.title
+      ? `${detailMessages.title} ${city || "City"}`
+      : "Default Title",
+    description: description || "Default Description",
+    openGraph: {
+      title: detailMessages?.title
+        ? `${detailMessages.title} ${city || "City"}`
+        : "Default Title",
+      description: description,
+      url: `${BASE_API_URL}/${locale}/${id}`,
+      images: [
+        {
+          url: pack?.packageimage,
+          width: 800,
+          height: 600,
+          alt: "Og Image Alt",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: detailMessages?.title
+        ? `${detailMessages.title} ${city || "City"}`
+        : "Default Title",
+      description: description,
+      image: pack?.packageimage,
+    },
+    robots: "index, follow",
+    keywords: "packes ,Travel, package, offer, tourist, booking, licience",
+    author: "Petra",
+  };
+}
 
-//   for (const locale of locales) {
-//     const response = await fetch(`${BASE_API_URL}/${locale}/api/packages`);
-//     if (!response.ok) {
-//       throw new Error(
-//         `Failed to fetch packages for locale ${locale}: ${response.status} ${response.statusText}`
-//       );
-//     }
-//     const packages = await response.json();
-
-//     const localeParams = packages.map((pack) => ({
-//       locale,
-//       id: pack.id,
-//     }));
-
-//     params.push(...localeParams);
-//   }
-
-//   return params;
-// }
 const page = async ({ params: { locale, id } }) => {
   if (!BASE_API_URL) {
     return null;
@@ -70,4 +87,5 @@ const page = async ({ params: { locale, id } }) => {
     </div>
   );
 };
+
 export default page;

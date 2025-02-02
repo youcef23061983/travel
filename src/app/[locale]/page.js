@@ -15,9 +15,21 @@ export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
 
   const homePageMessages = messages["HomePage"];
+  const PackagesData = await GetallPackages(locale);
+  const image = PackagesData ? PackagesData[0]?.packageimage : "Default Image";
 
   return {
     title: homePageMessages ? homePageMessages.title : "Default Title",
+    twitter: {
+      card: "summary_large_image",
+      // title: detailMessages?.title
+      //   ? `${detailMessages.title} ${city || "City"}`
+      //   : "Default Title",
+      description: homePageMessages
+        ? homePageMessages.infoParagraph
+        : "Default Title",
+      image: image,
+    },
   };
 }
 
