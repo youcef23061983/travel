@@ -15,21 +15,37 @@ export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
 
   const homePageMessages = messages["HomePage"];
-  const PackagesData = await GetallPackages(locale);
-  const image = PackagesData ? PackagesData[0]?.packageimage : "Default Image";
-
+  const title = homePageMessages ? homePageMessages.title : "Default Title";
+  const description = homePageMessages
+    ? homePageMessages.infoParagraph
+    : "Default Description";
+  const image = "/homepage/petra.jpg";
   return {
-    title: homePageMessages ? homePageMessages.title : "Default Title",
+    title: title,
+    openGraph: {
+      title: title,
+
+      description: description,
+      url: `${BASE_API_URL}/${locale}`,
+      images: [
+        {
+          url: image,
+          width: 800,
+          height: 600,
+          alt: "Og Image Alt",
+        },
+      ],
+    },
     twitter: {
       card: "summary_large_image",
-      // title: detailMessages?.title
-      //   ? `${detailMessages.title} ${city || "City"}`
-      //   : "Default Title",
-      description: homePageMessages
-        ? homePageMessages.infoParagraph
-        : "Default Title",
+      title: title,
+
+      description: description,
       image: image,
     },
+    robots: "index, follow",
+    keywords: "packes ,Travel, package, offer, tourist, booking, licience",
+    author: "Petra",
   };
 }
 
