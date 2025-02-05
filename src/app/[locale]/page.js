@@ -55,7 +55,6 @@ const page = async ({ params: { locale } }) => {
   }
 
   const PackagesData = await GetallPackages(locale);
-  console.log(PackagesData);
 
   return (
     <div style={{ paddingBottom: "3rem" }}>

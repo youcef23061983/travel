@@ -6,15 +6,46 @@ import GetallPackages from "@/components/GetallPackages";
 import Packages from "./Packages";
 import FrontImage from "@/components/frontPage/FrontImage";
 import { redirect } from "next/navigation";
+// export { Image } from "../opengraph-image";
+export { default as Image } from "../opengraph-image";
 
-export async function generateMetadata({ params: { locale } }) {
-  const messages = await getMessages({ locale });
-  const homePageMessages = messages["Offer"];
+// export async function generateMetadata({ params: { locale } }) {
+//   const messages = await getMessages({ locale });
+//   const homePageMessages = messages["Offer"];
+//   const image = "/pageImages/groupoffer.jpg";
+//   paragraph;
+//   const description = homePageMessages
+//     ? homePageMessages.paragraph
+//     : "Default Description";
 
-  return {
-    title: homePageMessages ? homePageMessages.title : "Default Title",
-  };
-}
+//   return {
+//     title: homePageMessages ? homePageMessages.title : "Default Title",
+//     openGraph: {
+//       title: title,
+
+//       description: description,
+//       url: `${BASE_API_URL}/${locale}/offer`,
+//       images: [
+//         {
+//           url: image,
+//           width: 800,
+//           height: 600,
+//           alt: "Og Image Alt",
+//         },
+//       ],
+//     },
+//     twitter: {
+//       card: "summary_large_image",
+//       title: title,
+
+//       description: description,
+//       image: image,
+//     },
+//     robots: "index, follow",
+//     keywords: "packes ,Travel, package, offer, tourist, booking, licience",
+//     author: "Petra",
+//   };
+// }
 // export async function generateStaticParams() {
 //   const locales = ["en", "ar"]; // Define your locales here
 //   const params = [];
@@ -37,6 +68,22 @@ export async function generateMetadata({ params: { locale } }) {
 //   }
 //   return params;
 // }
+export { default as Image } from "../opengraph-image";
+
+export async function generateMetadata({ params: { locale } }) {
+  return {
+    title: "Offer Page",
+    openGraph: {
+      images: [
+        {
+          url: `/api/opengraph-image?imagePath=/pageImages/groupoffer.jpg&translationKey=Offer`,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+  };
+}
 
 const page = async ({ params: { locale } }) => {
   if (!BASE_API_URL) {
