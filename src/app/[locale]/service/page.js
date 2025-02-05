@@ -9,8 +9,37 @@ export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
   const homePageMessages = messages["Service"];
 
+  const description = homePageMessages
+    ? homePageMessages.paragraph
+    : "Default Description";
+  const image = "/pageImages/service.jpg";
+
   return {
     title: homePageMessages ? homePageMessages.title : "Default Title",
+    openGraph: {
+      title: title,
+
+      description: description,
+      url: `${BASE_API_URL}/${locale}/service`,
+      images: [
+        {
+          url: image,
+          width: 800,
+          height: 600,
+          alt: "Og Image Alt",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title,
+
+      description: description,
+      image: image,
+    },
+    robots: "index, follow",
+    keywords: "packes ,Travel, package, offer, tourist, booking, licience",
+    author: "Petra",
   };
 }
 const page = () => {

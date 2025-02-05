@@ -68,27 +68,16 @@ export async function generateMetadata({ params: { locale } }) {
 //   return params;
 // }
 
-const page = async ({ params: { locale }, req }) => {
+const page = async ({ params: { locale } }) => {
   if (!BASE_API_URL) {
     return null;
   }
 
   const PackagesData = await GetallPackages(locale);
-  // const session = await getServerSession(options);
-
-  // if (!session) {
-  //   redirect(`/api/auth/signin?callbackUrl=/${locale}/offer`);
-  // }
-  const isCrawler = req?.headers["user-agent"]?.includes("bot");
   const session = await getServerSession(options);
 
-  if (!session && !isCrawler) {
-    return {
-      redirect: {
-        destination: `/api/auth/signin?callbackUrl=/${locale}/offer`,
-        permanent: false,
-      },
-    };
+  if (!session) {
+    redirect(`/api/auth/signin?callbackUrl=/${locale}/offer`);
   }
 
   return (
