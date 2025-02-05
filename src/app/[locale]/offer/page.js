@@ -23,7 +23,7 @@ export async function generateMetadata({ params: { locale } }) {
       title: title,
 
       description: description,
-      url: `${BASE_API_URL}/${locale}`,
+      url: `${BASE_API_URL}/${locale}/offer`,
       images: [
         {
           url: image,
