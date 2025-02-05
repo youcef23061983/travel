@@ -14,10 +14,10 @@ export const contentType = "image/jpg";
 export default async function Image({ params: { locale } }) {
   const messages = await getMessages({ locale });
 
-  const homePageMessages = messages["HomePage"];
+  const homePageMessages = messages["Offer"];
   const title = homePageMessages ? homePageMessages.title : "Default Title";
 
-  const backgroundimg = "/homepage/petra.jpg";
+  const backgroundimg = "/pageImages/groupoffer.jpg";
   const interSemiBold = await readFile(
     join(process.cwd(), "assets/Inter-SemiBold.ttf")
   );
