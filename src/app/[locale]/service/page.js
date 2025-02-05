@@ -4,10 +4,12 @@ import { getMessages } from "next-intl/server";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import FlightSearch from "./FlightSearchPage";
+import { BASE_API_URL } from "../../../../utils/Url";
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
   const homePageMessages = messages["Service"];
+  const title = homePageMessages ? homePageMessages.title : "Default Title";
 
   const description = homePageMessages
     ? homePageMessages.paragraph
