@@ -76,7 +76,11 @@ const page = async ({ params: { locale } }) => {
   const PackagesData = await GetallPackages(locale);
   const session = await getServerSession(options);
 
-  if (!session) {
+  // if (!session) {
+  //   redirect(`/api/auth/signin?callbackUrl=/${locale}/offer`);
+  // }
+  const isCrawler = req.headers["user-agent"]?.includes("bot");
+  if (!session && !isCrawler) {
     redirect(`/api/auth/signin?callbackUrl=/${locale}/offer`);
   }
 
