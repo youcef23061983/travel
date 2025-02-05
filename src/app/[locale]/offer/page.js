@@ -6,7 +6,7 @@ import GetallPackages from "@/components/GetallPackages";
 import Packages from "./Packages";
 import FrontImage from "@/components/frontPage/FrontImage";
 import { redirect } from "next/navigation";
-export { Image } from "../opengraph-image";
+export { Image } from "./opengraph-image";
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
