@@ -12,7 +12,6 @@ export async function GET(request) {
     User-agent: *
     Allow: /
 
-    Disallow: /admin/
     Disallow: /login/
     Disallow: /_next/
     Disallow: /404

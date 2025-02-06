@@ -95,7 +95,6 @@ const CRAWLER_USER_AGENTS = [
   "twitterbot",
 ];
 
-// Function to check if the request is from a crawler
 function isCrawler() {
   const headersList = headers();
   const userAgent = headersList.get("user-agent") || "";
@@ -106,6 +105,8 @@ function isCrawler() {
 
 export async function generateMetadata({ params: { locale } }) {
   const messages = await getMessages({ locale });
+  console.log("Messages for locale:", locale, messages); // Add this to debug
+
   const homePageMessages = messages["Offer"];
   const title = homePageMessages ? homePageMessages.title : "Default Title";
 
@@ -151,7 +152,6 @@ const page = async ({ params: { locale } }) => {
   const PackagesData = await GetallPackages(locale);
   const isCrawlerRequest = isCrawler();
 
-  // If it's not a crawler, check authentication
   if (!isCrawlerRequest) {
     const session = await getServerSession(options);
     if (!session) {
