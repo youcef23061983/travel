@@ -1,11 +1,9 @@
 "use client";
 import React, { useEffect, useState, useCallback } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import { useTranslations } from "next-intl";
-
+import { useLocale, useTranslations } from "next-intl";
 const FlightSearchPage = () => {
   const t = useTranslations("Service");
-
   let flights = [
     { id: 1, price: 200, date: "2025-12-06" },
     { id: 2, price: 300, date: "2025-12-07" },
@@ -38,13 +36,11 @@ const FlightSearchPage = () => {
     ...flight,
     country: t(`flights.flight${flight.id}.country`),
   }));
-
   const initialUserState = {
     country: "all",
     date: "",
     price: 0,
   };
-
   const [user, setUser] = useState(initialUserState);
   const [filteredFlights, setFilteredFlights] = useState(flights);
   const router = useRouter();
@@ -58,7 +54,6 @@ const FlightSearchPage = () => {
   };
   const createQueryString = useCallback(() => {
     const params = new URLSearchParams();
-
     if (user.country !== "all") params.set("country", user.country);
     if (user.date !== "") params.set("date", user.date);
     if (user.price > 0 && user.price > minPrice) {
@@ -72,6 +67,10 @@ const FlightSearchPage = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setUser((prevUser) => ({ ...prevUser, [name]: value }));
+  };
+  const formatDateArabic = (date) => {
+    const [year, month, day] = date.split("-");
+    return `${day}-${month}-${year}`;
   };
 
   const handleFilter = () => {
@@ -108,6 +107,7 @@ const FlightSearchPage = () => {
   const filter = t("filter");
   const destination = t("destination");
   const date = t("date");
+  const locale = useLocale();
 
   return (
     <div className="p-4 mt-[30px] ">
@@ -182,7 +182,12 @@ const FlightSearchPage = () => {
                 {price}: {flight.price}$
               </p>
               <p className="mb-0 flex">
-                {date}: {formatDate(flight.date)}
+                {date}:{" "}
+                {
+                  locale === "en"
+                    ? formatDate(flight.date) // MM-DD-YYYY
+                    : formatDateArabic(flight.date) // DD-MM-YYYY
+                }
               </p>
             </div>
           ))}

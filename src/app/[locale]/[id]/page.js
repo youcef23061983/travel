@@ -64,7 +64,6 @@ const page = async ({ params: { locale, id } }) => {
   if (!pack) {
     return null;
   }
-
   return (
     <div
       style={{
@@ -87,5 +86,4 @@ const page = async ({ params: { locale, id } }) => {
     </div>
   );
 };
-
 export default page;

@@ -16,11 +16,9 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import AnimatedText from "../AnimatedText";
 import AnimatedTextArabic from "../AnimatedTextArabic";
-// import { PackagesData } from "../PackagesData";
 import Word from "@/components/Word";
 import { Link } from "@/i18n/routing";
 const PopularPackagesSlider = ({ PackagesData }) => {
-  // const PopularPackagesSlider = () => {
   const [textSlider, setTextSlider] = useState(null);
   const [cubeSlider, setCubeSlider] = useState(null);
   const locale = useLocale();

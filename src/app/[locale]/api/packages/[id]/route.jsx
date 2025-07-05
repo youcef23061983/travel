@@ -1,17 +1,24 @@
 import { NextResponse } from "next/server";
-import { data } from "../data";
+const pool = require("../../../../../../lib/db.js");
 
-export async function GET(request, { params }) {
+export async function GET(req, { params }) {
   const { id } = params;
 
   try {
-    const product = data?.find((pro) => pro.id === id);
-    // return new Response(JSON.stringify(product));
-    return NextResponse.json(product);
+    const result = await pool.query("SELECT * FROM packages WHERE id = $1", [
+      id,
+    ]);
+    const pkg = result.rows[0];
+
+    if (!pkg) {
+      return NextResponse.json({ error: "Package not found" }, { status: 404 });
+    }
+
+    return NextResponse.json(pkg);
   } catch (error) {
-    console.error("Error fetching package details:", error);
+    console.error("Database error:", error);
     return NextResponse.json(
-      { error: "Internal server error" },
+      { error: "Failed to fetch package" },
       { status: 500 }
     );
   }

@@ -8,7 +8,6 @@ import AuthProvider from "./(component)/AuthProvider";
 import Footer from "@/components/Footer";
 
 export default async function LocaleLayout({ children, params }) {
-  // const { locale } = params;
   const { locale = "ar" } = params;
 
   if (!routing.locales.includes(locale)) {
