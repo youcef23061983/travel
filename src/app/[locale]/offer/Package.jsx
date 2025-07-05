@@ -1,10 +1,11 @@
 "use client";
 import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 const Package = ({ pack }) => {
   const t = useTranslations("HomePage");
+  const locale = useLocale();
   const projectsVariants = {
     hidden: { opacity: 0 },
     visible: (index) => ({
@@ -36,7 +37,8 @@ const Package = ({ pack }) => {
       <h3>
         {t("price")}: {`${price} $`}
       </h3>
-      <Link href={pack.id} className="slidelink">
+
+      <Link href={`/${id}`} className="slidelink">
         {t("discover")}
       </Link>
     </motion.div>
