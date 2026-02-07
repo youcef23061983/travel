@@ -1,0 +1,18 @@
+<!-- public/robots.txt -->
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Crawl-delay: 5
+
+# Block AI bots aggressively
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: CCBot
+Disallow: /
+
+# Dynamic sitemap routes
+Sitemap: https://petratravel.vercel.app/en/sitemap.xml
+Sitemap: https://petratravel.vercel.app/ar/sitemap.xml
