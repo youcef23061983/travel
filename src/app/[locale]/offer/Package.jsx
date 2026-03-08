@@ -24,7 +24,6 @@ const Package = ({ pack }) => {
       className="package"
       viewport={{ once: true }}
     >
-      <h1>hi</h1>
       <Image
         src={packageimage}
         className="img"
