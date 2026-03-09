@@ -10,7 +10,7 @@ const Packages = ({ PackagesData }) => {
       <p className="px-[10px] text-center mt-[40px]">{t("paragraph")}</p>
       <div className="packages">
         {PackagesData?.map((pack) => (
-          <Suspense fallback="...loading">
+          <Suspense fallback="...it is loading">
             <Package pack={pack} />
           </Suspense>
         ))}
