@@ -19,12 +19,12 @@ export async function GET(request, { params }) {
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>
-    <url>
-      <loc>${baseUrl}/offer</loc>
-      <lastmod>${new Date().toISOString()}</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-    </url>
+    // <url>
+    //   <loc>${baseUrl}/offer</loc>
+    //   <lastmod>${new Date().toISOString()}</lastmod>
+    //   <changefreq>monthly</changefreq>
+    //   <priority>0.8</priority>
+    // </url>
   </urlset>`;
 
   return new Response(sitemap, {
