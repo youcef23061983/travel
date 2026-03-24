@@ -84,7 +84,9 @@ a {
   background-color: #e5b9a2;
   padding: 0.7rem 1.7rem;
   border-radius: 0.7rem;
-  transition: transform 0.3s ease, scale 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    scale 0.3s ease;
 }
 .link:hover {
   scale: 0.9;
@@ -132,48 +134,7 @@ a {
   background-position: center;
   background-attachment: fixed;
 }
-/* .marquee {
-  padding: 2rem 20rem;
-  max-width: 100%;
-  overflow: hidden;
-  --speed: 7s;
-  --item-width: clamp(50px, 10vw, 100px);
-  --item-gap: clamp(100px, 15vw, 250px);
-  --num-items: 7;
-  --single-slide-speed: calc(var(--speed) / var(--num-items));
-  --item-width-plus-gap: calc(var(--item-width) + var(--item-gap));
-  --track-width: calc(var(--item-width-plus-gap) * var(--num-items));
-}
 
-.marquee-track {
-  display: flex;
-  gap: var(--item-gap);
-  animation: marquee-move var(--speed) linear infinite;
-  width: var(--track-width);
-}
-
-.marquee.rtl .marquee-track {
-  animation: marquee-move-rtl var(--speed) linear infinite;
-}
-
-.marquee-item {
-  width: var(--item-width);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2rem;
-  color: #fff;
-  flex-shrink: 0;
-}
-
-@keyframes marquee-move {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100% - var(--item-gap)));
-  }
-} */
 .marquee {
   padding: 2rem 20rem;
   max-width: 100%;
@@ -283,7 +244,9 @@ a {
   width: 300px;
 }
 .footerLogo {
-  transition: transform 0.3s ease, scale 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    scale 0.3s ease;
 }
 .footerLogo:hover {
   scale: 1.1;
@@ -294,7 +257,9 @@ a {
   border: 0.1rem solid white;
   padding: 0.7rem 1.7rem;
   border-radius: 0.7rem;
-  transition: transform 0.3s ease, scale 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    scale 0.3s ease;
 }
 .slidelink:hover {
   scale: 0.9;
@@ -337,7 +302,9 @@ a {
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    transition: transform 0.3s ease, scale 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      scale 0.3s ease;
   }
   .x:hover {
     scale: 1.1;
